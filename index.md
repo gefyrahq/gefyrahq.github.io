@@ -24,14 +24,17 @@ Gefyra offers you to:
 - leverage all the neat development features, such as debugger, code-hot-reloading, overriding environment variables
 - run high-level integration tests against all dependent services
 - keep peace-of-mind when pushing new code to the integration environment 
-  
-Compared to [Telepresence2](https://www.telepresence.io/docs/latest/reference/architecture/), Gefyra uses a Wireguard-based
+
+
+
+## Alternative to Telepresence 2
+Compared to [Telepresence 2](https://www.telepresence.io/docs/latest/reference/architecture/), Gefyra uses a Wireguard-based
 VPN to connect with the Kubernetes cluster. Telepresence2 provides a broad connectivity with the cluster ("your development
 machine becomes part of the cluster"), Gefyra instead establishes a very scoped connectivity based on a dedicated Docker-network on the
 developer machine. In addition, Gefyra supports a couple of important use-cases such as the sidecar pattern 
-(see: https://medium.com/bb-tutorials-and-thoughts/kubernetes-learn-sidecar-container-pattern-6d8c21f873d) and does not require
+(see: [this medium article](https://medium.com/bb-tutorials-and-thoughts/kubernetes-learn-sidecar-container-pattern-6d8c21f873d)) and does not require
 "sudo"-privileges during the development process.  
-Anyway, if you feel you need other features that Telepresence2 provides and Gefyra misses, please give it a go. Gefyra was heavily 
+Anyway, if you feel you need other features that Telepresence 2 provides and Gefyra misses, please give it a go. Gefyra was heavily 
 inspired by Telepresence2.
 
 Gefyra was designed to be fast and robust on an average developer machine and supports most platforms.
