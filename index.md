@@ -3,14 +3,20 @@ layout: home
 nav_order: 1
 title: Home
 permalink: /
+description: "Blazingly-fast, rock-solid, local application development with Kubernetes."
 ---
 
-# Gefyra
+# Gefyra: Blazingly-fast, rock-solid, local application development with Kubernetes.
+{: .fs-9 }
+
 Gefyra gives Kubernetes-("cloud-native")-developers a completely new way of writing and testing their applications. 
 Gone are the times of custom `docker-compose` setups, Vagrants, custom scripts or other scenarios in order to develop (micro-)services
-for Kubernetes.  
-<img src="assets/images/main.png" alt="Gefyra Mascot" width="200" style="float:right"/>
+for Kubernetes.
+{: .fs-6 .fw-300 }
 
+[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/Schille/gefyra){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+<img src="assets/images/main.png" alt="Gefyra Mascot" width="200" style="float:right"/>
 Gefyra offers you to:
 - run services locally on a developer machine
 - operate feature-branches in a production-like Kubernetes environment with all adjacent services
@@ -30,3 +36,7 @@ inspired by Telepresence2.
 
 Gefyra was designed to be fast and robust on an average developer machine and supports most platforms.
 
+
+### License
+
+Gefyra is distributed by an [Apache-2.0 License](https://github.com/Schille/gefyra/tree/main/LICENSE).
