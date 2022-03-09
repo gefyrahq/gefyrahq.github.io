@@ -42,9 +42,7 @@ ga_tracking: GTM-MZZHWCF
 logo: "/assets/images/gefyra_logo.png"
 # Aux links for the upper right navigation
 aux_links:
-  "Gefyra on GitHub":
-    - "//github.com/schille/gefyra"
-  "Gefyra runs at the heart of Unikube. Check it out!":
+  "Gefyra will become part of Unikube. Check it out!":
     - "//unikube.io"
 #
 # Footer
