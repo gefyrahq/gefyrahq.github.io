@@ -35,7 +35,7 @@ developer machine. In addition, Gefyra supports a couple of important use-cases 
 (see: [this medium article](https://medium.com/bb-tutorials-and-thoughts/kubernetes-learn-sidecar-container-pattern-6d8c21f873d)) and does not require
 "sudo"-privileges during the development process.  
 Anyway, if you feel you need other features that Telepresence 2 provides and Gefyra misses, please give it a go. Gefyra was heavily 
-inspired by Telepresence2.
+inspired by Telepresence 2.
 
 Gefyra was designed to be fast and robust on an average developer machine and supports most platforms.
 
