@@ -2,7 +2,7 @@
 layout: page
 title: What is Gefyra
 permalink: /what-is-gefyra/
-nav_order: 2
+nav_order: 1
 parent: Technical Details
 ---
 
