@@ -14,7 +14,7 @@ Gone are the times of custom `docker-compose` setups, Vagrants, custom scripts o
 for Kubernetes.
 {: .fs-6 .fw-300 }
 
-[Try it now](tryit.md){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/Schille/gefyra){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Try it now](tryit.md){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/gefyrahq/gefyra){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 <img src="assets/images/main.png" alt="Gefyra Mascot" width="200" style="float:right"/>
 Gefyra offers you to:
@@ -42,4 +42,4 @@ Gefyra was designed to be fast and robust on an average developer machine and su
 
 ### License
 
-Gefyra is distributed by an [Apache-2.0 License](https://github.com/Schille/gefyra/tree/main/LICENSE).
+Gefyra is distributed by an [Apache-2.0 License](https://github.com/gefyrahq/gefyra/tree/main/LICENSE).

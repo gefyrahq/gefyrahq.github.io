@@ -15,7 +15,7 @@ Kubernetes while having fun. It is installed on any development computer and sta
 as a user-space application and controls the local Docker host and Kubernetes via _Kubernetes Python Client_. 
 
 <p align="center">
-  <img src="https://github.com/Schille/gefyra/raw/main/docs/static/img/gefyra-intro.png" alt="Gefyra controls docker and kubeapi"/>
+  <img src="https://github.com/gefyrahq/gefyra/raw/main/docs/static/img/gefyra-intro.png" alt="Gefyra controls docker and kubeapi"/>
 </p>
 
 (_Kubectl_ is not really required but kinda makes sense to be in this picture)
