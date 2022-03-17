@@ -14,7 +14,7 @@ Please find your preferred operating system below.
 ### Darwin AMD64
 1. Download and extract the binary executable
 ```zsh
-GEFYRA=$(curl -L -s https://api.github.com/repos/Schille/gefyra/releases/latest | grep -oP '(?<="browser_download_url": ").*darwin-amd64.*(?=")') && curl -LO $GEFYRA && unzip -o $(echo $GEFYRA | grep -oE '[^/]+$') gefyra
+GEFYRA=$(curl -L -s https://api.github.com/repos/Schille/gefyra/releases/latest | grep '"browser_download_url": ".*darwin-amd64.*"' | grep -Eo "(http|https)://[a-zA-Z0-9./?=_%:-]*") && curl -LO $GEFYRA && unzip -o $(echo $GEFYRA | grep -oE '[^/]+$') gefyra
 ```
 2. Make the Gefyra binary executable
 ```zsh
@@ -35,7 +35,7 @@ Todo
 
 ## Install Gefyra on Linux
 ```bash
-GEFYRA=$(curl -L -s https://api.github.com/repos/Schille/gefyra/releases/latest | grep -oP '(?<="browser_download_url": ").*linux.*(?=")') && curl -LO $GEFYRA && unzip -o $(echo $GEFYRA | grep -oE '[^/]+$') gefyra && sudo install -o root -g root -m 0755 gefyra /usr/local/bin/gefyra
+GEFYRA=$(curl -L -s https://api.github.com/repos/Schille/gefyra/releases/latest | grep '"browser_download_url": ".*linux.*"' | grep -Eo "(http|https)://[a-zA-Z0-9./?=_%:-]*") && curl -LO $GEFYRA && unzip -o $(echo $GEFYRA | grep -oE '[^/]+$') gefyra && sudo install -o root -g root -m 0755 gefyra /usr/local/bin/gefyra
 ```
 
 ## Install Gefyra on Windows
