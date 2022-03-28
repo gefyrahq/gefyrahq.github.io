@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Architecture
-permalink: /architecture/
+permalink: /details/architecture/
 nav_order: 2
 parent: Technical Details
 ---

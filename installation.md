@@ -4,10 +4,10 @@ title: Installation
 permalink: /installation/
 nav_order: 2
 ---
-
+<img src="/assets/images/minfootprint.png" alt="minimal footprint" width="150" style="float:right"/>
 # Installation
 Gefyra is tested under Windows, MacOS and Linux. The command line tool can be 
-installed with a binary executable.   
+installed with a binary executable.
 Please find your preferred operating system below.  
 
 ## Install Gefyra on MacOS

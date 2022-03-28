@@ -1,7 +1,7 @@
 ---
 layout: page
 title: What is Gefyra
-permalink: /what-is-gefyra/
+permalink: /details/what-is-gefyra/
 nav_order: 1
 parent: Technical Details
 ---

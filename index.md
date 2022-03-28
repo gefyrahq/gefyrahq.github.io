@@ -1,7 +1,7 @@
 ---
 layout: home
 nav_order: 1
-title: Home
+title: Gefyra
 permalink: /
 description: "Blazingly-fast, rock-solid, local application development with Kubernetes."
 ---
@@ -29,7 +29,7 @@ Gefyra offers you to:
 
 ## Alternative to Telepresence 2
 Compared to [Telepresence 2](https://www.telepresence.io/docs/latest/reference/architecture/), Gefyra uses a Wireguard-based
-VPN to connect with the Kubernetes cluster. Telepresence2 provides a broad connectivity with the cluster ("your development
+VPN to connect with the Kubernetes cluster. Telepresence 2 provides a broad connectivity with the cluster ("your development
 machine becomes part of the cluster"), Gefyra instead establishes a very scoped connectivity based on a dedicated Docker-network on the
 developer machine. In addition, Gefyra supports a couple of important use-cases such as the sidecar pattern 
 (see: [this medium article](https://medium.com/bb-tutorials-and-thoughts/kubernetes-learn-sidecar-container-pattern-6d8c21f873d)) and does not require
@@ -40,6 +40,3 @@ inspired by Telepresence 2.
 Gefyra was designed to be fast and robust on an average developer machine and supports most platforms.
 
 
-### License
-
-Gefyra is distributed by an [Apache-2.0 License](https://github.com/gefyrahq/gefyra/tree/main/LICENSE).
