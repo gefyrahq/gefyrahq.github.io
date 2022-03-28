@@ -12,6 +12,13 @@ Please find your preferred operating system below.
 
 ## Install Gefyra on MacOS
 ### Darwin AMD64
+#### Homebrew
+```zsh
+brew tap gefyrahq/gefyra
+brew install gefyra
+````
+
+#### Manual Installation
 1. Download and extract the binary executable
 ```zsh
 GEFYRA=$(curl -L -s https://api.github.com/repos/gefyrahq/gefyra/releases/latest | grep '"browser_download_url": ".*darwin-amd64.*"' | grep -Eo "(http|https)://[a-zA-Z0-9./?=_%:-]*") && curl -LO $GEFYRA && unzip -o $(echo $GEFYRA | grep -oE '[^/]+$') gefyra
