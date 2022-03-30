@@ -52,7 +52,7 @@ assign a name to the container instance for further reference.
 | `-i`, `--image`     | The Docker image to run in Gefyra (required)                                          |
 | `-N`, `--name`      | The name of the container running in Gefyra (required)                                |
 | `-n`, `--namespace` | The Kubernetes namespace for this container to run in (default: _default_)            |
-| `-n`, `--namespace` | The Kubernetes namespace for this container to run in (default: _default_)            |
+| `-C`, `--command`   | The command for this container to run in Gefyra                                       |
 | `--env`             | Set or override environment variables in the form _ENV=value_, allowed multiple times |
 | `--env-from`        | Copy the environment from the container in the notation _Pod/Container_               |
 | `-v`, `--volume`    | Bind mount a volume into the container in notation _src:dest_, allowed multiple times |
