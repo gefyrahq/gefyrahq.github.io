@@ -5,7 +5,7 @@ This website uses GitHub Pages special `remote_theme` [which is not locally inst
 
 ### Installation
 
-[Jekyll static site generator docs](https://jekyllrb.com/docs/).
+[Jekyll static site generator docs](https://jekyllrb.com/docs/).  
 **For more regarding the use of Jekyll, please refer to the [Jekyll Step by Step Tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/).**
 
 1. Install a full [Ruby development environment](https://jekyllrb.com/docs/installation/). If you use `rvm`, run: `rvm use 2.7.1`.
