@@ -46,7 +46,7 @@ Just run:
 ```bash
 deck get --name oauth2-demo https://github.com/gefyrahq/gefyra-demos.git
 ``` 
-and you will get a fresh `k3d` cluster running locally with all required components installed.
+and you will get a fresh `k3d` cluster running locally with all required components installed.  
 **Important:** These workloads are intended for demonstration purposes and are not safe for production deployments.
 
 **Optional:** If you don't want to create the development infrastructure using `Getdeck` you can also provide it
