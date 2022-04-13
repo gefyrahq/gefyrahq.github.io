@@ -23,6 +23,7 @@ parent: Use Cases and Demos
 * [Gefyra](/installation)
 * [Getdeck](https://github.com/Schille/getdeck) for setting up the development infrastructure (runs on `k3d`)
 * kubectl
+* A copy of [https://github.com/gefyrahq/gefyra-demos](https://github.com/gefyrahq/gefyra-demos)
 * Optionally: [k3d](https://k3d.io) or any other preferred Kubernetes cluster
 * Optionally: VSCode with Python debugger installed (or any other preferred IDE)
 
@@ -37,7 +38,7 @@ That's about it. Let's get started.
 
 <hr />
 
-## Creating the development infrastructure
+## Creating the Development Infrastructure
 First, we need a Kubernetes-based development infrastructure which contains all required components. Luckily this can
 be achieved quite easily with the `Deck CLI` from here: (https://github.com/Schille/getdeck).
 
