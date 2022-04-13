@@ -248,7 +248,7 @@ Of course, you are a very attentive reader and found the mistake immediately, bu
 
 ## Gefyra to the Rescue
 As always, the first would be to spin up Gefyra with
-`gefyra up`. Please be sure to still have the development in your current `kubectl` context set.
+`gefyra up`. Please be sure to still have the development cluster active in your current `kubectl` context.
 
 ### Running a Development Instance of the Container
 In order to inspect the application and pinpoint the bug, it requires a local instance of the container. Ideally with a
