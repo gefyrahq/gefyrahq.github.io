@@ -40,7 +40,7 @@ That's about it. Let's get started.
 
 ## Creating the Development Infrastructure
 First, we need a Kubernetes-based development infrastructure which contains all required components. Luckily this can
-be achieved quite easily with the `Deck CLI` from here: (https://github.com/Schille/getdeck).
+be achieved quite easily with the [`Deck CLI` from here](https://github.com/Schille/getdeck).
 
 Just run: 
 ```bash
