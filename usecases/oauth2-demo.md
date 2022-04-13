@@ -324,7 +324,7 @@ The parameter list specifies the following:
 
 ### Debugging the Application
 Now you are ready to stop the execution of the code in your VSCode debugger.
-Place the break point anywhere near the position you would expect the error to happen:
+Place the breakpoint anywhere near the position you would expect the error to happen:
 
 <div align="center">
  <img src="/assets/images/usecases_oauth2-demo_vscode2.png" alt="breakpoint in VSCode"/>
