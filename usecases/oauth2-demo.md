@@ -365,7 +365,7 @@ now in the browser:
 ```
 Awesome! Commit and push.  
 
-This way you can be quite sure that this will work in all Kubernetes environments provisioned with these workloads.
+This way you can be quite sure that this will work in all Kubernetes environments provisioned with these workloads.  
 **Remark:** Gefyra is able to run and bridge as many applications as you need. This is useful in complex request/response
 scenarios with multiple involved services - and potentially all with a debugger attached. Isn't that neat?
 
