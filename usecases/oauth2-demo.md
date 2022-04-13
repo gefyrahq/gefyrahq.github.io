@@ -339,8 +339,8 @@ verified with OAuth2-Proxy.
  <img src="/assets/images/usecases_oauth2-demo_vscode3.png" alt="introspecting variables and the JWT token"/>
 </div>
 
-As you may see, the key in the token is written in a lower case "email". This is causing the _KeyError: 'Email'_ resulting
-in a 500 error.
+As you may see, the key in the token is written in a lowercase "email". This is causing the _KeyError: 'Email'_ resulting
+in a 500 error.  
 **Remark:** Of course you could have found this out reading the logs, but where is the fun? Anyway, debugging software is 
 a tool for hunting down causes of way more complex misbehaving then in this example.
 
