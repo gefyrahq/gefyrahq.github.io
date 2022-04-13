@@ -332,7 +332,7 @@ Place the breakpoint anywhere near the position you would expect the error to ha
 
 Point your browser to [http://oauth2-demo.127.0.0.1.nip.io:8080/items/123](http://oauth2-demo.127.0.0.1.nip.io:8080/items/123) again.
 
-Once you hit the breakpoint, you can easily look around and introspect the JWT (json web token) issues from Keycloak and 
+Once you hit the breakpoint, you can easily look around and introspect the JWT (json web token) issued from Keycloak and 
 verified with OAuth2-Proxy.
 
 <div align="center">
