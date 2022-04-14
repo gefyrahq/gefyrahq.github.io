@@ -9,6 +9,7 @@ nav_order: 2
 Gefyra is tested under Windows, MacOS and Linux. The command line tool can be 
 installed with a binary executable.
 Please find your preferred operating system below.  
+{: .fs-6 .fw-300 }
 
 ## Install Gefyra on MacOS
 ### Darwin AMD64

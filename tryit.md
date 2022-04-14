@@ -6,6 +6,7 @@ nav_order: 5
 ---
 # Try it yourself
 You can easily try Gefyra yourself following this small example.
+{: .fs-6 .fw-300 }
 
 ## Prerequisites
 1. Follow the [installation](https://gefyra.dev/installation) for your preferred platform.

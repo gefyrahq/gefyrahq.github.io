@@ -25,7 +25,9 @@ Gefyra offers you to:
 - run high-level integration tests against all dependent services
 - keep peace-of-mind when pushing new code to the integration environment 
 
-
+## Use Cases and Demos
+If you are interested in more sophisticated use cases or want to develop modern Kubernetes-based architectures, 
+check out the [use cases and demos]() section. 
 
 ## Alternative to Telepresence 2
 Compared to [Telepresence 2](https://www.telepresence.io/docs/latest/reference/architecture/), Gefyra uses a Wireguard-based

@@ -8,6 +8,12 @@ parent: Use Cases and Demos
 # Create a Backend Application with a Sidecar and OAuth2 Authentication  
 {:.no_toc}
 
+This example demonstrates how to develop a Kubernetes sidecar pattern for an OAuth2 (OpenID Connect) authorized
+backend service using Gefyra.
+{: .fs-6 .fw-300 }
+
+<hr />
+
 ### What you will learn
 {:.no_toc}
 * Create a (Python-based) backend application that reads a JWT (Json web token)

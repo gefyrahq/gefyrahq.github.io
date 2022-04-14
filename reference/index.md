@@ -13,6 +13,7 @@ Gefyra provides a command line interface to run all available actions. It can qu
 Kubernetes-based development infrastructure. In addition, a concise Python API is available to integrate 
 Gefyra's capabilities into other tools
 and platforms.
+{: .fs-6 .fw-300 }
 
 ## CLI
 `gefyra`: The CLI tool for running commands and managing Gefyra's development infrastructure
