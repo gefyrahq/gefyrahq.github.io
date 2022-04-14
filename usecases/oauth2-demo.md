@@ -9,16 +9,17 @@ parent: Use Cases and Demos
 {:.no_toc}
 
 This example demonstrates how to develop a Kubernetes sidecar pattern for an OAuth2 (OpenID Connect) authorized
-backend service using Gefyra.
+backend service using Gefyra. This is more of an advanced use-case, if you just want an easy example of how Gefyra works, check
+out the [try-it-yourself guide](https://gefyra.dev/try-it-out/).
 {: .fs-6 .fw-300 }
 
 <hr />
 
 ### What you will learn
 {:.no_toc}
-* Create a (Python-based) backend application that reads a JWT (Json web token)
+* Create a (Python-based) backend application that reads a JWT (JSON web token)
 * Get a local identity provider with [Keycloak](https://www.keycloak.org/) 
-* Apply the Kubernetes sidecar pattern with [OAuth2-Proxy](https://oauth2-proxy.github.io/oauth2-proxy/) and connect the App to Keycloak
+* Apply the Kubernetes sidecar pattern with [OAuth2-Proxy](https://oauth2-proxy.github.io/oauth2-proxy/) and connect the app to Keycloak
 * Find and fix a bug
 * Start coding locally within the Kubernetes cluster having the sidecar active
 
@@ -52,7 +53,8 @@ Just run:
 ```bash
 deck get --name oauth2-demo https://github.com/gefyrahq/gefyra-demos.git
 ``` 
-and you will get a fresh `k3d` cluster running locally with all required components installed.  
+and you will get a fresh `k3d` cluster running locally with all required components installed. 
+
 **Important:** These workloads are intended for demonstration purposes and are not safe for production deployments.
 
 **Optional:** If you don't want to create the development infrastructure using `Getdeck` you can also provide it
@@ -126,6 +128,7 @@ In this picture you can find two [_Ingresses_](https://kubernetes.io/docs/concep
 definitions: one is serving the application [_Deployment_](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) _oauth2-demo_
 which schedules one _Pod_ under [oauth2-demo.127.0.0.1.nip.io:8080](oauth2-demo.127.0.0.1.nip.io:8080), the other is
 serving Keycloak under [keycloak.127.0.0.1.nip.io:8080](keycloak.127.0.0.1.nip.io:8080).    
+
 **Important:** Please mind that port _8080_ is a port mapping. From within the cluster you will see it running on port _80_.  
 
 You can introspect the Ingress also with `kubectl`:
@@ -260,10 +263,11 @@ As always, the first would be to spin up Gefyra with
 In order to inspect the application and pinpoint the bug, it requires a local instance of the container. Ideally with a
 debug server running. Since you need the sidecar in place (for the OIDC logic), the development instance must be placed
 in a Pod with the sidecar pattern. Gefyra offers you a unique mechanism to achieve exactly that.
-Start the development instance like so:
+Start the development instance like so (set `LOCAL_DIR` to the directory where you've copied/cloned `gefyra-demos` to):
 ```bash
+$> export LOCAL_DIR=/home/<...>/gefyra-demos/oauth2-demo/app
 $> gefyra run -i quay.io/gefyra/oauth2-demo -N myfastapi-demo \
-    -n oauth2-demo -v /home/<...>/gefyra-demos/oauth2-demo/app:/app \
+    -n oauth2-demo -v $LOCAL_DIR:/app \
     -c "bash -c 'python -m debugpy --wait-for-client --listen 0.0.0.0:5678 -m uvicorn main:app --host 0.0.0.0 --port 8155 --reload'"
 ```
 No worries, the following explains the parameter list:
@@ -347,6 +351,7 @@ verified with OAuth2-Proxy.
 
 As you may see, the key in the token is written in a lowercase "email". This is causing the _KeyError: 'Email'_ resulting
 in a 500 error.  
+
 **Remark:** Of course you could have found this out reading the logs, but where is the fun? Anyway, debugging software is 
 a tool for hunting down causes of way more complex misbehaving then in this example.
 
@@ -372,6 +377,7 @@ now in the browser:
 Awesome! Commit and push.  
 
 This way you can be quite sure that this will work in all Kubernetes environments provisioned with these workloads.  
+
 **Remark:** Gefyra is able to run and bridge as many applications as you need. This is useful in complex request/response
 scenarios with multiple involved services - and potentially all with a debugger attached. Isn't that neat?
 
@@ -387,7 +393,7 @@ $> deck remove --cluster https://github.com/gefyrahq/gefyra-demos.git
 [INFO] Deleting the k3d cluster with name gefyra-demos
 ```
 
-If you created the infrastructure yourself, you have to find out how you get rid of everything yourself.
+If you created the infrastructure yourself, you probably already know how you get rid of everything yourself ;-)
 
 # Additional Notes
 If you want maximum convenience for your developers and a supported team oriented workflow, we recommend you 
@@ -395,7 +401,8 @@ check out [Unikube](https://unikube.io).
 Gefyra is part of Unikube's development workflow.
 
 If you are developing django applications, be sure to check out [Django-Hurricane](https://django-hurricane.io/), a Kubernetes-native 
-stack specifically created for django.
+stack specifically created for django and [Pycloak](https://github.com/Blueshoe/pycloak), a package that's makes it super easy to integrate
+OpenID Connect/OAuth2 workflows in django.
 
 
 
