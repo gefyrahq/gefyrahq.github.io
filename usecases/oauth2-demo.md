@@ -97,7 +97,7 @@ the backend service:
 ```
 
 Voilà, we have a full-fledged [OpenID Connect](https://openid.net/connect/) login flow running in a Kubernetes cluster.  
-So are we done yet? Not quit. Let's move on to the internals.
+So are we done yet? Not quite. Let's move on to the internals.
 
 ## The Scheme of the Infrastructure
 ### Kubernetes Overview
@@ -302,7 +302,7 @@ Awesome. You have a debugger connected to the development instance. Now it's tim
 
 ### Bridging the Development Instance in the Cluster
 In order to receive requests (i.e. traffic) from within the cluster, basically when you hit the route [http://oauth2-demo.127.0.0.1.nip.io:8080/items/123](http://oauth2-demo.127.0.0.1.nip.io:8080/items/123)
-in your browser, a `gefyra bride ...` is needed.  
+in your browser, a `gefyra bridge ...` is needed.  
 Just create a bridge with:
 ```bash
 $> gefyra bridge -N myfastapi-demo -n oauth2-demo \
@@ -315,7 +315,7 @@ $> gefyra bridge -N myfastapi-demo -n oauth2-demo \
 ```
 
 The parameter list specifies the following:
-* _-N myfastapi-demo_: the bride targets (on one end) the local Docker instance with the name _myfastapi-demo_
+* _-N myfastapi-demo_: the bridge targets (on one end) the local Docker instance with the name _myfastapi-demo_
 * _-n oauth2-demo_: the target workload (the other end of the bridge) is in the Kubernetes namespace _oauth2-demo_
 * _-\-deployment oauth2-demo_: Gefyra intercepts all Pods of the Deployment _oauth2-demo_ (don't confuse it with the name of the namespace)
 * _-\-port 8155:8155_: the bridge to map port 8155 of the container in the cluster to 8155 on the local instance
