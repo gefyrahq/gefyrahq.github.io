@@ -27,7 +27,7 @@ Gefyra offers you to:
 
 ## Use Cases and Demos
 If you are interested in more sophisticated use cases or want to develop modern Kubernetes-based architectures, 
-check out the [use cases and demos]() section. 
+check out the [use cases and demos](/usecases/) section. 
 
 ## Alternative to Telepresence 2
 Compared to [Telepresence 2](https://www.telepresence.io/docs/latest/reference/architecture/), Gefyra uses a Wireguard-based
