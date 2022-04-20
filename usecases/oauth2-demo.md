@@ -9,9 +9,11 @@ parent: Use Cases and Demos
 {:.no_toc}
 
 This example demonstrates how to develop a Kubernetes sidecar pattern for an OAuth2 (OpenID Connect) authorized
-backend service using Gefyra. This is more of an advanced use-case, if you just want an easy example of how Gefyra works, check
-out the [try-it-yourself guide](https://gefyra.dev/try-it-out/).
+backend service using Gefyra. 
 {: .fs-6 .fw-300 }
+
+This is more of an advanced use-case, if you just want an easy example of how Gefyra works, check
+out the [try-it-yourself guide](https://gefyra.dev/try-it-out/).
 
 <hr />
 
@@ -393,7 +395,7 @@ $> deck remove --cluster https://github.com/gefyrahq/gefyra-demos.git
 [INFO] Deleting the k3d cluster with name gefyra-demos
 ```
 
-If you created the infrastructure yourself, you probably already know how you get rid of everything yourself ;-)
+If you created the infrastructure yourself, you probably already know how to get rid of everything yourself ;-)
 
 # Additional Notes
 If you want maximum convenience for your developers and a supported team oriented workflow, we recommend you 
