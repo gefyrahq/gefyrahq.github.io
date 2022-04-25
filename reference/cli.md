@@ -10,7 +10,7 @@ parent: Reference
 
 # Command line tool (CLI)
 
-**This reference is for version 0.7.0**
+**This reference is for version 0.7.x**
 
 ## Syntax
 Use the following syntax to run `gefyra` commands from your terminal:
