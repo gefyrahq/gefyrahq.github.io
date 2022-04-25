@@ -10,6 +10,8 @@ parent: Reference
 
 # Command line tool (CLI)
 
+**This reference is for version 0.7.0**
+
 ## Syntax
 Use the following syntax to run `gefyra` commands from your terminal:
 ```
@@ -35,9 +37,15 @@ the local Docker network and traffic tunnel endpoint.
 
 **Arguments:**  
 
-| Argument        | Description                                                                                                                                                                |
-|:-------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `--endpoint` | The Wireguard endpoint in the form _IP_:_Port_ for Gefyra to connect to<br/>**Important:** Be sure to allow your firewall for this IP and port to let traffic pass through |
+| Argument            | Description                                                                                                                                                                |
+|:--------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `-e`, `--endpoint`  | The Wireguard endpoint in the form _IP_:_Port_ for Gefyra to connect to<br/>**Important:** Be sure to allow your firewall for this IP and port to let traffic pass through |
+| `-o`, `--operator`  | The full image path (including tag) for the Operator image (e.g. _quay.io/gefyra/operator:latest_)                                                                         |
+| `-s`, `--stowaway`  | The full image path (including tag) for the Stowaway image (e.g. _quay.io/gefyra/stowaway:latest_)                                                                         |
+| `-c`, `--carrier`   | The full image path (including tag) for the Carrier image (e.g. _quay.io/gefyra/carrier:latest_)                                                                           |
+| `-a`, `--cargo`     | The full image path (including tag) for the Cargo image (e.g. _quay.io/gefyra/cargo:latest_)                                                                               |
+|  `-r`, `--registry` | The base url for registry to pull images from (e.g. _quay.io/gefyra/_), the full image paths will be constructed using the name and the tag of the release                 |                                                                                                      |
+                        
 
 ## `run`
 Run a new app container image in Gefyra's development infrastructure. Any Docker image is supported. It is required to
