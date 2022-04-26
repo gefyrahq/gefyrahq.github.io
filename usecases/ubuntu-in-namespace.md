@@ -101,7 +101,7 @@ Now that the container is running, you can enter a bash by running: `docker exec
 ```bash
 root@6178770cd6b1:/#
 ```
-In order to call a http service from this Kubernetes namesapce a terminal application could be handy. The official
+In order to call a http service from this Kubernetes namespace a terminal application could be handy. The official
 Ubuntu Docker image does not provide on of my favorites out of the box, but it is easy to add it.
 
 ```bash
