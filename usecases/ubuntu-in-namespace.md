@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Run an Ubuntu container instance
+title: Run a Ubuntu container instance
 permalink: /usecases/ubuntu-in-namespace/
 nav_order: 1
 parent: Use Cases and Demos
@@ -18,7 +18,7 @@ This example demonstrates how to run a local Ubuntu container instance as part o
 
 ### What you will learn
 {:.no_toc}
-* Run an Ubuntu container as part of a Kubernetes namespace
+* Run a Ubuntu container as part of a Kubernetes namespace
 * Install additional software to that instance
 * Use this container to call Kubernetes services
 
@@ -73,14 +73,14 @@ of one of your data plane nodes. The default port is _31820_, it may be differen
 networking.
 
 ## Running a container in a Kubernetes namespace
-In this example, an Ubuntu will become part of the cluster namespace _buzzword_.
+In this example, a Ubuntu will become part of the cluster namespace _buzzword_.
 Start the container instance like so :
 ```bash
 $> gefyra run -i ubuntu -N myubuntu -n buzzword -c "bash -c 'tail -f /dev/null'"
 > [INFO] Container image 'ubuntu:latest' started with name 'myubuntu' in Kubernetes namespace 'buzzword'
 ```
 No worries, the following explains the parameter list:
-* _-i ubuntu_: run the public Docker image ob Ubuntu from here: https://hub.docker.com/_/ubuntu 
+* _-i ubuntu_: run the public Docker image ob Ubuntu from here: [https://hub.docker.com/_/ubuntu](https://hub.docker.com/_/ubuntu) 
 * _-N myubuntu_: name this local Docker instance _myubuntu_ for further reference
 * _-n buzzword_: place this Docker instance in the Kubernetes namespace _buzzword_ (where this example plays)
 * _-c "bash -c 'tail -f /dev/null'"_: start this Docker instance and keep it running forever
@@ -101,7 +101,7 @@ Now that the container is running, you can enter a bash by running: `docker exec
 ```bash
 root@6178770cd6b1:/#
 ```
-In order to call a http service from this Kubernetes namespace a terminal application could be handy. The official
+In order to call an http service from this Kubernetes namespace a terminal application could be handy. The official
 Ubuntu Docker image does not provide on of my favorites out of the box, but it is easy to add it.
 
 ```bash
