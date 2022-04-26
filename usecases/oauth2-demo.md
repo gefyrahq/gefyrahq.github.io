@@ -2,11 +2,14 @@
 layout: page
 title: OAuth2 Demo with a Sidecar 
 permalink: /usecases/oauth2-demo/
-nav_order: 1
+nav_order: 2
 parent: Use Cases and Demos
 ---
 # Create a Backend Application with a Sidecar and OAuth2 Authentication  
 {:.no_toc}
+
+Advanced Usecase
+{: .label .label-yellow }
 
 This example demonstrates how to develop a Kubernetes sidecar pattern for an OAuth2 (OpenID Connect) authorized
 backend service using Gefyra. 
@@ -30,7 +33,7 @@ out the [try-it-yourself guide](https://gefyra.dev/try-it-out/).
 ### What you will need
 {:.no_toc}
 * [Gefyra](/installation)
-* [Getdeck](https://github.com/Schille/getdeck) for setting up the development infrastructure (runs on `k3d`)
+* [Getdeck](https://github.com/Getdeck/getdeck) for setting up the development infrastructure (runs on `k3d`)
 * kubectl
 * A copy of [https://github.com/gefyrahq/gefyra-demos](https://github.com/gefyrahq/gefyra-demos)
 * Optionally: [k3d](https://k3d.io) or any other preferred Kubernetes cluster
@@ -49,7 +52,7 @@ That's about it. Let's get started.
 
 ## Creating the Development Infrastructure
 First, we need a Kubernetes-based development infrastructure which contains all required components. Luckily this can
-be achieved quite easily with the [`Deck CLI` from here](https://github.com/Schille/getdeck).
+be achieved quite easily with the [`Deck CLI` from here](https://github.com/Getdeck/getdeck).
 
 Just run: 
 ```bash
