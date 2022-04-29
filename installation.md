@@ -20,18 +20,8 @@ brew install gefyra
 ````
 
 #### Manual Installation
-1. Download and extract the binary executable
 ```zsh
-GEFYRA=$(curl -L -s https://api.github.com/repos/gefyrahq/gefyra/releases/latest | grep '"browser_download_url": ".*darwin-amd64.*"' | grep -Eo "(http|https)://[a-zA-Z0-9./?=_%:-]*") && curl -LO $GEFYRA && unzip -o $(echo $GEFYRA | grep -oE '[^/]+$') gefyra
-```
-2. Make the Gefyra binary executable
-```zsh
-chmod +x ./gefyra
-```
-3. Move the Gefyra binary to a location on your system `PATH`
-```zsh
-sudo mv ./gefyra /usr/local/bin/gefyra
-sudo chown root: /usr/local/bin/gefyra
+curl -sSL https://raw.githubusercontent.com/georgkrause/gefyra/fix-install-for-mac/install.sh | sh -
 ```
 
 
@@ -43,7 +33,7 @@ Todo
 
 ## Install Gefyra on Linux
 ```bash
-GEFYRA=$(curl -L -s https://api.github.com/repos/gefyrahq/gefyra/releases/latest | grep '"browser_download_url": ".*linux.*"' | grep -Eo "(http|https)://[a-zA-Z0-9./?=_%:-]*") && curl -LO $GEFYRA && unzip -o $(echo $GEFYRA | grep -oE '[^/]+$') gefyra && sudo install -o root -g root -m 0755 gefyra /usr/local/bin/gefyra
+curl -sSL https://raw.githubusercontent.com/georgkrause/gefyra/fix-install-for-mac/install.sh | sh -
 ```
 
 ## Install Gefyra on Windows
