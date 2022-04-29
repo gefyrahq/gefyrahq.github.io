@@ -21,7 +21,7 @@ brew install gefyra
 
 #### Manual Installation
 ```zsh
-curl -sSL https://raw.githubusercontent.com/georgkrause/gefyra/fix-install-for-mac/install.sh | sh -
+curl -sSL https://raw.githubusercontent.com/gefyrahq/gefyra/main/install.sh | sh -
 ```
 
 
@@ -33,7 +33,7 @@ Todo
 
 ## Install Gefyra on Linux
 ```bash
-curl -sSL https://raw.githubusercontent.com/georgkrause/gefyra/fix-install-for-mac/install.sh | sh -
+curl -sSL https://raw.githubusercontent.com/gefyrahq/gefyra/main/install.sh | sh -
 ```
 
 ## Install Gefyra on Windows
