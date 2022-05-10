@@ -12,7 +12,7 @@ Please find your preferred operating system below.
 {: .fs-6 .fw-300 }
 
 ## Install Gefyra on MacOS
-### Darwin AMD64
+### Darwin AMD64 / ARM64 (universal build)
 #### Homebrew
 ```zsh
 brew tap gefyrahq/gefyra
@@ -23,13 +23,6 @@ brew install gefyra
 ```zsh
 curl -sSL https://raw.githubusercontent.com/gefyrahq/gefyra/main/install.sh | sh -
 ```
-
-
-### Darwin ARM64
-Gefyra is currently not tested on ARM64 and does potentially not work at the moment.
-
-Todo
-{: .label .label-yellow }
 
 ## Install Gefyra on Linux
 ```bash
