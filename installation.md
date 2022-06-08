@@ -30,11 +30,13 @@ curl -sSL https://raw.githubusercontent.com/gefyrahq/gefyra/main/install.sh | sh
 ```
 
 ## Install Gefyra on Windows
-You can download the latest release from https://github.com/gefyrahq/gefyra/releases/ and extract the binary
-on your local machine.
+You can download the latest release from 
+[https://github.com/gefyrahq/gefyra/releases/](https://github.com/gefyrahq/gefyra/releases/) and extract the binary
+on your local machine.  
 
 Chocolatey will be available soon. If you can support this project with packaging and distributing for Windows
 please get in touch!
+
 Todo
 {: .label .label-yellow }
 
