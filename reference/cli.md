@@ -32,7 +32,7 @@ Brings up a local development infrastructure. Gefyra pulls the active `kubectl` 
 _Operator_ to the connected cluster. Gefyra waits for _Operator_ to become ready. In the last step, Gefyra rolls out
 the local Docker network and traffic tunnel endpoint.
 
-**Example:** `geyra up`
+**Example:** `gefyra up`
 
 **Arguments:**  
 
@@ -50,7 +50,7 @@ the local Docker network and traffic tunnel endpoint.
 Run a new app container image in Gefyra's development infrastructure. Any Docker image is supported. It is required to
 assign a name to the container instance for further reference.
 
-**Example:** `geyra run -i pyserver -N mypyserver -n default`
+**Example:** `gefyra run -i pyserver -N mypyserver -n default`
 
 **Arguments:**  
 
@@ -73,7 +73,7 @@ be replaced by Gefyra's proxy component _Carrier_. Carrier redirects all request
 in a Pod) to the local development container. During the bridge operation Carrier can fake-serve `httpGet` probes. There 
 is one bridge for each Pod/container combination if a Deployment or Statefulset is selected with more than one Pod.
 
-**Example:** `geyra bridge -N mypyserver --container-name hello-nginx --deployment hello-nginxdemo --port 80:8000 -n default -I mypybridge`
+**Example:** `gefyra bridge -N mypyserver --container-name hello-nginx --deployment hello-nginxdemo --port 80:8000 -n default -I mypybridge`
 
 **Arguments:**  
 
@@ -93,7 +93,7 @@ is one bridge for each Pod/container combination if a Deployment or Statefulset 
 ## `unbridge`
 Remove active traffic intercepts and reset the cluster to its original state.
 
-**Example:** `geyra unbridge -N mypybridge`
+**Example:** `gefyra unbridge -N mypybridge`
 
 **Arguments:**  
 
@@ -116,7 +116,7 @@ No arguments available.
 ## `list`
 List running containers and active bridges. Please select either `--bridges` or `--containers` to display.
 
-**Example:** `geyra list --bridges`
+**Example:** `gefyra list --bridges`
 
 **Arguments:**  
 
