@@ -3,6 +3,7 @@ layout: page
 title: Getting Started (Docker Desktop OSX)
 permalink: /guides/getting-started-docker-desktop-osx/
 nav_order: 2
+parent: Guides
 ---
 # Getting started with Gefyra and Docker Desktop on MacOS
 This example is really similar to the k3d getting started guide.
