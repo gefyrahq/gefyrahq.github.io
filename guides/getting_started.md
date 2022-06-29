@@ -22,3 +22,4 @@ Check out this workload running under: http://hello.127.0.0.1.nip.io:8080/
  running Kubernetes cluster with `k3d cluster delete mycluster`
 
 {% include_relative _includes/getting_started_common.md %}
+10. Remove the locally running Kubernetes cluster with `k3d cluster delete mycluster`

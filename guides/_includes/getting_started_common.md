@@ -19,4 +19,3 @@ Check out the initial response from: http://hello.127.0.0.1.nip.io:8080/
 
 ## Cleaning up
 9. Remove Gefyra's components from the cluster with `gefyra down`
-10. Remove the locally
