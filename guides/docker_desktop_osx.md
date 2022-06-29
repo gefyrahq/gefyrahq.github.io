@@ -46,4 +46,4 @@ kubectl apply -f https://raw.githubusercontent.com/gefyrahq/gefyra/main/testing/
 Check out this workload running under: http://hello.127.0.0.1.nip.io:8080/    
 
 
-{% include_relative getting_started_common.md %}
+{% include_relative _includes/getting_started_common.md %}
