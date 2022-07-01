@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Getting Started (Docker Desktop OSX)
-permalink: /guides/getting-started-docker-desktop-osx/
+title: Getting Started (Docker Desktop Kubernetes OSX)
+permalink: /guides/getting-started-docker-desktop-kubernetes-osx/
 nav_order: 2
 parent: Guides
 ---
