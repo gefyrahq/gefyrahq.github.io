@@ -5,7 +5,7 @@ permalink: /guides/getting-started-docker-desktop-kubernetes-osx/
 nav_order: 2
 parent: Guides
 ---
-# Getting started with Gefyra and Docker Desktop on MacOS
+# Getting started with Gefyra and Docker Desktop Kubernetes on MacOS
 This example is really similar to the k3d getting started guide.
 However, Docker Desktop's Kubernetes comes with some specialities
 which must be taken care of to make this guide work.
