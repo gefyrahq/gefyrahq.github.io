@@ -16,7 +16,15 @@ for Kubernetes.
 
 [Try it now](guides/index.md){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/gefyrahq/gefyra){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-<img src="assets/images/main.png" alt="Gefyra Mascot" width="200" style="float:right"/>
+**Quick installation**
+
+```bash
+curl -sSL https://raw.githubusercontent.com/gefyrahq/gefyra/main/install.sh | sh -
+```
+
+Looking for homebrew or Windows installation? Checkout the [installation guide](installation.md).
+
+<img src="assets/images/main.png" alt="Gefyra Mascot" width="200" style="float:right; margin-left: 15px;"/>
 Gefyra offers you to:
 - run services locally on a developer machine
 - operate feature-branches in a production-like Kubernetes environment with all adjacent services
