@@ -17,7 +17,7 @@ You can easily try Gefyra yourself following this small example.
 **>= v5** `k3d cluster create mycluster --agents 1 -p 8080:80@agent:0 -p 31820:31820/UDP@agent:0`  
 This creates a Kubernetes cluster that binds port 8080 and 31820 to localhost. `kubectl` context is immediately set to this cluster.
 3. Apply some workload, for example from the testing directory of this repo:  
-`kubectl apply -f testing/workloads/hello.yaml`
+`kubectl apply -f https://raw.githubusercontent.com/gefyrahq/gefyra/main/testing/workloads/hello.yaml`
 Check out this workload running under: http://hello.127.0.0.1.nip.io:8080/    
  running Kubernetes cluster with `k3d cluster delete mycluster`
 
