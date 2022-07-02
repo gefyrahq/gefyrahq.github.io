@@ -22,7 +22,7 @@ for Kubernetes.
 curl -sSL https://raw.githubusercontent.com/gefyrahq/gefyra/main/install.sh | sh -
 ```
 
-Looking for homebrew or Windows installation? Checkout the [installation guide](installation.md).
+Looking for Homebrew or Windows installation? Checkout the [installation guide](installation.md).
 
 <img src="assets/images/main.png" alt="Gefyra Mascot" width="200" style="float:right; margin-left: 15px;"/>
 **Gefyra offers you to:**
