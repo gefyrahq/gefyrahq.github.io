@@ -10,10 +10,10 @@ parent: Guides
 
 ## Intro
 
-This guide will show you how to use Gefyra for the local development of an Kubernetes
+This guide will show you how to use Gefyra for the local development of a Kubernetes
 Application running in GKE. Gefyra is able to spin up a local container which
-behaves like it was part of the cluster already. This way you can services
-inside the cluster without abstain from features like hot code reload. Sounds
+behaves like it was part of the cluster already. This way you can run services
+inside the cluster without abstaining from features like hot code reload. Sounds
 good? Lets go!
 
 ## Prerequisites
@@ -54,7 +54,7 @@ to connect to the cluster using wireguard:
 ## Running the Spacecrafts Demo
 
 To have some actual application to develop against, we want to deploy our
-spacecrafts demo to our Cluster. Clone the repository and deploy it using helm:
+spacecrafts demo to our cluster. Clone the repository and deploy it using helm:
 
 ```
 git clone https://github.com/django-hurricane/spacecrafts-demo.git
@@ -104,8 +104,8 @@ everything to allow us to run local containers linked to the cluster.
 
 ## Local development backed by the cluster
 
-Lets say we want to debug and fix the 404 on the index page. Its possible to do
-this in the remote cluster, but gefyra enables us to do this on your maschine!
+Lets say we want to debug and fix the 404 on the index page. It's possible to do
+this in the remote cluster, but gefyra enables us to do this on your machine!
 
 The following command will spin your local development container for spacecrafts
 up. Please note you need to adjust the name of the container, run `kubectl get
