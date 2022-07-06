@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Getting Started (Docker Desktop Kubernetes OSX)
-permalink: /guides/getting-started-docker-desktop-kubernetes-osx/
+title: Docker Desktop Kubernetes (OSX)
+permalink: /getting-started/docker-desktop-kubernetes-osx/
 nav_order: 2
-parent: Guides
+parent: Getting Started
 ---
 # Getting started with Gefyra and Docker Desktop Kubernetes on MacOS
 This example is really similar to the k3d getting started guide.

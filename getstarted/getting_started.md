@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Getting Started (k3d)
-permalink: /guides/getting-started-k3d/
+title: K3D
+permalink: /getting-started/k3d/
 nav_order: 1
-parent: Guides
+parent: Get Started
 ---
 # Gettings started with Gefyra and k3d
 You can easily try Gefyra yourself following this small example.
