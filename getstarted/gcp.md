@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Getting Started (GCP)
-permalink: /guides/getting-started-gcp/
+title: Google Cloud Platform (GCP)
+permalink: /getting-started/google-cloud-platform-gcp/
 nav_order: 3
-parent: Guides
+parent: Getting Started
 ---
 
 # Get started using Gefyra with Google Cloud Platform
