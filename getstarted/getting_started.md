@@ -5,7 +5,7 @@ permalink: /getting-started/k3d/
 nav_order: 1
 parent: Getting Started
 ---
-# Gettings started with Gefyra and k3d
+# Getting started with Gefyra and k3d
 You can easily try Gefyra yourself following this small example.
 {: .fs-6 .fw-300 }
 
