@@ -3,7 +3,7 @@ layout: page
 title: K3D
 permalink: /getting-started/k3d/
 nav_order: 1
-parent: Get Started
+parent: Getting Started
 ---
 # Gettings started with Gefyra and k3d
 You can easily try Gefyra yourself following this small example.
