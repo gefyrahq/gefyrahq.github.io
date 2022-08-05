@@ -1,24 +1,24 @@
 ---
 layout: page
 title: Minikube
-permalink: /getting-started/minikube-docker/
+permalink: /getting-started/minikube/
 nav_order: 1
 parent: Getting Started
 ---
 # Getting started with Gefyra and Minikube
-This guide will show you how to use Gefyra for the local development of a Kubernetes
+This guide describes the usage of Gefyra for the local development of a Kubernetes
 application running in Minikube.
 {: .fs-6 .fw-300 }
 
-**Important:** This getting started guide for Minikube is profiled for Gefyra in version **0.9.0+**.
+**Important:** This getting started guide for Minikube requires Gefyra in version **0.9.0+**.
 
 ## Prerequisites
-1. You have Minikube [installed](https://minikube.sigs.k8s.io/docs/start/) (at least in version v1.26.1)
-2. Follow the [installation](https://gefyra.dev/installation) of Gefyra for your preferred platform  
+1. Minikube is [installed](https://minikube.sigs.k8s.io/docs/start/) (at least in version v1.26.1)
+2. Gefyra is [available](https://gefyra.dev/installation) (at least in version 0.9.0)
 
 
 ## Creating a local Kubernetes cluster
-1. For Minikube to create a Kubernetes cluster based on Docker containers please run:  
+1. Create a local Kubernetes cluster with Minikube by running:  
 ```bash
 > minikube start
 ```  
@@ -29,17 +29,17 @@ Tested drivers are: _docker_, _kvm2_, _kvm_, _virtualbox_. Others are potentiall
 After some time of downloading the required resources, the cluster will be running. You may enable the required 
 addons based on your requirements. The `kubectl` context is immediately set to this cluster. You can check if 
 `kubectl config current-context` is set to `minikube`.
-2. Apply some workload, for example from the testing directory of this repo:  
+2. Apply some workload, for example from the testing directory of this repository:  
 `kubectl apply -f https://raw.githubusercontent.com/gefyrahq/gefyra/main/testing/workloads/hello.yaml`
 3. Check the output of the deployed app with:
    1. `kubectl expose deployment hello-nginxdemo --type=NodePort --port=80`
    2. `minikube service hello-nginxdemo`
 
 ## Running Gefyra
-1. Set up Gefyra with your local Minikube cluster: `gefyra up --minikube`  
-The `--minikube` switch detects all required connection parameters from your local machine.
+1. Set up Gefyra with your Minikube cluster: `gefyra up --minikube`  
+The `--minikube` switch detects all required connection parameters from your local cluster.
 2. Run a local Docker image with Gefyra in order to  make it part of the cluster.
-   1. Build your Docker image with a local tag, for example from the testing directory:
+   1. Build your Docker image with a local tag, for example [from the testing directory](https://github.com/gefyrahq/gefyra/tree/main/testing):
    `cd testing/images/ && docker build -f Dockerfile.local . -t pyserver`
    2. Execute Gefyra's run command:    
    `gefyra run -i pyserver -N mypyserver -n default`
