@@ -16,7 +16,7 @@ backend service using Gefyra.
 {: .fs-6 .fw-300 }
 
 This is more of an advanced use-case, if you just want an easy example of how Gefyra works, check
-out the [try-it-yourself guide](https://gefyra.dev/try-it-out/).
+out the [getting started guide](https://gefyra.dev/getting-started/).
 
 <hr />
 
