@@ -5,7 +5,7 @@ permalink: /usecases/remote-development-with-gke/
 nav_order: 4
 parent: Use Cases and Demos
 ---
-# Developing a Backend Application with Django on the Google Kubernetes Engine (GKE) 
+# Developing a backend application with Django on the Google Kubernetes Engine (GKE) 
 {:.no_toc}
 
 Intermediate Usecase

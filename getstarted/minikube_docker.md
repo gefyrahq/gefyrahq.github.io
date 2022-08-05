@@ -7,7 +7,7 @@ parent: Getting Started
 ---
 # Getting started with Gefyra and Minikube
 This guide will show you how to use Gefyra for the local development of a Kubernetes
-Application running in Minikube.
+application running in Minikube.
 {: .fs-6 .fw-300 }
 
 **Important:** This getting started guide for Minikube is profiled for Gefyra in version **0.9.0+**.
