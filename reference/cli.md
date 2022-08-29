@@ -54,16 +54,16 @@ assign a name to the container instance for further reference.
 
 **Arguments:**  
 
-| Argument            | Description                                                                                 |
-|:--------------------|:--------------------------------------------------------------------------------------------|
-| `-i`, `--image`     | The Docker image to run in Gefyra (required)                                                |
-| `-N`, `--name`      | The name of the container running in Gefyra (required)                                      |
-| `-n`, `--namespace` | The Kubernetes namespace for this container to run in (default: _default_)                  |
-| `-c`, `--command`   | The command for this container to run in Gefyra                                             |
-| `--port`            | Add port mapping in form of `<(ip:host_port)>:<container_port>`.`ip` defaults to localhost. |
-| `--env`             | Set or override environment variables in the form _ENV=value_, allowed multiple times       |
-| `--env-from`        | Copy the environment from the container in the notation _Pod/Container_                     |
-| `-v`, `--volume`    | Bind mount a volume into the container in notation _src:dest_, allowed multiple times       |
+| Argument            | Description                                                                                                                                                                                             |
+|:--------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `-i`, `--image`     | The Docker image to run in Gefyra (required)                                                                                                                                                            |
+| `-N`, `--name`      | The name of the container running in Gefyra (required)                                                                                                                                                  |
+| `-n`, `--namespace` | The Kubernetes namespace for this container to run in (default: _default_)                                                                                                                              |
+| `-c`, `--command`   | The command for this container to run in Gefyra                                                                                                                                                         |
+| `--expose`          | Add port mapping in form of `<(ip:host_port)>:<container_port>`.`ip` defaults to localhost.                                                                                                             |
+| `--env`             | Set or override environment variables in the form _ENV=value_, allowed multiple times                                                                                                                   |
+| `--env-from`        | Copy the environment from the container in the notation `<workload_type>/<workload_name>/<container>`. `container` is optional. <br/> Example: `deploy/some-deployment` or `pod/pod-name-1dd1/my-container`. |
+| `-v`, `--volume`    | Bind mount a volume into the container in notation _src:dest_, allowed multiple times                                                                                                                   |
 
 
 
@@ -78,17 +78,17 @@ is one bridge for each Pod/container combination if a Deployment or Statefulset 
 
 **Arguments:**  
 
-| Argument                    | Description                                                                                           |
-|:----------------------------|:------------------------------------------------------------------------------------------------------|
-| `-N`, `--name`              | The name of the container running in Gefyra (started with `run`) receiving the traffic (required)     |
-| `-C`, `--container-name`    | The name for the intercepted container running in the cluster (required)                              |
-| `--deployment`              | The name of the Deployment (all its Pods) to be intercepted                                           |
-| `--statefulset`             | The name of the Statefulset (all its Pods) to be intercepted                                          |
-| `--pod`                     | The name of a Pod to be intercepted                                                                   |
-| `-p`, `--port`              | The port mapping from source to target in the form _source:target_, allowed multiple times (required) |
-| `-n`, `--namespace`         | The Kubernetes namespace for this container to run in (default: _default_)                            |
-| `-P`, `--no-probe-handling` | Make _Carrier_ to not handle probes during the bridge operation                                       |
-| `-I`, `--bridge-name`       | The name of the bridge                                                                                |
+| Argument                    | Description                                                                                              |
+|:----------------------------|:---------------------------------------------------------------------------------------------------------|
+| `-N`, `--name`              | The name of the container running in Gefyra (started with `run`) receiving the traffic (required)        |
+| `-C`, `--container-name`    | The name for the intercepted container running in the cluster (required)                                 |
+| `--deployment`              | The name of the Deployment (all its Pods) to be intercepted                                              |
+| `--statefulset`             | The name of the Statefulset (all its Pods) to be intercepted                                             |
+| `--pod`                     | The name of a Pod to be intercepted                                                                      |
+| `-p`, `--port`              | The port mapping from source to target in the form `<source>:<target>`, allowed multiple times (required) |
+| `-n`, `--namespace`         | The Kubernetes namespace for this container to run in (default: _default_)                               |
+| `-P`, `--no-probe-handling` | Make _Carrier_ to not handle probes during the bridge operation                                          |
+| `-I`, `--bridge-name`       | The name of the bridge                                                                                   |
 
 
 ## `unbridge`
