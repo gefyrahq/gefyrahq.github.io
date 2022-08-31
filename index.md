@@ -14,7 +14,7 @@ Gone are the times of custom `docker-compose` setups, Vagrants, custom scripts o
 for Kubernetes.
 {: .fs-6 .fw-300 }
 
-[Try it now](getstarted/index.md){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/gefyrahq/gefyra){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Try it now](/getting-started/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/gefyrahq/gefyra){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ## Quick installation
 

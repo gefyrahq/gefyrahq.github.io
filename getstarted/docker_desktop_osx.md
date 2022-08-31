@@ -2,7 +2,7 @@
 layout: page
 title: Docker Desktop Kubernetes (OSX)
 permalink: /getting-started/docker-desktop-kubernetes-osx/
-nav_order: 2
+nav_order: 3
 parent: Getting Started
 ---
 # Getting started with Gefyra and Docker Desktop Kubernetes on MacOS

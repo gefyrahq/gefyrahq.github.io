@@ -1,12 +1,12 @@
 ---
 layout: page
-title: K3D
+title: k3d
 permalink: /getting-started/k3d/
-nav_order: 1
+nav_order: 2
 parent: Getting Started
 ---
 # Getting started with Gefyra and k3d
-You can easily try Gefyra yourself following this small example.
+This guide will show you how to use Gefyra for the local development of a Kubernetes application running in k3d.
 {: .fs-6 .fw-300 }
 
 ## Prerequisites
