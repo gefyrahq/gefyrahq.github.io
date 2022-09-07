@@ -9,8 +9,11 @@ Videos, podcasts and other media about Gefyra.
 {: .fs-6 .fw-300 }
 
 ## Conferences 
+* **Debugging a container with a sidecar using Gefyra | Cloud-native Rejects 2022, Valencia**
+[https://www.youtube.com/watch?v=P6LKFCwelvo&t=17475s](https://www.youtube.com/watch?v=P6LKFCwelvo&t=17475s)
 * **Debugging a container with a sidecar using Gefyra | Conf42 Cloud Native 2022**  
 [https://www.youtube.com/watch?v=FazRUwBWPUI](https://www.youtube.com/watch?v=FazRUwBWPUI)
+
 
 ## Podcasts
 * **Accelerate And Simplify Cloud Native Development For Kubernetes Environments With Gefyra - Episode 359**  
