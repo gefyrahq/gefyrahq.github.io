@@ -26,7 +26,7 @@ search_enabled: true
 # Build settings
 
 # please use this for local development
-# theme: "just-the-docs"
+theme: "just-the-docs"
 
 # this is used by GitHub
 remote_theme: "just-the-docs/just-the-docs"
