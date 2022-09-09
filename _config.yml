@@ -42,6 +42,8 @@ ga_tracking: GTM-MZZHWCF
 logo: "/assets/images/gefyra_logo.png"
 # Aux links for the upper right navigation
 aux_links:
+  "[ CLI Reference ]":
+    - "/reference/cli/"
   "Gefyra will become part of Unikube. Check it out!":
     - "//unikube.io"
 #

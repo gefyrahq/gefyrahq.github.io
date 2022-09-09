@@ -9,7 +9,7 @@ parent: Reference
 1. TOC
 {:toc}
 
-**This reference is for version 0.8.x**
+**This reference is for version 0.11.x**
 
 ## Syntax
 Use the following syntax to run `gefyra` commands from your terminal:
@@ -36,14 +36,18 @@ the local Docker network and traffic tunnel endpoint.
 
 **Arguments:**  
 
-| Argument            | Description                                                                                                                                                                |
-|:--------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `-e`, `--endpoint`  | The Wireguard endpoint in the form _IP_:_Port_ for Gefyra to connect to<br/>**Important:** Be sure to allow your firewall for this IP and port to let traffic pass through |
-| `-o`, `--operator`  | The full image path (including tag) for the Operator image (e.g. _quay.io/gefyra/operator:latest_)                                                                         |
-| `-s`, `--stowaway`  | The full image path (including tag) for the Stowaway image (e.g. _quay.io/gefyra/stowaway:latest_)                                                                         |
-| `-c`, `--carrier`   | The full image path (including tag) for the Carrier image (e.g. _quay.io/gefyra/carrier:latest_)                                                                           |
-| `-a`, `--cargo`     | The full image path (including tag) for the Cargo image (e.g. _quay.io/gefyra/cargo:latest_)                                                                               |
-|  `-r`, `--registry` | The base url for registry to pull images from (e.g. _quay.io/gefyra/_), the full image paths will be constructed using the name and the tag of the release                 |                                                                                                      |
+| Argument           | Description                                                                                                                                                                |
+|:-------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `-e`, `--endpoint` | The Wireguard endpoint in the form _IP_:_Port_ for Gefyra to connect to<br/>**Important:** Be sure to allow your firewall for this IP and port to let traffic pass through |
+| `-M`, `--minikube` | Let Gefyra automatically find out the connection parameters for a local Minikube cluster<br/>**Important:** This cannot be used together with the `--endpoint` option      |
+| `-o`, `--operator` | The full image path (including tag) for the Operator image (e.g. _quay.io/gefyra/operator:latest_)                                                                         |
+| `-s`, `--stowaway` | The full image path (including tag) for the Stowaway image (e.g. _quay.io/gefyra/stowaway:latest_)                                                                         |
+| `-c`, `--carrier`  | The full image path (including tag) for the Carrier image (e.g. _quay.io/gefyra/carrier:latest_)                                                                           |
+| `-a`, `--cargo`    | The full image path (including tag) for the Cargo image (e.g. _quay.io/gefyra/cargo:latest_)                                                                               |
+| `-r`, `--registry` | The base url for registry to pull images from (e.g. _quay.io/gefyra/_), the full image paths will be constructed using the name and the tag of the release                 |                                                                                                      |
+| `--kubeconfig`     | The path to kubeconfig file to the Kubernetes cluster (default is global `kubeconfig`)                                                                                     |                                                                                                      |
+| `--context`        | The context name from kubeconfig (default is active global context)                                                                                                        |                                                                                                      |
+| `--wireguard-mtu`  | The MTU value for the local Wireguard endpoint (default: 1340)                                                                                                             |                                                                                                      |
                         
 
 ## `run`
@@ -54,16 +58,17 @@ assign a name to the container instance for further reference.
 
 **Arguments:**  
 
-| Argument            | Description                                                                           |
-|:--------------------|:--------------------------------------------------------------------------------------|
-| `-i`, `--image`     | The Docker image to run in Gefyra (required)                                          |
-| `-N`, `--name`      | The name of the container running in Gefyra (required)                                |
-| `-n`, `--namespace` | The Kubernetes namespace for this container to run in (default: _default_)            |
-| `-c`, `--command`   | The command for this container to run in Gefyra                                       |
-| `--port`            | Add port mapping in form of `<container_port>:<host_port>`                              |
-| `--env`             | Set or override environment variables in the form _ENV=value_, allowed multiple times |
-| `--env-from`        | Copy the environment from the container in the notation _Pod/Container_               |
-| `-v`, `--volume`    | Bind mount a volume into the container in notation _src:dest_, allowed multiple times |
+| Argument            | Description                                                                                                                                                                                                                                           |
+|:--------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `-i`, `--image`     | The Docker image to run in Gefyra (required)                                                                                                                                                                                                          |
+| `-N`, `--name`      | The name of the container running in Gefyra (required)                                                                                                                                                                                                |
+| `-n`, `--namespace` | The Kubernetes namespace for this container to run in (default: _default_)                                                                                                                                                                            |
+| `-c`, `--command`   | The command for this container to run in Gefyra                                                                                                                                                                                                       |
+| `-p`, `--expose`    | Add port mapping in form of `<ip>:<host_port>:<container_port>` <br/>**Important:** This works just as `docker run --expose` (see: [Docker reference](https://docs.docker.com/engine/reference/commandline/run/#publish-or-expose-port--p---expose))  |
+| `--rm`              | Automatically remove the container when it exits or when it is killed                                                                                                                                                                                 |
+| `--env`             | Set or override environment variables in the form _ENV=value_, allowed multiple times                                                                                                                                                                 |
+| `--env-from`        | Copy the environment from the container in the notation `<type>/<container>` <br/>**Important:** \<type\> can be one of {pod, po, pods, deploy, deployment, deployments, statefulset, sts, statefulsets} and <container> is the name of the container |
+| `-v`, `--volume`    | Bind mount a volume into the container in notation _src:dest_, allowed multiple times                                                                                                                                                                 |
 
 
 
@@ -115,7 +120,7 @@ No arguments available.
 
 
 ## `list`
-List running containers and active bridges. Please select either `--bridges` or `--containers` to display.
+List running containers and active bridges. You can select either `--bridges` or `--containers` to display.
 
 **Example:** `gefyra list --bridges`
 
@@ -142,3 +147,23 @@ Display the current version and exit.
 
 **Arguments:**  
 No arguments available.
+
+## `status`
+Display the status of Gefyra on the local machine and the cluster.
+
+**Example:** `gefyra status`
+
+**Arguments:**  
+No arguments available.
+
+## `telemetry`
+Gefyra anonymously tracks its usage by collecting telemetry data. Telemetry is enabled by default.
+
+**Example:** `gefyra telemetry --on`
+
+**Arguments:**  
+
+| Argument      | Description        |
+|:--------------|:-------------------|
+| `--off`       | Turn off telemetry |
+| `--on` | Turn on telemetry  |
