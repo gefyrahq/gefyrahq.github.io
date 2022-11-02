@@ -88,8 +88,7 @@ is one bridge for each Pod/container combination if a Deployment or Statefulset 
 | `-N`, `--name`              | The name of the container running in Gefyra (started with `run`) receiving the traffic (required)     |
 | `-p`, `--port`              | The port mapping from source to target in the form _source:target_, allowed multiple times (required) |
 | `-n`, `--namespace`         | The Kubernetes namespace for this container to run in (default: _default_)                            |
-| `-P`, `--no-probe-handling` | Make _Carrier_ to not handle probes during the bridge operation                                       |
-| `-I`, `--bridge-name`       | The name of the bridge                                                                                |
+| `-P`, `--no-probe-handling` | Make _Carrier_ to not handle probes during the bridge operation                                       |                   
 | `--target`                  | Target to bridge in the notation of `<type>/<workload_name>/<container>` <br/>**Important:** `<type>`  can be one of {pod, po, pods, deploy, deployment, deployments, statefulset, sts, statefulsets}, `<workload_name>` is the name of the resource to bridge and `<container>` is the name of the container within the resource. |
 
 
