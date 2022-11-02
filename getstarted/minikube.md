@@ -47,7 +47,7 @@ The `--minikube` switch detects all required connection parameters from your loc
    `docker exec -it mypyserver bash`  
    `wget -O- hello-nginx` will print out the website of the cluster service _hello-nginx_ from within the cluster.
 3. Create a bridge in order to intercept the traffic to the cluster application with the one running locally:    
-`gefyra bridge -N mypyserver -n default --deployment hello-nginxdemo --port 8000:80 --container-name hello-nginx -I mypybridge`    
+`gefyra bridge -N mypyserver -n default --port 8000:80 --target deploy/hello-nginxdemo/hello-nginx`    
 Check out the locally running server comes up by refreshing the address from: `minikube service hello-nginxdemo`  
 4. List all running _bridges_:  
 `gefyra list --bridges`

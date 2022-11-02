@@ -321,9 +321,8 @@ in your browser, a `gefyra bridge ...` is needed.
 Just create a bridge with:
 ```bash
 $> gefyra bridge -N myfastapi-demo -n oauth2-demo \
-      --deployment oauth2-demo \
-      --port 8155:8155 --container-name oauth2-demo-app \
-      -I myfastapi
+      --target deploy/oauth2-demo/oauth2-demo-app \
+      --port 8155:8155 
 [INFO] Creating bridge for Pod oauth2-demo-675f5c55b5-xxj57
 [INFO] Waiting for the bridge(s) to become active
 [INFO] Bridge myfastapi established
@@ -335,7 +334,6 @@ The parameter list specifies the following:
 * _-\-deployment oauth2-demo_: Gefyra intercepts all Pods of the Deployment _oauth2-demo_ (don't confuse it with the name of the namespace)
 * _-\-port 8155:8155_: the bridge to map port 8155 of the container in the cluster to 8155 on the local instance
 * _-\-container-name oauth2-demo-app_: since this Pod contains multiple containers (see the sidecar pattern above), Gefyra is asked to intercept the application container _oauth2-demo-app_
-* _-I myfastapi_: the name of the bridge _myfastapi_ for further reference
 
 ### Debugging the Application
 Now you are ready to stop the execution of the code in your VSCode debugger.

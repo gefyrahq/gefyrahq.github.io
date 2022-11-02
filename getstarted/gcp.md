@@ -51,7 +51,7 @@ them with running `gcloud compute instances list`. Pick one of them.
    `docker exec -it mypyserver bash`  
    `wget -O- hello-nginx` will print out the website of the cluster service _hello-nginx_ from within the cluster.
 4. Create a bridge in order to intercept the traffic to the cluster application with the one running locally:    
-`gefyra bridge -N mypyserver -n default --deployment hello-nginxdemo --port 80:8000 --container-name hello-nginx -I mypybridge`    
+`gefyra bridge -N mypyserver -n default --port 80:8000 --target deploy/hello-nginxdemo/hello-nginx`    
 5. List all running _bridges_:  
 `gefyra list --bridges`
 6. _Unbridge_ the local container and reset the cluster to its original state: 

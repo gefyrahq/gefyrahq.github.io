@@ -79,7 +79,7 @@ be replaced by Gefyra's proxy component _Carrier_. Carrier redirects all request
 in a Pod) to the local development container. During the bridge operation Carrier can fake-serve `httpGet` probes. There 
 is one bridge for each Pod/container combination if a Deployment or Statefulset is selected with more than one Pod.
 
-**Example:** `gefyra bridge -N mypyserver --container-name hello-nginx --deployment hello-nginxdemo --port 80:8000 -n default -I mypybridge`
+**Example:** `gefyra bridge -N mypyserver --target deploy/hello-nginxdemo/hello-nginx --port 80:8000 -n default`
 
 **Arguments:**  
 
