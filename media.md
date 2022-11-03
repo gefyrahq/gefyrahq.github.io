@@ -9,6 +9,8 @@ Videos, podcasts and other media about Gefyra.
 {: .fs-6 .fw-300 }
 
 ## Conferences 
+* **Local containers on board! Connect your local containers to K8s using Gefyra | Kubernetes Community Days Munich 2022, Munich**
+[https://www.youtube.com/watch?v=-HtBGPtaVo8](https://www.youtube.com/watch?v=-HtBGPtaVo8)
 * **Debugging a container with a sidecar using Gefyra | Cloud-native Rejects 2022, Valencia**
 [https://www.youtube.com/watch?v=P6LKFCwelvo&t=17475s](https://www.youtube.com/watch?v=P6LKFCwelvo&t=17475s)
 * **Debugging a container with a sidecar using Gefyra | Conf42 Cloud Native 2022**  
