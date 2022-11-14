@@ -11,6 +11,12 @@ installed with a binary executable.
 Please find your preferred operating system below.  
 {: .fs-6 .fw-300 }
 
+## Prerequisites
+To use Gefyra you need:
+
+ - Docker client API compatible container runtime (Docker/Docker Desktop/Colima)
+ - Kubernetes cluster with a reachable port 31820 UDP
+
 ## Install Gefyra on MacOS
 ### Darwin AMD64 / ARM64 (universal build)
 #### Homebrew
