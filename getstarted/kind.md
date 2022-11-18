@@ -13,7 +13,8 @@ This guide will show you how to use Gefyra for the local development of a Kubern
 1. Follow the [installation](https://gefyra.dev/installation) for your preferred platform.
 
 2. Create a local Kubernetes cluster with `kind` like this:
-- Create a file `kind-config.yaml`:
+Create a file `kind-config.yaml`:
+
 ```yaml
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
