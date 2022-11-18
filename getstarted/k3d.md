@@ -6,7 +6,7 @@ nav_order: 2
 parent: Getting Started
 ---
 # Getting started with Gefyra and k3d
-This guide will show you how to use Gefyra for the local development of a Kubernetes application running in k3d.
+This guide will show you how to use Gefyra for the local development of a Kubernetes application running in [k3d](https://k3d.io/).
 {: .fs-6 .fw-300 }
 
 ## Prerequisites
