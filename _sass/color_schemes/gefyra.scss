@@ -36,3 +36,9 @@ $nav-child-link-color: $grey-dk-300;
 $link-color: darken($yellow-100, 45%);
 $btn-primary-color: $yellow-000;
 $base-button-color: $white;
+
+div.highlighter-rouge,
+div.listingblock>div.content,
+code {
+  background-color: #efefef;
+}
