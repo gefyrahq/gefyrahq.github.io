@@ -31,6 +31,7 @@ The CLI allows to run the following available actions.
 Brings up a local development infrastructure. Gefyra pulls the active `kubectl` connection and installs 
 _Operator_ to the connected cluster. Gefyra waits for _Operator_ to become ready. In the last step, Gefyra rolls out
 the local Docker network and traffic tunnel endpoint.
+**Import** In some scenarios firewalls may be blocking port `31280`. Make sure it is reachable from your machine.
 
 **Example:** `gefyra up`
 
