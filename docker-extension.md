@@ -5,7 +5,7 @@ permalink: /docker-desktop-extension/
 nav_order: 6
 ---
 
-Gefyra's Docker Desktop Extension allows you to run containers on your local machine and connect them to Kubernetes-based resources. It is a great way to test a new service in the cluster or write code that depends on Kubernetes resources.
+[Gefyra's Docker Desktop Extension](https://hub.docker.com/r/gefyra/docker-desktop-extension) allows you to run containers on your local machine and connect them to Kubernetes-based resources. It is a great way to test a new service in the cluster or write code that depends on Kubernetes resources.
 
 # Installation
 Currently the Gefyra Docker Desktop Extension is not available on the marketplace. 
