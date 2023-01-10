@@ -13,7 +13,7 @@ Gefyra support two modes of operation: Run and Bridge. Let's dive into the diffe
 | | Run | Bridge |
 | --- | --- | --- |
 | What | Run a local container and connect it to a Kubernetes cluster | Build on top of run. Connect a local container to a Kubernetes cluster and reroute traffic to it |
-| Who | Multiple users can run multiple containers connected to the same cluster | Multiple users cannot bridge the same workload |
+| Multi-User | Multiple users can run multiple containers connected to the same cluster | Multiple users cannot bridge the same workload |
 | When | When you want to test a service in the cluster or write code that depends on Kubernetes resources | When you want to expose a local container to other services within the cluster |
 
 **Run** -  allows to run a local container and connect it to a Kubernetes cluster. It is executed within a given namespace and can communicate
