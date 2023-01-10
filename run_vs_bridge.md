@@ -10,6 +10,7 @@ nav_order: 5
 Gefyra support two modes of operation: Run and Bridge. Let's dive into the differences.
 
 **TLDR**
+
 | | Run | Bridge |
 | --- | --- | --- |
 | What | Run a local container and connect it to a Kubernetes cluster | Build on top of run. Connect a local container to a Kubernetes cluster and reroute traffic to it |
