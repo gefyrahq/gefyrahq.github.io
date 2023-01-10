@@ -23,7 +23,7 @@ support the `run` mode. After clicking on the `run` tile you're guided through t
 
 ![Docker Desktop Extension Start](/assets/images/extension/mode.png)
 
-Firstly Gefyra needs to know about you're cluster to allow you to set all settings accordingly.
+Firstly Gefyra needs to know about your cluster to allow you to set all settings accordingly.
 
 ![Docker Desktop Extension Cluster Settings](/assets/images/extension/cluster.png)
 
