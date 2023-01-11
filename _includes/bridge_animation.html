@@ -1347,13 +1347,13 @@
     "path31015",
     "g37910",
     "g37916",
-  ]
+  ];
 
   const runArrow = [
     "path1999",
     "path2001",
     "path8643",
-  ]
+  ];
 
   const applicationWindow = [
     "g1851",
@@ -1363,130 +1363,130 @@
     "path1827",
     "path1825",
     "path1823",
-  ]
+  ];
 
   const dockerContainer = [
     "g1881"
-  ]
+  ];
 
   const projectedContainer = [
     "path293564_1_",
     "path293562_1_",
-  ]
+  ];
 
   const catService = [
     "g293578_1_"
-  ]
+  ];
 
-  const draw = SVG('#gefyra-bridge')
-  draw.size(800)
-  var timeline = new SVG.Timeline()
+  const draw = SVG('#gefyra-bridge');
+  draw.size(800);
+  var timeline = new SVG.Timeline();
 
 
-  const cluster = draw.find(clusterElements.map(e => "#" + e).join())
-  const arrow = draw.find(runArrow.map(e => "#" + e).join())
-  const appWindow = draw.find(applicationWindow.map(e => "#" + e).join())
-  const container = draw.find(dockerContainer.map(e => "#" + e).join())
-  const projected = draw.find(projectedContainer.map(e => "#" + e).join())
-  const cat = draw.find(catService.map(e => "#" + e).join())
+  const cluster = draw.find(clusterElements.map(e => "#" + e).join());
+  const arrow = draw.find(runArrow.map(e => "#" + e).join());
+  const appWindow = draw.find(applicationWindow.map(e => "#" + e).join());
+  const container = draw.find(dockerContainer.map(e => "#" + e).join());
+  const projected = draw.find(projectedContainer.map(e => "#" + e).join());
+  const cat = draw.find(catService.map(e => "#" + e).join());
 
 	const text = draw.text("Start IDE")
 		.font({ size: 100, color: 'black', family: 'system-ui,-apple-system,BlinkMacSystemFont,"Modern Sans","Open Sans","Helvetica Neue",Arial,sans-serif'})
-		.move(0, 2100)
+		.move(0, 2100);
 
 
 
-  const data = draw.findOne('#packet')
-  const data2 = data.clone()
-  const data3 = data.clone()
-  const data4 = data.clone()
-  const data5 = data.clone()
-	data2.addTo(draw)
-	data3.addTo(draw)
-	data4.addTo(draw)
-	data5.addTo(draw)
+  const data = draw.findOne('#packet');
+  const data2 = data.clone();
+  const data3 = data.clone();
+  const data4 = data.clone();
+  const data5 = data.clone();
+	data2.addTo(draw);
+	data3.addTo(draw);
+	data4.addTo(draw);
+	data5.addTo(draw);
 
-  cluster.attr('opacity', 0)
-  arrow.attr('opacity', 0)
-  appWindow.attr('opacity', 0)
-  container.attr('opacity', 0)
-  projected.attr('opacity', 0)
-  data.attr('opacity', 0)
-  data2.attr('opacity', 0)
-  data3.attr('opacity', 0)
-  data4.attr('opacity', 0)
-  data5.attr('opacity', 0)
+  cluster.attr('opacity', 0);
+  arrow.attr('opacity', 0);
+  appWindow.attr('opacity', 0);
+  container.attr('opacity', 0);
+  projected.attr('opacity', 0);
+  data.attr('opacity', 0);
+  data2.attr('opacity', 0);
+  data3.attr('opacity', 0);
+  data4.attr('opacity', 0);
+  data5.attr('opacity', 0);
 
 
-  cluster.timeline(timeline)
-  arrow.timeline(timeline)
-  appWindow.timeline(timeline)
-  container.timeline(timeline)
-  text.timeline(timeline)
+  cluster.timeline(timeline);
+  arrow.timeline(timeline);
+  appWindow.timeline(timeline);
+  container.timeline(timeline);
+  text.timeline(timeline);
 
 	/* Text animation */
 	text.animate(100, 2500, 'now').attr('opacity', 0).after(function() {
-		text.text("Spin up local container ...")
-		text.animate(100, 100, 'now').attr('opacity', 1)
-	})
+		text.text("Spin up local container ...");
+		text.animate(100, 100, 'now').attr('opacity', 1);
+	});
 	text.animate(100, 4500, 'now').attr('opacity', 0).after(function() {
-		text.text("... connect to Kubernetes ...")
-		text.animate(100, 100, 'now').attr('opacity', 1)
-	})
+		text.text("... connect to Kubernetes ...");
+		text.animate(100, 100, 'now').attr('opacity', 1);
+	});
 	text.animate(100, 8500, 'now').attr('opacity', 0).after(function() {
-		text.text("... bridge container (as Cat service)")
-		text.animate(100, 100, 'now').attr('opacity', 1)
-	})
+		text.text("... bridge container (as Cat service)");
+		text.animate(100, 100, 'now').attr('opacity', 1);
+	});
 	text.animate(100, 10500, 'now').attr('opacity', 0).after(function() {
-		text.text("Done!")
-		text.animate(100, 100, 'now').attr('opacity', 1)
-	})
+		text.text("Done!");
+		text.animate(100, 100, 'now').attr('opacity', 1);
+	});
 	text.animate(100, 13500, 'now').attr('opacity', 0).after(function() {
-		text.text("Your local container now acts \n as if it was the chosen service within Kubernetes.")
-		text.animate(100, 100, 'now').attr('opacity', 1)
-	})
+		text.text("Your local container now acts \n as if it was the chosen service within Kubernetes.");
+		text.animate(100, 100, 'now').attr('opacity', 1);
+	});
 
-  appWindow.dmove(0, 30)
-  appWindow.animate(1000, 1000, 'now').attr('opacity', 1).dmove(0, -30).queue()
+  appWindow.dmove(0, 30);
+  appWindow.animate(1000, 1000, 'now').attr('opacity', 1).dmove(0, -30).queue();
 
-  const containerMove = 15
+  const containerMove = 15;
 
-  container.dmove(0, containerMove)
-  container.animate(1000, 3000, 'now').attr('opacity', 1).dmove(0, -containerMove)
+  container.dmove(0, containerMove);
+  container.animate(1000, 3000, 'now').attr('opacity', 1).dmove(0, -containerMove);
+;
+  const clusterMove = 15;
+;
+  cluster.dmove(0, clusterMove);
+  cluster.animate(1000, 5000, 'now').attr('opacity', 1).dmove(0, -clusterMove);
 
-  const clusterMove = 15
+  arrow.animate(1000, 7000, 'now').attr('opacity', 1);
 
-  cluster.dmove(0, clusterMove)
-  cluster.animate(1000, 5000, 'now').attr('opacity', 1).dmove(0, -clusterMove)
+  projected.animate(1000, 9000, 'now').attr('opacity', 1);
 
-  arrow.animate(1000, 7000, 'now').attr('opacity', 1)
-
-  projected.animate(1000, 9000, 'now').attr('opacity', 1)
-
-	const path = draw.findOne('#packet-path')
+	const path = draw.findOne('#packet-path');
 
 	function animatePacket(packet, delay, reverse) {
-		packet.timeline(timeline)
+		packet.timeline(timeline);
 		packet.animate(2000, delay, 'now')
 			.ease('<>')
-			.loop(true, false).during(function(pos, morph, eased){
+			.loop(true, false).during(function(pos, morph, eased) {
 			var p;
 			if (reverse) {
-				p = path.pointAt(path.length() - pos * path.length())
+				p = path.pointAt(path.length() - pos * path.length());
 			} else {
-				p = path.pointAt(pos * path.length())
+				p = path.pointAt(pos * path.length());
 			}
-			packet.move(p.x - packet.width() / 2, p.y - packet.height() / 2)
+			packet.move(p.x - packet.width() / 2, p.y - packet.height() / 2);
 		}).queue(function() {
-			packet.attr('opacity', 1)
+			packet.attr('opacity', 1);
 		})
 	}
 
-	animatePacket(data, 11000)
-	animatePacket(data2, 11200)
-	animatePacket(data3, 11400)
-	animatePacket(data4, 12000, true)
-	animatePacket(data5, 13200, true)
+	animatePacket(data, 11000);
+	animatePacket(data2, 11200);
+	animatePacket(data3, 11400);
+	animatePacket(data4, 12000, true);
+	animatePacket(data5, 13200, true);
 
 	function restartAnimation() {
 		timeline.time(0)
