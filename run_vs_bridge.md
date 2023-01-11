@@ -21,6 +21,10 @@ Gefyra support two modes of operation: Run and Bridge. Let's dive into the diffe
 with other services running in the cluster. This allows your local container to talk to things databases or internal APIs within the cluster
 you connected it to. Multiple users can run multiple containers connected to the same cluster. 
 
+{% include_relative _includes/run_animation.html %}
+
 **Bridge** - builds on top of `Run`. In certain situation you want other services to connect to your local container. For this, your local container
 needs some kind of representation within the Kubernetes cluster it is connected to. With `Bridge` Gefyra patches a given workload within your 
 Kubernetes cluster and reroutes all the incoming traffic to your local container. Multiple users cannot bridge the same workload. 
+
+{% include_relative _includes/bridge_animation.html %}
