@@ -5,6 +5,8 @@ permalink: /run-vs-bridge/
 nav_order: 5
 ---
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/svg.min.js" integrity="sha512-I+rKw3hArzZIHzrkdELbKqrXfkSvw/h0lW/GgB8FThaBVz2e5ZUlSW8kY8v3q6wq37eybIwyufkEZxe4qSlGcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 # Run vs Bridge
 
 Gefyra support two modes of operation: Run and Bridge. Let's dive into the differences.
