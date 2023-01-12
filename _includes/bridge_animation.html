@@ -1950,11 +1950,10 @@
 	</g>
 
 </svg>
-<button class="btn btn-primary" onclick="restartBridge()">Restart animation</button>
+<button class="btn btn-primary" onclick="bridgeAnimationStart()">Restart animation</button>
 {% include_relative _includes/animation.html %}
 <script>
-	let restartBridge;
-	function x() {
+	function bridgeAnimationStart() {
 		const clusterElements = [
 			"g54022_1_",
 			"path31015",
@@ -2083,11 +2082,8 @@
 		animatePacket(data3, 11400, false, path);
 		animatePacket(data4, 12000, true, path);
 		animatePacket(data5, 13200, true, path);
-		restartBridge = function() {
-			restartAnimation(timeline);
-		}
 
 	};
-	x();
+	bridgeAnimationStart();
 
 </script>

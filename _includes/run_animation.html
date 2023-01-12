@@ -2072,9 +2072,10 @@
 		</g>
 	</g>
 </svg>
-<button class="btn btn-primary" onclick="restartRun()">Restart animation</button>
+<button class="btn btn-primary" onclick="runAnimationStart()">Restart animation</button>
 {% include_relative _includes/animation.html %}
 <script>
+	function runAnimationStart() {
 	const clusterElements = [
 		"g1897",
 		"auth-service",
@@ -2255,7 +2256,7 @@
 	animatePacket(data8, 11500, false, path2);
 	animatePacket(data9, 11900, true, path2);
 	animatePacket(data10, 12200, true, path2);
-	function restartRun() {
-		restartAnimation(timeline);
-	}
+}
+runAnimationStart();
+	
 </script>
