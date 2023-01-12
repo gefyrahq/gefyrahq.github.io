@@ -1953,6 +1953,7 @@
 <button class="btn btn-primary" onclick="restartBridge()">Restart animation</button>
 {% include_relative _includes/animation.html %}
 <script>
+	let restartBridge;
 	function x() {
 		const clusterElements = [
 			"g54022_1_",
@@ -2082,11 +2083,11 @@
 		animatePacket(data3, 11400, false, path);
 		animatePacket(data4, 12000, true, path);
 		animatePacket(data5, 13200, true, path);
+		restartBridge = function() {
+			restartAnimation(timeline);
+		}
 
 	};
-	window.restartBridge = function() {
-		restartAnimation(timeline);
-	}
 	x();
 
 </script>
