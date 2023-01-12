@@ -2156,27 +2156,32 @@
 		.move(0, 2000);
 
 
+	const packets = document.getElementsByClassName("packet-marker");
+	if (packets.length) {
+		for (let i = 0; i < packets.length; i++) {
+			packets[i].remove();
+		}
+	}
 
 	const data = draw.findOne('#packet');
 	const data2 = data.clone();
 	const data3 = data.clone();
 	const data4 = data.clone();
-	const data5 = data.clone();
-	;
+	const data5 = data.clone();;
 	const data6 = data.clone();
 	const data7 = data.clone();
 	const data8 = data.clone();
 	const data9 = data.clone();
 	const data10 = data.clone();
-	data2.addTo(draw);
-	data3.addTo(draw);
-	data4.addTo(draw);
-	data5.addTo(draw);
-	data6.addTo(draw);
-	data7.addTo(draw);
-	data8.addTo(draw);
-	data9.addTo(draw);
-	data10.addTo(draw);
+	data2.addTo(draw).attr("class", "packet-marker");
+	data3.addTo(draw).attr("class", "packet-marker");
+	data4.addTo(draw).attr("class", "packet-marker");
+	data5.addTo(draw).attr("class", "packet-marker");
+	data6.addTo(draw).attr("class", "packet-marker");
+	data7.addTo(draw).attr("class", "packet-marker");
+	data8.addTo(draw).attr("class", "packet-marker");
+	data9.addTo(draw).attr("class", "packet-marker");
+	data10.addTo(draw).attr("class", "packet-marker");
 
 	cluster.attr('opacity', 0);
 	arrow.attr('opacity', 0);

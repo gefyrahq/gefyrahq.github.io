@@ -2011,16 +2011,22 @@
 			.move(0, 2100);
 
 
+		const packets = document.getElementsByClassName("packet-marker");
+		if (packets.length) {
+			for (let i = 0; i < packets.length; i++) {
+				packets[i].remove();
+			}
+		}
 
 		const data = draw.findOne('#packet');
 		const data2 = data.clone();
 		const data3 = data.clone();
 		const data4 = data.clone();
 		const data5 = data.clone();
-		data2.addTo(draw);
-		data3.addTo(draw);
-		data4.addTo(draw);
-		data5.addTo(draw);
+		data2.addTo(draw).class("packet-marker");
+		data3.addTo(draw).class("packet-marker");
+		data4.addTo(draw).class("packet-marker");
+		data5.addTo(draw).class("packet-marker");
 
 		cluster.attr('opacity', 0);
 		arrow.attr('opacity', 0);
