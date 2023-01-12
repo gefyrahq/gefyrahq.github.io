@@ -1,0 +1,25 @@
+
+<script>
+
+	function animatePacket(packet, delay, reverse, path) {
+		packet.timeline(timeline);
+		packet.animate(2000, delay, 'now')
+			.ease('<>')
+			.loop(true, false).during(function(pos, morph, eased) {
+			var p;
+			if (reverse) {
+				p = path.pointAt(path.length() - pos * path.length());
+			} else {
+				p = path.pointAt(pos * path.length());
+			}
+			packet.move(p.x - packet.width() / 2, p.y - packet.height() / 2);
+		}).queue(function() {
+			packet.attr('opacity', 1);
+		});
+	}
+
+
+	function restartAnimation() {
+		timeline.time(0)
+	}
+</script>
