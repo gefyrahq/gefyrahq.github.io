@@ -1954,6 +1954,7 @@
 {% include_relative _includes/animation.html %}
 <script>
 	let bridgeTimeline;
+	let bridgePackets = [];
 	function bridgeAnimationStart() {
 		const clusterElements = [
 			"g54022_1_",
@@ -2013,8 +2014,7 @@
 			.move(0, 2100);
 
 
-		const packets = document.getElementsByClassName("packet-marker");
-		if (packets.length) {
+		if (bridgePackets.length) {
 			for (let i = 0; i < packets.length; i++) {
 				packets[i].remove();
 			}
@@ -2022,9 +2022,13 @@
 
 		const data = draw.findOne('#packet');
 		const data2 = data.clone();
+		bridgePackets.push(data2);
 		const data3 = data.clone();
+		bridgePackets.push(data3);
 		const data4 = data.clone();
+		bridgePackets.push(data4);
 		const data5 = data.clone();
+		bridgePackets.push(data5);
 		data2.addTo(draw).attr("class", "packet-marker");
 		data3.addTo(draw).attr("class", "packet-marker");
 		data4.addTo(draw).attr("class", "packet-marker");
