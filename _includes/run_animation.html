@@ -2148,7 +2148,8 @@
 	const gefyraOp = draw.find(operator.map(e => "#" + e).join());
 	const cat = draw.find(catService.map(e => "#" + e).join());
 
-	document.getElementById("run-text").remove();
+	const textCheck = document.getElementById("run-text");
+	if (textCheck) textCheck.remove();
 
 	const text = draw.text("Start IDE").attr("id", "run-text")
 		.font({size: 100, color: 'black', family: 'system-ui,-apple-system,BlinkMacSystemFont,"Modern Sans","Open Sans","Helvetica Neue",Arial,sans-serif'})

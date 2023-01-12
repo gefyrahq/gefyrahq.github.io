@@ -2002,7 +2002,9 @@
 		const projected = draw.find(projectedContainer.map(e => "#" + e).join());
 		const cat = draw.find(catService.map(e => "#" + e).join());
 
-		document.getElementById("bridge-text").remove();
+
+		const textCheck = document.getElementById("bridge-text");
+		if (textCheck) textCheck.remove();
 
 		const text = draw.text("Start IDE").attr("id", "bridge-text")
 			.font({size: 100, color: 'black', family: 'system-ui,-apple-system,BlinkMacSystemFont,"Modern Sans","Open Sans","Helvetica Neue",Arial,sans-serif'})
