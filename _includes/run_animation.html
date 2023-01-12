@@ -2076,6 +2076,7 @@
 {% include_relative _includes/animation.html %}
 <script>
 	let runTimeline;
+	const packets = [];
 	function runAnimationStart() {
 	const clusterElements = [
 		"g1897",
@@ -2158,8 +2159,6 @@
 		.font({size: 100, color: 'black', family: 'system-ui,-apple-system,BlinkMacSystemFont,"Modern Sans","Open Sans","Helvetica Neue",Arial,sans-serif'})
 		.move(0, 2000);
 
-
-	const packets = document.getElementsByClassName("packet-marker");
 	if (packets.length) {
 		for (let i = 0; i < packets.length; i++) {
 			console.log(packets[i]);
@@ -2169,14 +2168,23 @@
 
 	const data = draw.findOne('#packet');
 	const data2 = data.clone();
+	packets.push(data2);
 	const data3 = data.clone();
+	packets.push(data3);
 	const data4 = data.clone();
+	packets.push(data4);
 	const data5 = data.clone();;
+	packets.push(data5);
 	const data6 = data.clone();
+	packets.push(data6);
 	const data7 = data.clone();
+	packets.push(data7);
 	const data8 = data.clone();
+	packets.push(data8);
 	const data9 = data.clone();
+	packets.push(data9);
 	const data10 = data.clone();
+	packets.push(data10);
 	data2.addTo(draw).attr("class", "packet-marker");
 	data3.addTo(draw).attr("class", "packet-marker");
 	data4.addTo(draw).attr("class", "packet-marker");
