@@ -1994,6 +1994,7 @@
 		const draw = SVG('#gefyra-bridge');
 		draw.size(800);
 		var timeline = bridgeTimeline ? bridgeTimeline : new SVG.Timeline();
+		timeline.reset();
 		timeline.stop();
 
 
@@ -2070,17 +2071,17 @@
 			text.animate(100, 100, 'now').attr('opacity', 1);
 		});
 
-		appWindow.dmove(0, 30);
+		appWindow.animate(0, 0, 'now').dmove(0, 30);
 		appWindow.animate(1000, 1000, 'now').attr('opacity', 1).dmove(0, -30).queue();
 
 		const containerMove = 15;
 
-		container.dmove(0, containerMove);
+		container.animate(0, 0, 'now').dmove(0, containerMove);
 		container.animate(1000, 3000, 'now').attr('opacity', 1).dmove(0, -containerMove);
 		;
 		const clusterMove = 15;
 		;
-		cluster.dmove(0, clusterMove);
+		cluster.animate(0, 0, 'now').dmove(0, clusterMove);
 		cluster.animate(1000, 5000, 'now').attr('opacity', 1).dmove(0, -clusterMove);
 
 		arrow.animate(1000, 7000, 'now').attr('opacity', 1);
