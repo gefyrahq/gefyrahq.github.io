@@ -1,7 +1,7 @@
 
 <script>
 
-	function animatePacket(packet, delay, reverse, path) {
+	function animatePacket(packet, delay, reverse, path, timeline) {
 		packet.timeline(timeline);
 		packet.animate(2000, delay, 'now')
 			.ease('<>')
