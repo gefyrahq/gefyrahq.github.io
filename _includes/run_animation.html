@@ -2075,6 +2075,7 @@
 <button class="btn btn-primary" onclick="runAnimationStart()">Restart animation</button>
 {% include_relative _includes/animation.html %}
 <script>
+	let runTimeline;
 	function runAnimationStart() {
 	const clusterElements = [
 		"g1897",
@@ -2137,7 +2138,9 @@
 
 	const draw = SVG('#gefyra-run');
 	draw.size(800);
-	var timeline = new SVG.Timeline();
+
+	var timeline = runTimeline ? runTimeline : new SVG.Timeline();
+	timeline.stop();
 
 
 	const cluster = draw.find(clusterElements.map(e => "#" + e).join());

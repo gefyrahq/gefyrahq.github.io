@@ -1953,6 +1953,7 @@
 <button class="btn btn-primary" onclick="bridgeAnimationStart()">Restart animation</button>
 {% include_relative _includes/animation.html %}
 <script>
+	let bridgeTimeline;
 	function bridgeAnimationStart() {
 		const clusterElements = [
 			"g54022_1_",
@@ -1992,7 +1993,8 @@
 
 		const draw = SVG('#gefyra-bridge');
 		draw.size(800);
-		var timeline = new SVG.Timeline();
+		var timeline = bridgeTimeline ? bridgeTimeline : new SVG.Timeline();
+		timeline.stop();
 
 
 		const cluster = draw.find(clusterElements.map(e => "#" + e).join());
