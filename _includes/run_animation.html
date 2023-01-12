@@ -2072,6 +2072,7 @@
 		</g>
 	</g>
 </svg>
+<button class="btn btn-primary" onclick="restartRun()">Restart animation</button>
 {% include_relative _includes/animation.html %}
 <script>
 	const clusterElements = [
@@ -2254,4 +2255,7 @@
 	animatePacket(data8, 11500, false, path2);
 	animatePacket(data9, 11900, true, path2);
 	animatePacket(data10, 12200, true, path2);
+	function restartRun() {
+		restartAnimation(timeline);
+	}
 </script>

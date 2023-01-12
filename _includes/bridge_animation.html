@@ -1950,6 +1950,7 @@
 	</g>
 
 </svg>
+<button class="btn btn-primary" onclick="restartBridge()">Restart animation</button>
 {% include_relative _includes/animation.html %}
 <script>
 	function x() {
@@ -2083,6 +2084,9 @@
 		animatePacket(data5, 13200, true, path);
 
 	};
+	window.restartBridge = function() {
+		restartAnimation(timeline);
+	}
 	x();
 
 </script>
