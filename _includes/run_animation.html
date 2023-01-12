@@ -2139,9 +2139,9 @@
 	const draw = SVG('#gefyra-run');
 	draw.size(800);
 
-	var timeline = runTimeline ? runTimeline : new SVG.Timeline();
-	timeline.finish();
-	timeline.stop();
+	runTimeline = runTimeline ? runTimeline : new SVG.Timeline();
+	runTimeline.finish();
+	runTimeline.stop();
 
 
 	const cluster = draw.find(clusterElements.map(e => "#" + e).join());
@@ -2204,12 +2204,12 @@
 	data9.attr('opacity', 0);
 	data10.attr('opacity', 0);
 
-	cluster.timeline(timeline);
-	arrow.timeline(timeline);
-	appWindow.timeline(timeline);
-	container.timeline(timeline);
-	text.timeline(timeline);
-	gefyraOp.timeline(timeline);
+	cluster.timeline(runTimeline);
+	arrow.timeline(runTimeline);
+	appWindow.timeline(runTimeline);
+	container.timeline(runTimeline);
+	text.timeline(runTimeline);
+	gefyraOp.timeline(runTimeline);
 
 	/* Text animation */
 	text.animate(100, 4500, 'now').attr('opacity', 0).after(function () {
@@ -2257,17 +2257,17 @@
 	const path2 = draw.findOne('#path1887');
 
 
-	animatePacket(data, 11000, false, path, timeline);
-	animatePacket(data2, 11200, false, path, timeline);
-	animatePacket(data3, 11400, false, path, timeline);
-	animatePacket(data4, 12000, true, path, timeline);
-	animatePacket(data5, 13200, true, path, timeline);
+	animatePacket(data, 11000, false, path, runTimeline);
+	animatePacket(data2, 11200, false, path, runTimeline);
+	animatePacket(data3, 11400, false, path, runTimeline);
+	animatePacket(data4, 12000, true, path, runTimeline);
+	animatePacket(data5, 13200, true, path, runTimeline);
 
-	animatePacket(data6, 11100, false, path2, timeline);
-	animatePacket(data7, 11300, false, path2, timeline);
-	animatePacket(data8, 11500, false, path2, timeline);
-	animatePacket(data9, 11900, true, path2, timeline);
-	animatePacket(data10, 12200, true, path2, timeline);
+	animatePacket(data6, 11100, false, path2, runTimeline);
+	animatePacket(data7, 11300, false, path2, runTimeline);
+	animatePacket(data8, 11500, false, path2, runTimeline);
+	animatePacket(data9, 11900, true, path2, runTimeline);
+	animatePacket(data10, 12200, true, path2, runTimeline);
 }
 runAnimationStart();
 	
