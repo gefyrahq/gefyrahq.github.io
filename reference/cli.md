@@ -9,7 +9,7 @@ parent: Reference
 1. TOC
 {:toc}
 
-**This reference is for version 0.11.x**
+**This reference is for version 1.0.x**
 
 ## Syntax
 Use the following syntax to run `gefyra` commands from your terminal:
@@ -39,7 +39,8 @@ the local Docker network and traffic tunnel endpoint.
 
 | Argument           | Description                                                                                                                                                                |
 |:-------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `-e`, `--endpoint` | The Wireguard endpoint in the form _IP_:_Port_ for Gefyra to connect to<br/>**Important:** Be sure to allow your firewall for this IP and port to let traffic pass through |
+| `-H`, `--host` | Host address for Gefyra to connect to<br/>**Important:** Be sure to allow your firewall for this IP and port to let traffic pass through |
+| `-P`, `--port` | Port on the for Gefyra to connect to<br/>**Important:** Default is 31280. |
 | `-M`, `--minikube` | Let Gefyra automatically find out the connection parameters for a local Minikube cluster<br/>**Important:** This cannot be used together with the `--endpoint` option      |
 | `-o`, `--operator` | The full image path (including tag) for the Operator image (e.g. _quay.io/gefyra/operator:latest_)                                                                         |
 | `-s`, `--stowaway` | The full image path (including tag) for the Stowaway image (e.g. _quay.io/gefyra/stowaway:latest_)                                                                         |
@@ -62,13 +63,13 @@ assign a name to the container instance for further reference.
 | Argument            | Description                                                                                                                                                                                                                                           |
 |:--------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `-i`, `--image`     | The Docker image to run in Gefyra (required)                                                                                                                                                                                                          |
-| `-N`, `--name`      | The name of the container running in Gefyra (required)                                                                                                                                                                                                |
+| `-N`, `--name`      | The name of the container running in Gefyra |
 | `-n`, `--namespace` | The Kubernetes namespace for this container to run in (default: _default_)                                                                                                                                                                            |
 | `-c`, `--command`   | The command for this container to run in Gefyra                                                                                                                                                                                                       |
-| `-p`, `--expose`    | Add port mapping in form of `<ip>:<host_port>:<container_port>` <br/>**Important:** This works just as `docker run --expose` (see: [Docker reference](https://docs.docker.com/engine/reference/commandline/run/#publish-or-expose-port--p---expose))  |
+| `--expose`    | Add port mapping in form of `<ip>:<host_port>:<container_port>` <br/>**Important:** This works just as `docker run --expose` (see: [Docker reference](https://docs.docker.com/engine/reference/commandline/run/#publish-or-expose-port--p---expose))  |
 | `--rm`              | Automatically remove the container when it exits or when it is killed                                                                                                                                                                                 |
 | `--env`             | Set or override environment variables in the form _ENV=value_, allowed multiple times                                                                                                                                                                 |
-| `--env-from`        | Copy the environment from the container in the notation `<type>/<container>` <br/>**Important:** \<type\> can be one of {pod, po, pods, deploy, deployment, deployments, statefulset, sts, statefulsets} and <container> is the name of the container |
+| `--env-from`        | Copy the environment from the container in the notation `<workload_type>/<workload_name>/<container>`. `container` is optional. <br/> Example: `deploy/some-deployment` or `pod/pod-name-1dd1/my-container`. |
 | `-v`, `--volume`    | Bind mount a volume into the container in notation _src:dest_, allowed multiple times                                                                                                                                                                 |
 
 
@@ -87,7 +88,7 @@ is one bridge for each Pod/container combination if a Deployment or Statefulset 
 | Argument                    | Description                                                                                           |
 |:----------------------------|:------------------------------------------------------------------------------------------------------|
 | `-N`, `--name`              | The name of the container running in Gefyra (started with `run`) receiving the traffic (required)     |
-| `-p`, `--port`              | The port mapping from source to target in the form _source:target_, allowed multiple times (required) |
+| `-p`, `--port`              | The port mapping from source to target in the form `<source>:<target>`, allowed multiple times (required) |
 | `-n`, `--namespace`         | The Kubernetes namespace for this container to run in (default: _default_)                            |
 | `-P`, `--no-probe-handling` | Make _Carrier_ to not handle probes during the bridge operation                                       |                   
 | `--target`                  | Target to bridge in the notation of `<type>/<workload_name>/<container>` <br/>**Important:** `<type>`  can be one of {pod, po, pods, deploy, deployment, deployments, statefulset, sts, statefulsets}, `<workload_name>` is the name of the resource to bridge and `<container>` is the name of the container within the resource. |
