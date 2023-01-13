@@ -41,7 +41,7 @@ the local Docker network and traffic tunnel endpoint.
 |:-------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `-H`, `--host` | Host address for Gefyra to connect to<br/>**Important:** Be sure to allow your firewall for this IP and port to let traffic pass through |
 | `-P`, `--port` | Port on the for Gefyra to connect to<br/>**Important:** Default is 31280. |
-| `-M`, `--minikube` | Let Gefyra automatically find out the connection parameters for a local Minikube cluster<br/>**Important:** This cannot be used together with the `--endpoint` option      |
+| `-M`, `--minikube` | Let Gefyra automatically find out the connection parameters for a local Minikube cluster<br/>**Important:** This cannot be used together with the `--host` option      |
 | `-o`, `--operator` | The full image path (including tag) for the Operator image (e.g. _quay.io/gefyra/operator:latest_)                                                                         |
 | `-s`, `--stowaway` | The full image path (including tag) for the Stowaway image (e.g. _quay.io/gefyra/stowaway:latest_)                                                                         |
 | `-c`, `--carrier`  | The full image path (including tag) for the Carrier image (e.g. _quay.io/gefyra/carrier:latest_)                                                                           |
