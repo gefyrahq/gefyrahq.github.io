@@ -101,7 +101,7 @@ containers. Some of them use the _sidecar_ (https://medium.com/nerd-for-tech/mic
 Before the _brigde_ can happen, Gefyra installs all required components to the cluster. A valid and privileged connection
 must be available on the developer machine to do so.  
 The main component is the cluster agent called _Stowaway_. The Stowaway controls the cluster side of the tunnel connection.
-It is operated by [Gefyra's Operator application](operator).
+It is operated by [Gefyra's Operator application](https://github.com/gefyrahq/gefyra/tree/main/operator).
 
 <p align="center">
   <img src="https://github.com/gefyrahq/gefyra/raw/main/docs/static/img/gefyra-process-step-2.png" alt="Gefyra development workflow step 2"/>
