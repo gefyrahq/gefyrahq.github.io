@@ -6,7 +6,7 @@ nav_order: 8
 ---
 # About this project
 Gefyra is based on well-crafted open source software. Special credits go to the teams of 
-[https://www.linuxserver.io/](linxuserver.io) and [https://git.zx2c4.com/wireguard-go/about/](Wireguard(-go)). Please
+[linxuserver.io](https://www.linuxserver.io/) and [Wireguard(-go)](https://git.zx2c4.com/wireguard-go/about/). Please
 be sure to check out their awesome work.  
 Gefyra was heavily inspired by the free part of Telepresence 2.
 
