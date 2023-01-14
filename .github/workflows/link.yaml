@@ -3,6 +3,7 @@ name: Links validator
 on:
   schedule: 
     - cron:  '0 9 * * 1'
+  workflow_dispatch: {}
 
 jobs:
   linkChecker:
