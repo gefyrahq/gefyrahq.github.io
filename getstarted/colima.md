@@ -2,7 +2,7 @@
 layout: page
 title: Colima Kubernetes
 permalink: /getting-started/colima-kubernetes/
-nav_order: 2
+nav_order: 8
 parent: Getting Started
 ---
 # Getting started with Gefyra and Colima Kubernetes
