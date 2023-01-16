@@ -4,6 +4,7 @@ title: Colima Kubernetes
 permalink: /getting-started/colima-kubernetes/
 nav_order: 8
 parent: Getting Started
+hide_up: true
 ---
 # Getting started with Gefyra and Colima Kubernetes
 This guide will show you how to use Gefyra for the local development of a Kubernetes application running in [Colima Kubernetes](https://github.com/abiosoft/colima).

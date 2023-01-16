@@ -1,5 +1,7 @@
 ## Running Gefyra
+{% if page.hide_up != true %}
 4. Set up Gefyra with `gefyra up`
+{% endif %}
 5. Run a local Docker image with Gefyra in order to  make it part of the cluster.
    1. Build your Docker image with a local tag, for example from the testing directory:
    `cd testing/images/ && docker build -f Dockerfile.local . -t pyserver`
