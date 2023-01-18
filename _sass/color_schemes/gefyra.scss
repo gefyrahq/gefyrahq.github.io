@@ -42,3 +42,21 @@ div.listingblock>div.content,
 code {
   background-color: #efefef !important;
 }
+
+
+div.highlighter-rouge:hover>button, div.listingblock>div.content:hover>button, figure.highlight:hover>button {
+  cursor: pointer;
+}
+
+div.highlighter-rouge>button, div.listingblock>div.content>button, figure.highlight>button {
+  width: 0.75rem;
+  opacity: 0;
+  position: absolute;
+  border-radius: 2px;
+  top: 7px;
+  right: 7px;
+  border: 0.5rem solid #f8f8f8;
+  background-color: #f8f8f8;
+  color: #000;
+  box-sizing: content-box;
+}
