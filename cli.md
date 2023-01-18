@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Command line interface (CLI)
-permalink: /reference/cli/
-nav_order: 1
-parent: Reference
+title: Command Line Interface (CLI)
+permalink: /cli/
+nav_order: 4
 ---
 # Command line tool (CLI)
 1. TOC
