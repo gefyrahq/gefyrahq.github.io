@@ -11,6 +11,8 @@ installed with a binary executable.
 Please find your preferred operating system below.  
 {: .fs-6 .fw-300 }
 
+{:toc}
+
 ## Prerequisites
 To use Gefyra you need:
 
