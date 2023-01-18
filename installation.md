@@ -46,6 +46,16 @@ please get in touch!
 Todo
 {: .label .label-yellow }
 
+## Docker Desktop Extension
+
+Currently the Gefyra Docker Desktop Extension is not available on the marketplace. 
+However, you can install it by running the following command:
+```shell
+docker extension install gefyra/docker-desktop-extension:1.0.0
+```
+
+For more details see [Docker Desktop Extension](/docker-desktop-extension/).
+
 
 # Using Python Package Index
 You can install Gefyra with `pip`:  
