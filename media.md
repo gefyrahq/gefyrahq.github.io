@@ -21,7 +21,8 @@ Videos, podcasts and other media about Gefyra.
 
 ## Podcasts
 * **Accelerate And Simplify Cloud Native Development For Kubernetes Environments With Gefyra - Episode 359**  
-[https://www.pythonpodcast.com/gefyra-cloud-native-development-episode-359/](https://www.pythonpodcast.com/gefyra-cloud-native-development-episode-359/)
+<iframe src="https://player.fireside.fm/v2/82qp1QFd+pR6zngj0?theme=dark" width="740" height="200" frameborder="0" scrolling="no"></iframe>
+
 
 ## Other Presentations
 
