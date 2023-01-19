@@ -9,14 +9,14 @@ Videos, podcasts and other media about Gefyra.
 {: .fs-6 .fw-300 }
 
 ## Conferences 
-* **Local containers on board! Connect your local containers to K8s using Gefyra | Kubernetes Community Days Munich 2022, Munich**
-<iframe width="560" height="315" src="https://youtube-nocookie.com/embed/-HtBGPtaVo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+**Local containers on board! Connect your local containers to K8s using Gefyra | Kubernetes Community Days Munich 2022, Munich**
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-HtBGPtaVo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-* **Debugging a container with a sidecar using Gefyra | Cloud-native Rejects 2022, Valencia**
-<iframe width="560" height="315" src="https://youtube-nocookie.com/embed/P6LKFCwelvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+**Debugging a container with a sidecar using Gefyra | Cloud-native Rejects 2022, Valencia**
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/P6LKFCwelvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-* **Debugging a container with a sidecar using Gefyra | Conf42 Cloud Native 2022**  
-<iframe width="560" height="315" src="https://youtube-nocookie.com/embed/FazRUwBWPUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+**Debugging a container with a sidecar using Gefyra | Conf42 Cloud Native 2022**  
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FazRUwBWPUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 ## Podcasts
