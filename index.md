@@ -25,7 +25,7 @@ You can run an arbitrary container on your local development machine that behave
 convenient to test a new service in the cluster or write code that depends on Kubernetes resources.
 
 <div align="center">
- <img src="assets/images/gefyra-run-action.png" alt="Gefyra run action"/>
+ <img src="assets/images/gefyra_run_action.svg" alt="Gefyra run action"/>
 </div>
 
 ### Overlay a container running within a Kubernetes Pod with a local instance 
