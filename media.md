@@ -26,7 +26,7 @@ Videos, podcasts and other media about Gefyra.
 
 ## Other Presentations
 **Gefyra Docker Desktop Extension Demo**  
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=k1HsJNnRS3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/k1HsJNnRS3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 ## Blog
