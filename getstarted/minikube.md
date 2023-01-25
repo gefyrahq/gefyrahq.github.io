@@ -41,7 +41,8 @@ kubectl apply -f https://raw.githubusercontent.com/gefyrahq/gefyra/main/testing/
 ```
 kubectl expose deployment hello-nginxdemo --type=NodePort --port=80
 ```
-```minikube service hello-nginxdemo
+```sh
+minikube service hello-nginxdemo
 ```
 
 ## Running Gefyra
