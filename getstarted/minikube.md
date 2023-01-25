@@ -45,18 +45,26 @@ kubectl expose deployment hello-nginxdemo --type=NodePort --port=80
 ```
 
 ## Running Gefyra
-1. Set up Gefyra with your Minikube cluster: `gefyra up --minikube`  
+1. Set up Gefyra with your Minikube cluster:
+```sh
+gefyra up --minikube
+```  
 The `--minikube` switch detects all required connection parameters from your local cluster.
 2. Run a local Docker image with Gefyra in order to  make it part of the cluster.
    1. Build your Docker image with a local tag, for example [from the testing directory](https://github.com/gefyrahq/gefyra/tree/main/testing):
    `cd testing/images/ && docker build -f Dockerfile.local . -t pyserver`
    2. Execute Gefyra's run command:    
-   `gefyra run -i pyserver -N mypyserver -n default`
+```sh
+gefyra run -i pyserver -N mypyserver -n default
+```
    3. _Exec_ into the running container and look around. You will find the container to run within your Kubernetes cluster.  
 ```sh
 docker exec -it mypyserver bash
 ```
-   `wget -O- hello-nginx` will print out the website of the cluster service _hello-nginx_ from within the cluster.
+```sh
+wget -O- hello-nginx
+```
+ will print out the website of the cluster service _hello-nginx_ from within the cluster.
 3. Create a bridge in order to intercept the traffic to the cluster application with the one running locally:    
 ```sh
 gefyra bridge -N mypyserver -n default --port 8000:80 --target deploy/hello-nginxdemo/hello-nginx
@@ -67,8 +75,13 @@ Check out the locally running server comes up by refreshing the address from: `m
 gefyra list --bridges
 ```
 5. _Unbridge_ the local container and reset the cluster to its original state: 
-`gefyra unbridge -N mypybridge`
-Check out the initial response from: `minikube service hello-nginxdemo`
+```sh
+gefyra unbridge -N mypybridge
+```
+Check out the initial response from: 
+```sh
+minikube service hello-nginxdemo
+```
 
 ## Cleaning up
 Remove Gefyra's components from the cluster with `gefyra down`
