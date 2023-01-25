@@ -70,7 +70,10 @@ wget -O- hello-nginx
 ```sh
 gefyra bridge -N mypyserver -n default --port 8000:80 --target deploy/hello-nginxdemo/hello-nginx
 ``` 
-Check out the locally running server comes up by refreshing the address from: `minikube service hello-nginxdemo`  
+Check out the locally running server comes up by refreshing the address from:
+```sh
+minikube service hello-nginxdemo
+```  
 4. List all running _bridges_:  
 ```sh
 gefyra list --bridges
