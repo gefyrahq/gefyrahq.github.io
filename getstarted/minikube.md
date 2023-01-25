@@ -85,4 +85,7 @@ minikube service hello-nginxdemo
 ```
 
 ## Cleaning up
-Remove Gefyra's components from the cluster with `gefyra down`
+Remove Gefyra's components from the cluster with
+```sh
+gefyra down
+```
