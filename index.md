@@ -34,7 +34,7 @@ serve the requests to that Pod from your local container instances. That makes i
 environment before pushing the code to CI/CD.
 
 <div align="center">
- <img src="assets/images/gefyra-bridge-action.png" alt="Gefyra bridge action"/>
+ <img src="assets/images/gefyra_bridge_action.svg" alt="Gefyra bridge action"/>
 </div>
 
 ### Gefyra offers you to
