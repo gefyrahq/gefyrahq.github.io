@@ -68,8 +68,8 @@ from [here](https://github.com/Blueshoe/buzzword-charts/tree/main/buzzword-count
 The first would be to spin up Gefyra with `gefyra up`. Please be sure to still have the development cluster 
 active in your current `kubectl` context. 
 
-**Important:** If you are running a remote Kubernetes cluster you need to specify the `--endpoint` argument with _IP:Port_
-of one of your data plane nodes. The default port is _31820_, it may be different depending on firewalls and the cluster
+**Important:** If you are running a remote Kubernetes cluster you need to specify the `--host` argument with _IP_
+of one of your data plane nodes. The default port is _31820_ (`--port`), it may be different depending on firewalls and the cluster
 networking.
 
 ## Running a container in a Kubernetes namespace

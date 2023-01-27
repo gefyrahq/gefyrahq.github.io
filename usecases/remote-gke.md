@@ -107,10 +107,10 @@ browser. If you can see a 404 error from Django, everything is alright!
 Now we can run `gefyra up`. This way gefyra sets up all requirements
 to enjoy local development supported by services in the cluster.
 
-At first, we need an endpoint IP of one of our compute instances. You can get
+At first, we need a host IP of one of our compute instances. You can get
 them with running `gcloud compute instances list`. Pick one of them.
 
-Now you can run `gefyra up --endpoint <IP>:31820`.
+Now you can run `gefyra up --host <IP>`.
 
 Gefyra now sets up a wireguard connection into the cluster and prepares
 everything to allow us to run local containers linked to the cluster.

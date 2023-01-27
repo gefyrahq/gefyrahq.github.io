@@ -28,7 +28,7 @@ default    Running    x86_64    2       2GiB      60GiB    docker+k3s    192.168
 
 Install Gefyra components in the cluster:
 ```shell
-gefyra up --endpoint=192.168.106.2:31820
+gefyra up --host=192.168.106.2
 ```
 
 

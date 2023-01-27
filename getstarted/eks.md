@@ -55,9 +55,9 @@ aws ec2 authorize-security-group-ingress --group-id "<security-group-id>" --prot
 ```
 
 ## Running Gefyra
-1. At first, we need an endpoint IP of one of our nodes. You can get
+1. At first, we need a host IP of one of our nodes. You can get
 them with running `kubectl get nodes -o wide |  awk {'print $1" " $2 " " $7'} | column -t`. Pick one of them from the `EXTERNAL-IP` column.
-2. Now you can run `gefyra up --endpoint <IP>:31820`
+2. Now you can run `gefyra up --host <IP>`
 3. Run a local Docker image with Gefyra in order to  make it part of the cluster.
    1. Build your Docker image with a local tag, for example from the testing directory:
    `cd testing/images/ && docker build -f Dockerfile.local . -t pyserver`
