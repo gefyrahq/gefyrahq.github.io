@@ -47,6 +47,7 @@ kubectl apply -f https://raw.githubusercontent.com/gefyrahq/gefyra/main/testing/
 Check out this workload running under: http://hello.127.0.0.1.nip.io:8080/    
 
 7. Set up Gefyra with the following command:
+
 **For Docker Desktop <4.16.x:**
 
 ```sh
