@@ -4,6 +4,7 @@ title: Docker Desktop Kubernetes (OSX)
 permalink: /getting-started/docker-desktop-kubernetes-osx/
 nav_order: 3
 parent: Getting Started
+hide_up: true
 ---
 # Getting started with Gefyra and Docker Desktop Kubernetes on MacOS
 This example is really similar to the k3d getting started guide.
@@ -45,5 +46,17 @@ kubectl apply -f https://raw.githubusercontent.com/gefyrahq/gefyra/main/testing/
 ```
 Check out this workload running under: http://hello.127.0.0.1.nip.io:8080/    
 
+7. Set up Gefyra with the following command:
+**For Docker Desktop <4.16.x:**
+
+```sh
+gefyra up
+```
+
+**For Docker Desktop >=4.16.x:**
+
+```sh
+gefyra up --host=kubernetes.docker.internal
+```
 
 {% include_relative _includes/getting_started_common.md %}
