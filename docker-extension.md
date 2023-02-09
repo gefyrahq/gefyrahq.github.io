@@ -20,7 +20,7 @@ nav_order: 6
 Currently the Gefyra Docker Desktop Extension is not available on the marketplace. 
 However, you can install it by running the following command:
 ```shell
-docker extension install gefyra/docker-desktop-extension:1.0.1
+docker extension install gefyra/docker-desktop-extension:1.1.0
 ```
 
 ## Usage
