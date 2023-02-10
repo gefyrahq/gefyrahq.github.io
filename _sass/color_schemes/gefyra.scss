@@ -39,9 +39,12 @@ $base-button-color: $white;
 
 div.highlighter-rouge,
 div.listingblock>div.content,
+.highlight, pre.highlight,
+.highlight pre,
 code {
   background-color: #efefef !important;
 }
+
 
 
 .main-content-wrap div.highlighter-rouge:hover>button, div.listingblock>div.content:hover>button, figure.highlight:hover>button {
