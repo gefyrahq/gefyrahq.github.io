@@ -35,7 +35,10 @@ _Operator_ to the connected cluster. Gefyra waits for _Operator_ to become ready
 the local Docker network and traffic tunnel endpoint.
 **Import** In some scenarios firewalls may be blocking port `31280`. Make sure it is reachable from your machine.
 
-**Example:** `gefyra up`
+**Example:**
+```sh
+gefyra up
+```
 
 **Arguments:**  
 
@@ -58,7 +61,10 @@ the local Docker network and traffic tunnel endpoint.
 Run a new app container image in Gefyra's development infrastructure. Any Docker image is supported. It is required to
 assign a name to the container instance for further reference.
 
-**Example:** `gefyra run -i pyserver -N mypyserver -n default`
+**Example:** 
+```sh
+gefyra run -i pyserver -N mypyserver -n default
+```
 
 **Arguments:**  
 
@@ -83,7 +89,10 @@ be replaced by Gefyra's proxy component _Carrier_. Carrier redirects all request
 in a Pod) to the local development container. During the bridge operation Carrier can fake-serve `httpGet` probes. There 
 is one bridge for each Pod/container combination if a Deployment or Statefulset is selected with more than one Pod.
 
-**Example:** `gefyra bridge -N mypyserver --target deploy/hello-nginxdemo/hello-nginx --port 80:8000 -n default`
+**Example:** 
+```sh
+gefyra bridge -N mypyserver --target deploy/hello-nginxdemo/hello-nginx --port 80:8000 -n default
+```
 
 **Arguments:**  
 
@@ -99,7 +108,10 @@ is one bridge for each Pod/container combination if a Deployment or Statefulset 
 ## `unbridge`
 Remove active traffic intercepts and reset the cluster to its original state.
 
-**Example:** `gefyra unbridge -N mypybridge`
+**Example:** 
+```sh
+gefyra unbridge -N mypybridge
+```
 
 **Arguments:**  
 
@@ -113,7 +125,10 @@ Remove active traffic intercepts and reset the cluster to its original state.
 Remove Gefyra's development infrastructure, including active bridges and all cluster components. The local Docker
 network will be removed as well.
 
-**Example:** `gefyra down`
+**Example:** 
+```sh
+gefyra down
+```
 
 **Arguments:**  
 No arguments available.
@@ -122,7 +137,10 @@ No arguments available.
 ## `list`
 List running containers and active bridges. You can select either `--bridges` or `--containers` to display.
 
-**Example:** `gefyra list --bridges`
+**Example:** 
+```sh
+gefyra list --bridges
+```
 
 **Arguments:**  
 
@@ -134,7 +152,10 @@ List running containers and active bridges. You can select either `--bridges` or
 ## `check`
 Check local system dependencies, such as Docker and Kubernetes.
 
-**Example:** `gefyra check`
+**Example:** 
+```sh
+gefyra check
+```
 
 **Arguments:**  
 No arguments available.
@@ -143,7 +164,10 @@ No arguments available.
 ## `version`
 Display the current version and exit.
 
-**Example:** `gefyra version`
+**Example:** 
+```sh
+gefyra version
+```
 
 **Arguments:**  
 No arguments available.
@@ -151,7 +175,10 @@ No arguments available.
 ## `status`
 Display the status of Gefyra on the local machine and the cluster.
 
-**Example:** `gefyra status`
+**Example:** 
+```sh
+gefyra status
+```
 
 **Arguments:**  
 No arguments available.
@@ -159,7 +186,10 @@ No arguments available.
 ## `telemetry`
 Gefyra anonymously tracks its usage by collecting telemetry data. Telemetry is enabled by default.
 
-**Example:** `gefyra telemetry --on`
+**Example:** 
+```sh
+gefyra telemetry --on
+```
 
 **Arguments:**  
 
