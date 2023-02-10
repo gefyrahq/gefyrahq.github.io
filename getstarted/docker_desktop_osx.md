@@ -11,6 +11,8 @@ This example is really similar to the k3d getting started guide.
 However, Docker Desktop's Kubernetes comes with some specialities
 which must be taken care of to make this guide work.
 
+**Try out our [Docker Desktop Extension](/docker-desktop-extension/)!**
+
 **Note:** Gefyra works the same for different Kubernetes distributions.
 Docker Desktop doesn't come with an ingress installed which must
 be added to the cluster to get things working.
