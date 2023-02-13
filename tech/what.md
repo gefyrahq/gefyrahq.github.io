@@ -22,6 +22,7 @@ as a user-space application and controls the local Docker host and Kubernetes vi
 
 In order for this to work, a few requirements have to be satisfied:
 - a Docker host must be available for the user on the development machine (it is convenient if [docker can be run without sudo-privileges](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user))
+- Overlay networking must be supported by the Docker host
 - there are a few container capabilities required on both sides, within the Kubernetes cluster and on the local computer
 - a node port must be opened on the development cluster for the duration of the development work 
 

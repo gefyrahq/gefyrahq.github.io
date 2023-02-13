@@ -17,6 +17,7 @@ Please find your preferred operating system below.
 To use Gefyra you need:
 
  - Docker client API compatible container runtime (Docker/Docker Desktop/Colima)
+   - Overlay networking support (not available on rootless Docker)
  - Kubernetes cluster with a reachable port 31820 UDP
 
 ## Install Gefyra on MacOS
