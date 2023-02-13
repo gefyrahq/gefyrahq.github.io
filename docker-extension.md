@@ -28,16 +28,16 @@ docker extension install gefyra/docker-desktop-extension:1.1.0
 After installing the extension it becomes available in the Docker Desktop Extension sidebar. Gefyra Docker Desktop currently only
 support the `run` mode. After clicking on the `run` tile you're guided through the process of running a container on your local machine.
 
-![Docker Desktop Extension Start](/assets/images/extension/mode.png)
+![Docker Desktop Extension Start](/assets/images/extension/home_light.png)
 
 Firstly Gefyra needs to know about your cluster to allow you to set all settings accordingly.
 
-![Docker Desktop Extension Cluster Settings](/assets/images/extension/cluster.png)
+![Docker Desktop Extension Cluster Settings](/assets/images/extension/cluster_light.png)
 
 After choosing your kubeconfig and context you can then proceed to adding the settings for your container. In case you have a remote cluster
 you need to provide Gefyra with its connection parameters under `Remote Cluster Settings`.
 
-![Docker Desktop Extension Container Settings](/assets/images/extension/container.png)
+![Docker Desktop Extension Container Settings](/assets/images/extension/container_light.png)
 
 There are several settings for the container - most importantly the `image`, `namespace` and `command` settings.
 The `image` setting is the image that will be used to run the container - Gefyra will you show any image that is available in the local Docker Desktop context as 
@@ -46,8 +46,7 @@ Gefyra allows you to copy the environment variables of a certain workload throug
 You can add volumes and more variables through the `Add Volume` and `Add Environment Variable` buttons.
 As soon as you're done hit run!
 
-![Docker Desktop Extension Load](/assets/images/extension/load.png)
+![Docker Desktop Extension Load](/assets/images/extension/load_light.png)
 Gefyra ensures that its cluster components are in the correct state and starts the container.
 
-![Docker Desktop Extension Logs](/assets/images/extension/logs.png)
 Once the container is running Gefyra will show you the logs of the container.
