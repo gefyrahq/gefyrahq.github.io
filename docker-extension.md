@@ -14,7 +14,7 @@ nav_order: 6
 ## 10 minute demo
 
 **Gefyra Docker Desktop Extension Demo Video**  
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/k1HsJNnRS3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4xmaOVul5Ww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Installation
 The Gefyra Docker Desktop Extension is available on the Docker Desktop extension [marketplace](https://hub.docker.com/extensions/gefyra/docker-desktop-extension). 
