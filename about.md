@@ -16,7 +16,9 @@ Gefyra is distributed by an [Apache-2.0 License](https://github.com/gefyrahq/gef
 ## Contributors
 This open-source project is currently mainly carried out by  
 [Michael Schilonka](https://github.com/Schille){:target="_blank"}.
-Follow me on [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/michael-schilonka)
+
+Follow me on  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/michael-schilonka){:target="_blank"}
 
 ## Sponsors
 This project is sponsored by [Blueshoe GmbH](https://blueshoe.io).
