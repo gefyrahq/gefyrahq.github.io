@@ -45,8 +45,6 @@ logo: "/assets/images/gefyra_logo.png"
 aux_links:
   "[ CLI Reference ]":
     - "/reference/cli/"
-  "Gefyra will become part of Unikube. Check it out!":
-    - "//unikube.io"
 #
 # Footer
 #

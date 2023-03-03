@@ -17,7 +17,7 @@ Building and pushing containers to test them in Kubernetes is repetitive and tim
 Gefyra runs local code in any Kubernetes cluster without the build and push cycle. It overlays containers in the cluster making code changes immediately available.
 {: .fs-6 .fw-300 }
 
-[Try it now](/getting-started/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/gefyrahq/gefyra){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Try it now](/getting-started/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/gefyrahq/gefyra){:target="_blank" .btn .fs-5 .mb-4 .mb-md-0}
 
 ## Core Features
 ### Run a container instance on a developer machine and connect it to Kubernetes-based resources
@@ -58,11 +58,11 @@ If you are interested in more sophisticated use cases or want to develop modern 
 check out the [use cases and demos](/usecases/) or [the media section](/media/). 
 
 ## Alternative to Telepresence 2
-Compared to [Telepresence 2](https://www.telepresence.io/docs/latest/reference/architecture/), Gefyra uses a Wireguard-based
+Compared to [Telepresence 2](https://www.telepresence.io/docs/latest/reference/architecture/){:target="_blank"}, Gefyra uses a Wireguard-based
 VPN to connect with the Kubernetes cluster. Telepresence 2 provides a broad connectivity with the cluster ("your development
 machine becomes part of the cluster"), Gefyra instead establishes a very scoped connectivity based on a dedicated Docker-network on the
 developer machine. In addition, Gefyra supports a couple of important use-cases such as the sidecar pattern 
-(see: [this medium article](https://medium.com/bb-tutorials-and-thoughts/kubernetes-learn-sidecar-container-pattern-6d8c21f873d)) and does not require
+(see: [this medium article](https://medium.com/bb-tutorials-and-thoughts/kubernetes-learn-sidecar-container-pattern-6d8c21f873d){:target="_blank"}) and does not require
 "sudo"-privileges during the development process.  
 Anyway, if you feel you need other features that Telepresence 2 provides and Gefyra misses, please give it a go. Gefyra was heavily 
 inspired by Telepresence 2.

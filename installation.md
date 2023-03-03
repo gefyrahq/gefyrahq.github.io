@@ -16,9 +16,9 @@ Please find your preferred operating system below.
 ## Prerequisites
 To use Gefyra you need:
 
- - Docker client API compatible container runtime (Docker/Docker Desktop/Colima)
+ - Docker client API compatible container runtime (Docker/Docker Desktop/Colima/Rancher Desktop with moby engine)
    - Overlay networking support (not available on rootless Docker)
- - Kubernetes cluster with a reachable port 31820 UDP
+ - Kubernetes cluster with a reachable node port **31820/UDP**
 
 ## Install Gefyra on MacOS
 ### Darwin AMD64 / ARM64 (universal build)
@@ -40,7 +40,7 @@ curl -sSL https://raw.githubusercontent.com/gefyrahq/gefyra/main/install.sh | sh
 
 ## Install Gefyra on Windows
 You can download the latest release from 
-[https://github.com/gefyrahq/gefyra/releases/](https://github.com/gefyrahq/gefyra/releases/) and extract the binary
+[https://github.com/gefyrahq/gefyra/releases/](https://github.com/gefyrahq/gefyra/releases/){:target="_blank"} and extract the binary
 on your local machine.  
 
 Chocolatey will be available soon. If you can support this project with packaging and distributing for Windows
@@ -51,7 +51,7 @@ Todo
 
 ## Docker Desktop Extension
 
-The Gefyra Docker Desktop Extension is available on the Docker Desktop extension [marketplace](https://hub.docker.com/extensions/gefyra/docker-desktop-extension). 
+The Gefyra Docker Desktop Extension is available on the Docker Desktop extension [marketplace](https://hub.docker.com/extensions/gefyra/docker-desktop-extension){:target="_blank"}. 
 However, you can also install it by running the following command:
 
 ```shell
@@ -67,4 +67,4 @@ You can install Gefyra with `pip`:
 pip install gefyra --upgrade
 ```  
 
-[https://pypi.org/project/gefyra/](https://pypi.org/project/gefyra/)
+[https://pypi.org/project/gefyra/](https://pypi.org/project/gefyra/){:target="_blank"}

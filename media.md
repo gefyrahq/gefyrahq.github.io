@@ -34,8 +34,8 @@ Videos, podcasts and other media about Gefyra.
 
 ## Blog
 * **An alternative to Telepresence 2: Gefyra**  
-[https://unikube.io/blog/alternative-to-telepresence-2-gefyra/](https://unikube.io/blog/alternative-to-telepresence-2-gefyra/)
+[https://unikube.io/blog/alternative-to-telepresence-2-gefyra/](https://unikube.io/blog/alternative-to-telepresence-2-gefyra/){:target="_blank"}
 * **Creating a Python CLI with Go(lang)-comparable startup times**  
-[https://www.reddit.com/r/Python/comments/tl3jwz/creating_a_python_cli_with_golangcomparable/](https://www.reddit.com/r/Python/comments/tl3jwz/creating_a_python_cli_with_golangcomparable/)
+[https://www.reddit.com/r/Python/comments/tl3jwz/creating_a_python_cli_with_golangcomparable/](https://www.reddit.com/r/Python/comments/tl3jwz/creating_a_python_cli_with_golangcomparable/){:target="_blank"}
 * **How does local Kubernetes development work?**  
-[https://unikube.io/blog/how-does-kubernetes-development-work/](https://unikube.io/blog/how-does-kubernetes-development-work/)
+[https://unikube.io/blog/how-does-kubernetes-development-work/](https://unikube.io/blog/how-does-kubernetes-development-work/){:target="_blank"}
