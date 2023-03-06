@@ -6,7 +6,7 @@ nav_order: 9
 parent: Getting Started
 hide_up: true
 ---
-# Getting started with Gefyra and SysEleven Metakube
+# Getting started with Gefyra and SysEleven MetaKube
 This guide will show you how to use Gefyra for the remote development of a Kubernetes
 application running on MetaKube.
 {: .fs-6 .fw-300 }
