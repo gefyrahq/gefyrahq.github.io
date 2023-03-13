@@ -35,10 +35,10 @@ To follow this guide, you need to have the following tools installed:
 
 You need to have the following tools installed:
 
-* [gcloud](https://cloud.google.com/sdk/docs/install-sdk)
-* [kubectl](https://kubernetes.io/docs/tasks/tools/)
-* [Helm](https://helm.sh/docs/intro/install/)
-* [Gefyra](https://gefyra.dev/installation/)
+* [gcloud](https://cloud.google.com/sdk/docs/install-sdk){:target="_blank"}
+* [kubectl](https://kubernetes.io/docs/tasks/tools/){:target="_blank"}
+* [Helm](https://helm.sh/docs/intro/install/){:target="_blank"}
+* [Gefyra](https://gefyra.dev/installation/){:target="_blank"}
 
 Additionally you need an account for the Google Cloud Platform including the
 permission to create a new cluster. Make sure your gcloud is using the right
