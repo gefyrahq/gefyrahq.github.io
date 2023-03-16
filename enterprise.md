@@ -16,7 +16,7 @@ Gefyra for Enterprise is a commercial version of Gefyra. It is designed for comp
 ## Enterprise compliance 
 <br/>
 
-[Let's talk](https://meetings.hubspot.com/hannes/gefyra-enterprise){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }{:target="_blank"}
+[Let's talk](https://meetings.hubspot.com/hannes/gefyra-enterprise){:target="_blank" .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 <hr/>
 ## Or get in touch
 <br/>
