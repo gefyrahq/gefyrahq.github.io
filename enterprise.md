@@ -1,6 +1,6 @@
 ---
 layout: page
-title: For Enterprise
+title: FOR ENTERPRISE
 permalink: /enterprise/
 nav_order: 7
 ---
