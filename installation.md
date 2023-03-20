@@ -55,7 +55,7 @@ The Gefyra Docker Desktop Extension is available on the Docker Desktop extension
 However, you can also install it by running the following command:
 
 ```shell
-docker extension install gefyra/docker-desktop-extension:1.1.3
+docker extension install gefyra/docker-desktop-extension:latest
 ```
 
 For more details see [Docker Desktop Extension](/docker-desktop-extension/).
