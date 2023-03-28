@@ -32,6 +32,10 @@ Videos, podcasts and other media about Gefyra.
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/k1HsJNnRS3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
+## Development Sessions
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zGxoLcOQh2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
 ## Blog
 * **An alternative to Telepresence 2: Gefyra**  
 [https://unikube.io/blog/alternative-to-telepresence-2-gefyra/](https://unikube.io/blog/alternative-to-telepresence-2-gefyra/){:target="_blank"}
