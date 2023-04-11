@@ -2,6 +2,7 @@
 title: Technical Details
 permalink: /details/
 has_children: true
+has_toc: true
 nav_order: 5
 ---
 # Technical Details
