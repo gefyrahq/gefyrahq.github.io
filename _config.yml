@@ -29,7 +29,7 @@ search_enabled: true
 # theme: "just-the-docs"
 
 # this is used by GitHub
-remote_theme: "just-the-docs/just-the-docs"
+remote_theme: "just-the-docs/just-the-docs@0.3.3"
 plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
