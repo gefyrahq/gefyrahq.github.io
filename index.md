@@ -63,9 +63,9 @@ VPN to connect with the Kubernetes cluster. Telepresence provides namespace-scop
 
 Unlike Gefyra, Telepresence can run with or without Docker. Docker is fully exploited when used, so no "sudo"-privileges are needed, and both network and volume mounts are fully isolated from the host. Without Docker, Telepresence requires "sudo"-privliges to add a virtual network interface and inject a DNS server on the host. 
 
-Like Gefyra, Telepresence uses a sidecar pattern to inject the container(s) needed to perform intercepts.
+Telepresence uses a sidecar pattern to inject the container(s) needed to perform selective intercepts (the original container will receive unintercepted traffic). Gefyra instead replaces the image of the intercepted container with the Gefyra `carrier` image, which then redirects traffic to the local container. Gefyra can therefore support a couple of important use-cases such as the sidecar pattern (see: this medium article{:target="_blank"}) which require an ability to intercept ports on the localhost.
 
-Anyway, if you feel you need other features that Telepresence 2 provides and Gefyra misses, please give it a go. Gefyra was heavily 
+Anyway, if you feel you need other features that Telepresence provides and Gefyra misses, please give it a go. Gefyra was heavily 
 inspired by Telepresence.
 
 Gefyra was designed to be fast and robust on an average developer machine and supports most platforms.
