@@ -57,15 +57,16 @@ Looking for Homebrew or Windows installation? Checkout the [installation guide](
 If you are interested in more sophisticated use cases or want to develop modern Kubernetes-based architectures, 
 check out the [use cases and demos](/usecases/) or [the media section](/media/). 
 
-## Alternative to Telepresence 2
-Compared to [Telepresence 2](https://www.telepresence.io/docs/latest/reference/architecture/){:target="_blank"}, Gefyra uses a Wireguard-based
-VPN to connect with the Kubernetes cluster. Telepresence 2 provides a broad connectivity with the cluster ("your development
-machine becomes part of the cluster"), Gefyra instead establishes a very scoped connectivity based on a dedicated Docker-network on the
-developer machine. In addition, Gefyra supports a couple of important use-cases such as the sidecar pattern 
-(see: [this medium article](https://medium.com/bb-tutorials-and-thoughts/kubernetes-learn-sidecar-container-pattern-6d8c21f873d){:target="_blank"}) and does not require
-"sudo"-privileges during the development process.  
-Anyway, if you feel you need other features that Telepresence 2 provides and Gefyra misses, please give it a go. Gefyra was heavily 
-inspired by Telepresence 2.
+## Alternative to Telepresence
+Compared to [Telepresence](https://www.getambassador.io/docs/telepresence/latest/reference/architecture){:target="_blank"}, Gefyra uses a Wireguard-based
+VPN to connect with the Kubernetes cluster. Telepresence provides namespace-scoped connectivity with the cluster via a virtual network interface, and tunnels over gRPC.
+
+Gefyra comes with Docker as backed-in dependency. With Telepresence, Docker is optional. 
+
+Telepresence uses a sidecar pattern to inject the container(s) needed to perform selective intercepts (the original container will receive unintercepted traffic). Gefyra instead replaces the image of the intercepted container with the Gefyra `carrier` image, which then redirects traffic to the local container. Gefyra can therefore support a couple of important use-cases such as the sidecar pattern (see: [this medium article](https://medium.com/bb-tutorials-and-thoughts/kubernetes-learn-sidecar-container-pattern-6d8c21f873d){:target="_blank"}) which require an ability to intercept ports on the localhost.
+
+Anyway, if you feel you need other features that Telepresence provides and Gefyra misses, please give it a go. Gefyra was heavily 
+inspired by Telepresence.
 
 Gefyra was designed to be fast and robust on an average developer machine and supports most platforms.
 
