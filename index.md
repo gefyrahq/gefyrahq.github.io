@@ -61,7 +61,7 @@ check out the [use cases and demos](/usecases/) or [the media section](/media/).
 Compared to [Telepresence](https://www.getambassador.io/docs/telepresence/latest/reference/architecture){:target="_blank"}, Gefyra uses a Wireguard-based
 VPN to connect with the Kubernetes cluster. Telepresence provides namespace-scoped connectivity with the cluster via a virtual network interface, and tunnels over gRPC.
 
-Unlike Gefyra, Telepresence can run with or without Docker. Docker is fully exploited when used, so no "sudo"-privileges are needed, and both network and volume mounts are fully isolated from the host. Without Docker, Telepresence requires "sudo"-privliges to add a virtual network interface and inject a DNS server on the host. 
+Gefyra comes with Docker as backed-in dependency. With Telepresence, Docker is optional. 
 
 Telepresence uses a sidecar pattern to inject the container(s) needed to perform selective intercepts (the original container will receive unintercepted traffic). Gefyra instead replaces the image of the intercepted container with the Gefyra `carrier` image, which then redirects traffic to the local container. Gefyra can therefore support a couple of important use-cases such as the sidecar pattern (see: [this medium article](https://medium.com/bb-tutorials-and-thoughts/kubernetes-learn-sidecar-container-pattern-6d8c21f873d){:target="_blank"}) which require an ability to intercept ports on the localhost.
 
