@@ -12,7 +12,7 @@ This guide will show you how to use Gefyra for the local development of a Kubern
 ## Prerequisites
 1. Follow the [installation](https://gefyra.dev/installation) for your preferred platform.
 
-**Hint** there is a bug in Docker Desktop v4.18 which causes `gefyra up` to fail with k3d clusters that run on that DD version.
+**Hint** there is a bug in Docker Desktop v4.17-v4.18 which causes `gefyra up` to fail with k3d clusters that run on that DD version.
 
 2. Create a local Kubernetes cluster with `k3d` like so:    
 **< v5** 
