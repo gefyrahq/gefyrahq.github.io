@@ -121,6 +121,31 @@ gefyra unbridge -N mypybridge
 | `-A`, `--all`  | Remove all bridges at once           |
 
 
+## `reflect`
+Combines `run` and `bridge` commands. It starts a new container in Gefyra and bridges the traffic to it.
+`reflect` takes a workload as argument and mirrors the given workload on the local machine.
+It is possible to overwrite several aspects of the workload, e.g. the image, the command or the environment variables.
+
+**Example:**
+```sh
+gefyra reflect
+```
+
+**Arguments:**  
+
+| Argument           | Description                                                                                                                                                                |
+|:-------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `-w`, `--workload` | The workload to be mirrored on the local machine. |
+| `-e`, `--expose` |  | If set use ports from Kubernetes resource to expose the container to the host. |
+| `-i`, `--image` | Overwrite the container's image. Useful if there is a development version of your image. |
+| `-v`, `--volume` | Attach a volume to the container. Useful to mount code from host system to the container.                                                                         |
+| `-p`, `--port` | Overwrite ports which should be exposed from the container to the host.                                                                      |
+| `-b`, `--bridge`  | Bridge workload immediately when container has started.                                                                           |
+| `-c`, `--command`    | Overwrite command of container.                                                                               |
+| `-n`, `--namespace` | Namespace of the workload. Default to `default`.                 |                                                                                                      |
+| `--env`     | Add environment variable to container e.g. `--env KUBE=2` |                                                                                                      |
+
+
 ## `down`
 Remove Gefyra's development infrastructure, including active bridges and all cluster components. The local Docker
 network will be removed as well.
