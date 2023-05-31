@@ -136,7 +136,7 @@ gefyra reflect
 | Argument           | Description                                                                                                                                                                |
 |:-------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `-w`, `--workload` | The workload to be mirrored on the local machine. |
-| `-e`, `--expose` |  | If set use ports from Kubernetes resource to expose the container to the host. |
+| `-e`, `--expose` | If set use ports from Kubernetes resource to expose the container to the host. |
 | `-i`, `--image` | Overwrite the container's image. Useful if there is a development version of your image. |
 | `-v`, `--volume` | Attach a volume to the container. Useful to mount code from host system to the container.                                                                         |
 | `-p`, `--port` | Overwrite ports which should be exposed from the container to the host.                                                                      |
