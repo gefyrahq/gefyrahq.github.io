@@ -1,11 +1,5 @@
 ---
-layout: page
 title: Command Line Interface (CLI)
-permalink: /cli/
-nav_order: 4
-redirect_from:
-  - /reference/
-  - /reference/cli/
 ---
 # Command line tool (CLI)
 

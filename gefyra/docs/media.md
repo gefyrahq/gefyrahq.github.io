@@ -1,8 +1,5 @@
 ---
-layout: page
 title: Media
-permalink: /media/
-nav_order: 8
 ---
 # Media
 Videos, podcasts and other media about Gefyra.

@@ -1,8 +1,5 @@
 ---
-layout: page
-title: FOR ENTERPRISE
-permalink: /enterprise/
-nav_order: 7
+title: Enterprise Support
 ---
 
 # For Enterprise

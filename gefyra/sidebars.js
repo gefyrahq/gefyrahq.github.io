@@ -21,17 +21,17 @@ const sidebars = {
       type: 'category',
       label: 'Getting Started',
       link: {
-        type: 'doc', id: 'getstarted/index'
+        type: 'doc', id: 'getting-started/index'
       },
       items: [
-        'getstarted/minikube',
-        'getstarted/k3d',
-        'getstarted/kind',
-        'getstarted/docker_desktop_osx',
-        'getstarted/gcp',
-        'getstarted/eks',
-        'getstarted/colima',
-        'getstarted/sys11',
+        'getting-started/minikube',
+        'getting-started/k3d',
+        'getting-started/kind',
+        'getting-started/docker_desktop_osx',
+        'getting-started/gcp',
+        'getting-started/eks',
+        'getting-started/colima',
+        'getting-started/sys11',
       ],
     },
     'cli',

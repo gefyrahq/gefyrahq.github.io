@@ -1,8 +1,5 @@
 ---
-layout: page
 title: About
-permalink: /about/
-nav_order: 9
 ---
 # About this project
 Gefyra is based on well-crafted open-source software. Special credits go to the teams of 

@@ -21,3 +21,19 @@
   align-items: center;
   justify-content: center;
 }
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 300px;
+  width: 300px;
+}
+
+.lightBg {
+  background-color: var(--gefyra-secondary-bg-color);
+}

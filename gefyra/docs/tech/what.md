@@ -1,13 +1,6 @@
 ---
-layout: page
 title: What is Gefyra
-permalink: /details/what-is-gefyra/
-nav_order: 1
-parent: Technical Details
 ---
-
-1. TOC
-
 
 # What is Gefyra?
 Gefyra is a toolkit written in Python to organize a local development infrastructure in order to produce software for and with 

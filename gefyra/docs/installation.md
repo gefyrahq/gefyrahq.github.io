@@ -1,10 +1,8 @@
 ---
-layout: page
 title: Installation
-permalink: /installation/
-nav_order: 2
 ---
 <img src="/img/minfootprint.png" alt="minimal footprint" width="150" style={{ float: 'right' }}/>
+
 # Installation
 Gefyra is tested under Windows, MacOS and Linux. The command line tool can be 
 installed with a binary executable.
@@ -57,7 +55,7 @@ However, you can also install it by running the following command:
 docker extension install gefyra/docker-desktop-extension:latest
 ```
 
-For more details see [Docker Desktop Extension](/docker-desktop-extension/).
+For more details see [Docker Desktop Extension](/docs/docker-extension/).
 
 
 # Using Python Package Index

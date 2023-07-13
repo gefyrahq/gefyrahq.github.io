@@ -26,7 +26,7 @@ This example demonstrates how to run a local Ubuntu container instance as part o
 
 ### What you will need
 
-* [Gefyra](/installation)
+* [Gefyra](/docs/installation)
 * [Getdeck](https://github.com/Schille/getdeck) for setting up the development infrastructure (runs on `k3d`)
 * kubectl
 * Optionally: [k3d](https://k3d.io) or any other preferred Kubernetes cluster

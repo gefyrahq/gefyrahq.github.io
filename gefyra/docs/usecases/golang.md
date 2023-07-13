@@ -24,7 +24,7 @@ This example demonstrates how to run a local Golang container with hot code relo
 
 ### What you will need
 
-* [Gefyra](/installation)
+* [Gefyra](/docs/installation)
 * [Getdeck](https://github.com/Getdeck/getdeck) for setting up the development infrastructure (runs on `k3d`)
 * A copy of [https://github.com/gefyrahq/gefyra-demos](https://github.com/gefyrahq/gefyra-demos)
 * Optionally: [k3d](https://k3d.io) or any other preferred Kubernetes cluster

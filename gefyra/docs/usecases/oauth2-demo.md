@@ -32,7 +32,7 @@ out the [getting started guide](https://gefyra.dev/getting-started/).
 
 ### What you will need
 
-* [Gefyra](/installation)
+* [Gefyra](/docs/installation)
 * [Getdeck](https://github.com/Getdeck/getdeck) for setting up the development infrastructure (runs on `k3d`)
 * kubectl
 * A copy of [https://github.com/gefyrahq/gefyra-demos](https://github.com/gefyrahq/gefyra-demos)
@@ -131,8 +131,8 @@ The Kubernetes objects of the workload are as follows:
 
 In this picture you can find two [_Ingresses_](https://kubernetes.io/docs/concepts/services-networking/ingress/) 
 definitions: one is serving the application [_Deployment_](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) _oauth2-demo_
-which schedules one _Pod_ under [oauth2-demo.127.0.0.1.nip.io:8080](oauth2-demo.127.0.0.1.nip.io:8080), the other is
-serving Keycloak under [keycloak.127.0.0.1.nip.io:8080](keycloak.127.0.0.1.nip.io:8080).    
+which schedules one _Pod_ under [oauth2-demo.127.0.0.1.nip.io:8080](http://oauth2-demo.127.0.0.1.nip.io:8080), the other is
+serving Keycloak under [keycloak.127.0.0.1.nip.io:8080](http://keycloak.127.0.0.1.nip.io:8080).    
 
 **Important:** Please mind that port _8080_ is a port mapping. From within the cluster you will see it running on port _80_.  
 

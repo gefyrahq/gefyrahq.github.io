@@ -1,12 +1,6 @@
 ---
-layout: page
 title: Architecture
-permalink: /details/architecture/
-nav_order: 2
-parent: Technical Details
 ---
-1. TOC
-
 
 # How does it work?
 In order to write software for and with Kubernetes, obviously a Kubernetes cluster is required. There are already a number of Kubernetes 
