@@ -49,6 +49,13 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        googleTagManager: {
+          containerId: 'GTM-MZZHWCF',
+        },
+        gtag: {
+          trackingID: 'G-MDH0PRFGS1',
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
