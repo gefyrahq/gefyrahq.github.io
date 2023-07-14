@@ -2,9 +2,9 @@ name: Publish Website
 
 on:
   pull_request:
-    branches: [main]
+    branches: [main, gh-pages]
   push:
-    branches: [main]
+    branches: [main, gh-pages]
   workflow_dispatch:
 
 jobs:
