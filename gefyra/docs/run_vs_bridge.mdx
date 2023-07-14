@@ -5,7 +5,7 @@ title: Run vs Bridge
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/svg.min.js" integrity="sha512-I+rKw3hArzZIHzrkdELbKqrXfkSvw/h0lW/GgB8FThaBVz2e5ZUlSW8kY8v3q6wq37eybIwyufkEZxe4qSlGcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-
+<BrowserOnly>
 import Run from "@site/static/img/run.svg";
 import Bridge from "@site/static/img/bridge.svg";
 
@@ -34,3 +34,4 @@ needs some kind of representation within the Kubernetes cluster it is connected 
 Kubernetes cluster and reroutes all the incoming traffic to your local container. Multiple users cannot bridge the same workload. 
 
 <Bridge width="800"/>
+</BrowserOnly>
