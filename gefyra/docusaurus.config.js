@@ -58,6 +58,122 @@ const config = {
         },
       }),
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs/installation/',
+            from: '/installation/',
+          },
+          {
+            to: '/docs/getting-started/',
+            from: '/getting-started/',
+          },
+          {
+            to: '/docs/getting-started/minikube',
+            from: '/getting-started/minikube/',
+          },
+          {
+            to: '/docs/getting-started/k3d',
+            from: '/getting-started/k3d/',
+          },
+          {
+            to: '/docs/getting-started/kind',
+            from: '/getting-started/kind/',
+          },
+          {
+            to: '/docs/getting-started/docker_desktop_osx',
+            from: '/getting-started/docker-desktop-kubernetes-osx/',
+          },
+          {
+            to: '/docs/getting-started/gcp',
+            from: '/getting-started/google-cloud-platform-gcp/',
+          },
+          {
+            to: '/docs/getting-started/eks',
+            from: '/getting-started/aws-eks/',
+          },
+          {
+            to: '/docs/getting-started/colima',
+            from: '/getting-started/colima-kubernetes/',
+          },
+          {
+            to: '/docs/getting-started/sys11',
+            from: '/getting-started/syseleven-metakube-kubernetes/',
+          },
+          {
+            to: '/docs/cli/',
+            from: '/cli/',
+          },
+          {
+            to: '/docs/tech/',
+            from: '/details/',
+          },
+          {
+            to: '/docs/tech/architecture',
+            from: '/details/architecture/',
+          },
+          {
+            to: '/docs/tech/what/',
+            from: '/details/what-is-gefyra/',
+          },
+          {
+            to: '/docs/run_vs_bridge/',
+            from: '/run-vs-bridge/',
+          },
+          {
+            to: '/docs/docker-extension/',
+            from: '/docker-desktop-extension/',
+          },
+          {
+            to: '/docs/usecases/',
+            from: '/usecases/',
+          },
+          {
+            to: '/docs/usecases/ubuntu-in-namespace',
+            from: '/usecases/ubuntu-in-namespace/',
+          },
+
+          {
+            to: '/docs/usecases/oauth2-demo',
+            from: '/usecases/oauth2-demo/',
+          },
+
+          {
+            to: '/docs/usecases/remote-gke',
+            from: '/usecases/remote-development-with-gke/',
+          },
+          {
+            to: '/docs/usecases/golang',
+            from: '/usecases/developing-go-with-gefyra/',
+          },
+          {
+            to: '/docs/enterprise',
+            from: '/enterprise/',
+          },
+          {
+            to: '/docs/media',
+            from: '/media/',
+          },
+          {
+            to: '/docs/about',
+            from: '/about/',
+          },
+
+        ],
+        createRedirects(existingPath) {
+          if (existingPath.includes('/community')) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace('/community', '/docs/team'),
+              existingPath.replace('/community', '/docs/support'),
+            ];
+          }
+          return undefined; // Return a falsy value: no redirect created
+        },
+      },
+    ],
   ],
 
   themeConfig:
