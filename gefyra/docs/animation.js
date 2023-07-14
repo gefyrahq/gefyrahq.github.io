@@ -1,3 +1,4 @@
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 function animatePacket(packet, delay, reverse, path, timeline) {
     packet.timeline(timeline);
@@ -283,7 +284,7 @@ function bridgeAnimationStart() {
     if (textCheck) textCheck.remove();
 
     const text = draw.text("Start IDE").attr("id", "bridge-text")
-        .font({size: 100, color: 'black', family: 'system-ui,-apple-system,BlinkMacSystemFont,"Modern Sans","Open Sans","Helvetica Neue",Arial,sans-serif'})
+        .font({ size: 100, color: 'black', family: 'system-ui,-apple-system,BlinkMacSystemFont,"Modern Sans","Open Sans","Helvetica Neue",Arial,sans-serif' })
         .move(0, 2100);
 
 
@@ -383,4 +384,6 @@ function startAnimations() {
     }
 }
 
-startAnimations();
+if (ExecutionEnvironment.canUseDOM) {
+    startAnimations();
+}
