@@ -18,14 +18,14 @@ To use Gefyra you need:
  - Kubernetes cluster with a reachable node port **31820/UDP**
 
 ## Install Gefyra on MacOS
-### Darwin AMD64 / ARM64 (universal build)
-#### Homebrew
+### Homebrew
 ```zsh
 brew tap gefyrahq/gefyra
 brew install gefyra
 ````
 
-#### Manual Installation
+### Manual Installation
+
 ```zsh
 curl -sSL https://raw.githubusercontent.com/gefyrahq/gefyra/main/install.sh | sh -
 ```
