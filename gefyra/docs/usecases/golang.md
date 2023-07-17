@@ -1,9 +1,5 @@
 ---
-layout: page
 title: Developing Go Applications with Gefyra 
-permalink: /usecases/developing-go-with-gefyra/
-nav_order: 5
-parent: Use Cases and Demos
 ---
 # Developing Go Applications with Gefyra
 

@@ -1,9 +1,5 @@
 ---
-layout: page
 title: Run a Ubuntu container instance
-permalink: /usecases/ubuntu-in-namespace/
-nav_order: 1
-parent: Use Cases and Demos
 ---
 # Making any container part of your Kubernetes namespace  
 

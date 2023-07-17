@@ -1,9 +1,5 @@
 ---
-layout: page
 title: Remote Development on Google Kubernetes Engine
-permalink: /usecases/remote-development-with-gke/
-nav_order: 4
-parent: Use Cases and Demos
 ---
 # Developing a backend application with Django on the Google Kubernetes Engine (GKE) 
 

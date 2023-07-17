@@ -1,9 +1,5 @@
 ---
-layout: page
 title: OAuth2 Demo with a Sidecar 
-permalink: /usecases/oauth2-demo/
-nav_order: 2
-parent: Use Cases and Demos
 ---
 # Create a Backend Application with a Sidecar and OAuth2 Authentication  
 
