@@ -186,10 +186,10 @@ const config = {
             label: 'Docs',
           },
           {
+            html: '<iframe style="margin-top: 8px;" src="https://ghbtns.com/github-btn.html?user=gefyrahq&repo=gefyra&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>',
             href: 'https://github.com/gefyrahq/gefyra',
-            label: 'GitHub',
-            position: 'right',
-          },
+            position: 'right'
+          }
         ],
       },
       footer: {
