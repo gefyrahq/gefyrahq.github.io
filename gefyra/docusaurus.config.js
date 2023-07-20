@@ -57,7 +57,78 @@ const config = {
           anonymizeIP: true,
         },
       }),
-    ],
+    ]
+  ],
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
+      navbar: {
+        title: '',
+        logo: {
+          alt: 'Gefyra Logo',
+          src: 'img/gefyra_horizontal_logo.svg',
+          srcDark: 'img/gefyra_horizontal_logo_dark.svg',
+        },
+        items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'docsSidebar',
+            position: 'left',
+            label: 'Docs',
+          },
+          {
+            html: '<iframe style="margin-top: 8px;" src="https://ghbtns.com/github-btn.html?user=gefyrahq&repo=gefyra&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>',
+            href: 'https://github.com/gefyrahq/gefyra',
+            position: 'right'
+          }
+        ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Docs',
+                to: '/docs/index',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/8NTPMVPaKy',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/BLUESHOE_GmbH',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'GitHub',
+                href: 'https://github.com/gefyrahq/gefyra',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} Gefyra, Blueshoe GmbH. Built with Docusaurus.`,
+      },
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+    }),
+    plugins: [
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -164,76 +235,7 @@ const config = {
         ],
       },
     ],
-  ],
-
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: '',
-        logo: {
-          alt: 'Gefyra Logo',
-          src: 'img/gefyra_horizontal_logo.svg',
-          srcDark: 'img/gefyra_horizontal_logo_dark.svg',
-        },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'docsSidebar',
-            position: 'left',
-            label: 'Docs',
-          },
-          {
-            html: '<iframe style="margin-top: 8px;" src="https://ghbtns.com/github-btn.html?user=gefyrahq&repo=gefyra&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>',
-            href: 'https://github.com/gefyrahq/gefyra',
-            position: 'right'
-          }
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Docs',
-                to: '/docs/index',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/8NTPMVPaKy',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/BLUESHOE_GmbH',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/gefyrahq/gefyra',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Gefyra, Blueshoe GmbH. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+  ]
 };
 
 module.exports = config;
