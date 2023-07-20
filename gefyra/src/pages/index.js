@@ -82,6 +82,18 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className={clsx('hero')}>
+          <div className={clsx('container')}>
+            <div className="row">
+              <div class="col col--2"></div>
+              <div class="col col--8 text--center">
+                <h2>Let us know about your experience!</h2>
+                <p>We depend on your feedback - Gefyra's was created out of our own needs and the feedback we received from you, our community.</p>
+                <p>We'd appreciate if you could take 2 minutes of your time to fill out our <a href="https://forms.gle/AWT9NparpTVk8E978" target="_blank">feedback form</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </Layout >
   );

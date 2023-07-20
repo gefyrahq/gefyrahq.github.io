@@ -1,10 +1,8 @@
 ---
-layout: page
 title: Elastic Kubernetes Service (EKS)
-permalink: /getting-started/aws-eks/
-nav_order: 5
-parent: Getting Started
 ---
+
+import Feedback from './_includes/feedback.mdx';
 
 # Getting started with Gefyra and Elastic Kubernetes Service (EKS)
 This guide will show you how to use Gefyra for the remote development of a Kubernetes
@@ -75,4 +73,7 @@ them by running `kubectl get nodes -o wide |  awk {'print $1" " $2 " " $7'} | co
 
 ## Cleaning up
 Remove Gefyra's components from the cluster with `gefyra down`
+
+<Feedback />
+
 

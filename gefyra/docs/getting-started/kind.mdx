@@ -1,12 +1,9 @@
 ---
-layout: page
 title: kind
-permalink: /getting-started/kind/
-nav_order: 2
-parent: Getting Started
 ---
 
 import GettingStartedCommon from './_includes/getting_started_common.mdx';
+import Feedback from './_includes/feedback.mdx';
 
 # Getting started with Gefyra and kind
 This guide will show you how to use Gefyra for the local development of a Kubernetes application running in [kind](https://kind.sigs.k8s.io/).
@@ -37,3 +34,5 @@ kind create cluster --config kind-config.yaml
 <GettingStartedCommon hideUp={false} />
 
 10. Remove the locally running Kubernetes cluster with `kind delete cluster`
+
+<Feedback />
