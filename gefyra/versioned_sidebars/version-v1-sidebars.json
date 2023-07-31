@@ -1,0 +1,56 @@
+{
+  "docsSidebar": [
+    "index",
+    "installation",
+    {
+      "type": "category",
+      "label": "Getting Started",
+      "link": {
+        "type": "doc",
+        "id": "getting-started/index"
+      },
+      "items": [
+        "getting-started/minikube",
+        "getting-started/k3d",
+        "getting-started/kind",
+        "getting-started/docker_desktop_osx",
+        "getting-started/gcp",
+        "getting-started/eks",
+        "getting-started/colima",
+        "getting-started/sys11"
+      ]
+    },
+    "cli",
+    {
+      "type": "category",
+      "label": "Technical Details",
+      "link": {
+        "type": "doc",
+        "id": "tech/index"
+      },
+      "items": [
+        "tech/architecture",
+        "tech/what"
+      ]
+    },
+    "run_vs_bridge",
+    "docker-extension",
+    {
+      "type": "category",
+      "label": "Use Cases and Demos",
+      "link": {
+        "type": "doc",
+        "id": "usecases/index"
+      },
+      "items": [
+        "usecases/ubuntu-in-namespace",
+        "usecases/oauth2-demo",
+        "usecases/remote-gke",
+        "usecases/golang"
+      ]
+    },
+    "enterprise",
+    "media",
+    "about"
+  ]
+}

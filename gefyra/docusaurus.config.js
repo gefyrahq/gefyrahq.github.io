@@ -39,6 +39,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          includeCurrentVersion: false,
+          versions: {
+            'v1': {
+              banner: 'none'
+            }
+          },
           breadcrumbs: false,
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
@@ -78,6 +84,11 @@ const config = {
             sidebarId: 'docsSidebar',
             position: 'left',
             label: 'Docs',
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'left',
+            dropdownActiveClassDisabled: true,
           },
           {
             html: '<iframe style="margin-top: 8px;" src="https://ghbtns.com/github-btn.html?user=gefyrahq&repo=gefyra&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>',
