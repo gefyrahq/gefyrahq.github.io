@@ -145,7 +145,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       mermaid: {
-        theme: {light: 'base', dark: 'forest'},
+        theme: {light: 'base', dark: 'dark'},
       }
     }),
     plugins: [

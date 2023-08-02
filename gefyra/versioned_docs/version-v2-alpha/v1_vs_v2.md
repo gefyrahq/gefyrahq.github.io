@@ -1,5 +1,5 @@
 ---
-title: v1 vs v2
+title: What changed in v2?
 ---
 
 # What changed between Gefyra v1 and Gefyra v2?

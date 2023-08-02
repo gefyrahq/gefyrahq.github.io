@@ -40,7 +40,7 @@ gefyra install
 
 ### clients
 
-Gefyra allows to create client instances which are used to connect to the cluster. A Gefyra Client is a custom resource within Kubernetes.
+Gefyra allows to create client instances which are used to connect to the cluster. A [Gefyra Client](/docs/tech/clients) is a custom resource within Kubernetes.
 Once a client instance is created in the cluster it can be used to generate a connection file. This file can be used to connect Gefyra's client side
 to the cluster (with limited permissions).
 
@@ -53,7 +53,7 @@ gefyra clients delete my-client
 
 #### clients create
 
-Creates a new client. What are [clients](/docs/clients)?
+Creates a new client. What are [clients](/docs/tech/clients)?
 
 **Example:**
 ```bash

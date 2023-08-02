@@ -1,6 +1,6 @@
 # Gefyra Clients
 
-:::tip
+:::note **TLDR;**
 
 Gefyra Clients provide a way to grant limited access to a Kubernetes cluster to use Gefyra's capabilities.
 
@@ -29,3 +29,13 @@ flowchart TD;
 
 
 ## Workflow for single users
+
+This workflow is much more simple. `gefyra up` takes care of creating a Gefyra Client, generating the connection configuration
+and setup the connection to the cluster.
+
+```mermaid
+flowchart TD;
+    install["Install Gefyra (<a href='/docs/cli#up'>gefyra up</a>)"]
+    run["Run workload (<a href='/docs/cli#run'>gefyra run</a>)"]
+    install-->run
+```

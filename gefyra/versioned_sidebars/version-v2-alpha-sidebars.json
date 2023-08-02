@@ -30,11 +30,10 @@
       },
       "items": [
         "tech/architecture",
-        "tech/what"
+        "tech/what",
+        "tech/clients"
       ]
     },
-    "v1_vs_v2",
-    "clients",
     "presets",
     "run_vs_bridge",
     "docker-extension",
@@ -53,6 +52,7 @@
       ]
     },
     "enterprise",
+    "v1_vs_v2",
     "media",
     "about"
   ]
