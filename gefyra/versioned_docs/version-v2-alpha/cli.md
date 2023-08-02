@@ -118,16 +118,55 @@ gefyra clients remove my-client-id
 
 ### connections
 
-Connect Gefyra to a cluster via a Gefyra Client configuration.
+Connect Gefyra to a cluster via a Gefyra Client configuration. Since Gefyra v2 it is possible
+to manage multiple connections. Therefore connections must be named.
 
 #### connections connect
 
+Connect to cluster via connection file.
+
+**Example:**
+```bash
+gefyra connections connect -f con_file.json -n my-connection
+```
+
+**Arguments:**  
+
+| Argument           | Description                                                                                                                                                                |
+|:-------------------|:------------------------------------------------------------------------|
+| `-f`, `--client-config` | Gefyra's client connection file. Can be retrieved via `gefyra client config`  |
+| `-n`, `--connection-name` | The connection's name. Defaults to `default`. Connection names must be unique.|
+| `--minikube` | Target cluster is of type Minikube. Adapts connection's network settings. |
 
 
 #### connections disconnect
+
+Disconnect given Gefyra connection. Connection name must be provided. 
+As long a connection is not removed (`gefyra connections rm my-connection`) it can be reestablished.
+
+**Example:**
+```bash
+gefyra connections disconnect my-connection
+```
+
+
 #### connections list
+
+List established connections.
+
+**Example:**
+```bash
+gefyra connections list
+```
+
 #### connections remove
 
+Remove connection finally.
+
+**Example:**
+```bash
+gefyra connections rm my-connection
+```
 
 ### up
 Brings up a local development infrastructure. Gefyra pulls the active `kubectl` connection and installs 
