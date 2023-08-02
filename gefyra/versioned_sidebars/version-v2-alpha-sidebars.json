@@ -34,6 +34,7 @@
       ]
     },
     "v1_vs_v2",
+    "clients",
     "presets",
     "run_vs_bridge",
     "docker-extension",

@@ -10,6 +10,12 @@ const config = {
   tagline: 'Blazingly-fast 🚀, rock-solid, local application development ➡️ with Kubernetes.',
   favicon: 'img/favicon.ico',
 
+  markdown: {
+    mermaid: true,
+  },
+
+  themes: ['@docusaurus/theme-mermaid'],
+
 
   // Set the production url of your site here
   url: 'https://gefyra.dev',
@@ -138,6 +144,9 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      mermaid: {
+        theme: {light: 'base', dark: 'forest'},
+      }
     }),
     plugins: [
     [
