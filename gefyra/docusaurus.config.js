@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Gefyra | Blazingly-fast rocket, rock-solid, local application development arrow_right with Kubernetes.',
-  tagline: 'Blazingly-fast 🚀, rock-solid, local application development ➡️ with Kubernetes.',
+  tagline: 'Blazingly-fast, rock-solid, local application development with Kubernetes.',
   favicon: 'img/favicon.ico',
 
   markdown: {
@@ -75,6 +75,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: "support_us",
+        content:
+          'If you like Gefyra, please give us a ⭐ star on <a target="_blank" href="https://github.com/gefyrahq/gefyra/">GitHub</a> and support this project.',
+        backgroundColor: "#ebedf0",
+        textColor: "#1c1e21",
+        isCloseable: false,
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {

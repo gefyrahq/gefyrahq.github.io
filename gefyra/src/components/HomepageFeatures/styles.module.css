@@ -9,3 +9,22 @@
   height: 200px;
   width: 200px;
 }
+
+.sectionHeading {
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 52px;
+  margin: 0 auto;
+  max-width: 971px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-style: bold;
+}
+
+.item {
+  padding-top: 20px;
+}
