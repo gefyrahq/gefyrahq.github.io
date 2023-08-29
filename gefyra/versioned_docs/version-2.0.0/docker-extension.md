@@ -1,5 +1,6 @@
 ---
 title: Docker Desktop Extension
+sidebar_position: 5
 ---
 
 import Feedback from './getting-started/_includes/feedback.mdx';

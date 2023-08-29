@@ -1,5 +1,6 @@
 ---
-title: What is Gefyra
+title: What is Gefyra?
+sidebar_position: 2
 ---
 
 # What is Gefyra?

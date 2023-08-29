@@ -39,6 +39,16 @@ const config = {
     locales: ['en'],
   },
 
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap',
+      },
+    },
+  ],
+
   presets: [
     [
       'classic',
@@ -47,7 +57,7 @@ const config = {
         docs: {
           includeCurrentVersion: false,
           versions: {
-            'v1': {
+            '1.x': {
               banner: 'none'
             }
           },
@@ -94,15 +104,39 @@ const config = {
         },
         items: [
           {
+            type: 'docsVersionDropdown',
+            position: 'left',
+            dropdownActiveClassDisabled: true,
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'docsSidebar',
             position: 'left',
             label: 'Docs',
           },
           {
-            type: 'docsVersionDropdown',
+            type: 'docSidebar',
+            sidebarId: 'docsSidebar',
+            docsPluginId: 'devenvs',
             position: 'left',
-            dropdownActiveClassDisabled: true,
+            label: 'Development Environments',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'docsSidebar',
+            docsPluginId: 'usecases',
+            position: 'right',
+            label: 'Usecases and Demos',
+          },
+          {
+            position: 'right',
+            label: 'Media',
+            to: '/media',
+          },
+          {
+            position: 'right',
+            label: 'About',
+            to: '/about',
           },
           {
             html: '<iframe style="margin-top: 8px;" src="https://ghbtns.com/github-btn.html?user=gefyrahq&repo=gefyra&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>',
@@ -153,10 +187,28 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       mermaid: {
-        theme: {light: 'base', dark: 'dark'},
+        theme: { light: 'base', dark: 'dark' },
       }
     }),
-    plugins: [
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'devenvs',
+        path: 'devenvs',
+        routeBasePath: 'container-based-development',
+        sidebarPath: require.resolve('./sidebarsDevenvs.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'usecases',
+        path: 'usecases',
+        routeBasePath: 'usecases-and-demos',
+        sidebarPath: require.resolve('./sidebarsUsecases.js'),
+      },
+    ],
     [
       '@docusaurus/plugin-client-redirects',
       {

@@ -1,3 +1,8 @@
+---
+title: Gefyra Clients
+sidebar_position: 3
+---
+
 # Gefyra Clients
 
 :::note **TLDR;**

@@ -1,5 +1,6 @@
 ---
 title: What changed in v2?
+sidebar_position: 9
 ---
 
 # What changed between Gefyra v1 and Gefyra v2?

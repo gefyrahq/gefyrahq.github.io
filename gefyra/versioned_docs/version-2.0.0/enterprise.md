@@ -1,5 +1,6 @@
 ---
 title: Enterprise Support
+sidebar_position: 7
 ---
 
 # For Enterprise

@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 
 const Run = require('@site/static/img/run.svg').default;
 
-export default function RunAnimation({size}) {
+export default function RunAnimation({ size }) {
     function animatePacket(packet, delay, reverse, path, timeline) {
         packet.timeline(timeline);
         packet.animate(2000, delay, 'now')
@@ -43,13 +43,13 @@ export default function RunAnimation({size}) {
             "path2013",
             "path2011",
         ];
-    
+
         const runArrow = [
             "path1999",
             "path2001",
             "path8643",
         ];
-    
+
         const applicationWindow = [
             "g1851",
             "g1841",
@@ -59,20 +59,20 @@ export default function RunAnimation({size}) {
             "path1825",
             "path1823",
         ];
-    
+
         const dockerContainer = [
             "g1881"
         ];
-    
+
         const projectedContainer = [
             "path293564_1_",
             "path293562_1_",
         ];
-    
+
         const catService = [
             "g293578_1_"
         ];
-    
+
         const operator = [
             "path1909",
             "path1907",
@@ -86,14 +86,14 @@ export default function RunAnimation({size}) {
             "path2007",
             "path24326",
         ];
-    
+
         const draw = SVG('#gefyra-run');
         draw.size(size);
-    
+
         runTimeline = runTimeline ? runTimeline : new SVG.Timeline();
         runTimeline.stop();
-    
-    
+
+
         const cluster = draw.find(clusterElements.map(e => "#" + e).join());
         const arrow = draw.find(runArrow.map(e => "#" + e).join());
         const appWindow = draw.find(applicationWindow.map(e => "#" + e).join());
@@ -101,20 +101,20 @@ export default function RunAnimation({size}) {
         const projected = draw.find(projectedContainer.map(e => "#" + e).join());
         const gefyraOp = draw.find(operator.map(e => "#" + e).join());
         const cat = draw.find(catService.map(e => "#" + e).join());
-    
+
         const textCheck = document.getElementById("run-text");
         if (textCheck) textCheck.remove();
-    
+
         const text = draw.text("Start IDE").attr("id", "run-text")
             .font({ size: 100, color: 'black', family: 'system-ui,-apple-system,BlinkMacSystemFont,"Modern Sans","Open Sans","Helvetica Neue",Arial,sans-serif' })
             .move(0, 2000);
-    
+
         if (runPackets.length) {
             for (let i = 0; i < runPackets.length; i++) {
                 runPackets[i].remove();
             }
         }
-    
+
         const data = draw.findOne('#packet');
         const data2 = data.clone();
         runPackets.push(data2);
@@ -143,7 +143,7 @@ export default function RunAnimation({size}) {
         data8.addTo(draw).attr("class", "packet-marker");
         data9.addTo(draw).attr("class", "packet-marker");
         data10.addTo(draw).attr("class", "packet-marker");
-    
+
         cluster.attr('opacity', 0);
         arrow.attr('opacity', 0);
         appWindow.attr('opacity', 0);
@@ -160,14 +160,14 @@ export default function RunAnimation({size}) {
         data8.attr('opacity', 0);
         data9.attr('opacity', 0);
         data10.attr('opacity', 0);
-    
+
         cluster.timeline(runTimeline);
         arrow.timeline(runTimeline);
         appWindow.timeline(runTimeline);
         container.timeline(runTimeline);
         text.timeline(runTimeline);
         gefyraOp.timeline(runTimeline);
-    
+
         /* Text animation */
         text.animate(100, 4500, 'now').attr('opacity', 0).after(function () {
             text.text("Connect to Kubernetes ...");
@@ -189,56 +189,61 @@ export default function RunAnimation({size}) {
             text.text("Your local container is\n connected to the Kubernetes cluster.");
             text.animate(100, 100, 'now').attr('opacity', 1);
         });
-    
+
         appWindow.animate(0, 0, 'now').dmove(0, 30);
         appWindow.animate(1000, 1000, 'now').attr('opacity', 1).dmove(0, -30).queue();
-    
+
         const clusterMove = 15;
-    
+
         cluster.animate(0, 0, 'now').dmove(0, clusterMove);
         cluster.animate(1000, 5000, 'now').attr('opacity', 1).dmove(0, -clusterMove);
-    
+
         gefyraOp.animate(0, 0, 'now').dmove(0, 30);
         gefyraOp.animate(1000, 7000, 'now').attr('opacity', 1).dmove(0, -30);
-    
+
         arrow.animate(1000, 8000, 'now').attr('opacity', 1);
-    
+
         const containerMove = 15;
-    
+
         container.animate(0, 0, 'now').dmove(0, containerMove);
         container.animate(1000, 10000, 'now').attr('opacity', 1).dmove(0, -containerMove);
-    
+
         projected.animate(1000, 10000, 'now').attr('opacity', 1);
-    
+
         const path = draw.findOne('#packet-path');
         const path2 = draw.findOne('#path1887');
-    
-    
+
+
         animatePacket(data, 11000, false, path, runTimeline);
         animatePacket(data2, 11200, false, path, runTimeline);
         animatePacket(data3, 11400, false, path, runTimeline);
         animatePacket(data4, 12000, true, path, runTimeline);
         animatePacket(data5, 13200, true, path, runTimeline);
-    
+
         animatePacket(data6, 11100, false, path2, runTimeline);
         animatePacket(data7, 11300, false, path2, runTimeline);
         animatePacket(data8, 11500, false, path2, runTimeline);
         animatePacket(data9, 11900, true, path2, runTimeline);
         animatePacket(data10, 12200, true, path2, runTimeline);
     }
-    
+
     if (ExecutionEnvironment.canUseDOM) {
-        setTimeout(runAnimationStart.bind(null, size), 1000);
-        
+        setTimeout(() => {
+            if (!!document.getElementById('gefyra-run')) {
+                runAnimationStart(size);
+            }
+        },
+        1000);
     }
-    <Head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/svg.min.js"></script>
-    </Head>
+
     return (
-            
+        <div>
+            <Head>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/svg.min.js"></script>
+            </Head>
             <figure className={clsx(styles.sectionFigure)}>
                 <Run />
             </figure>
-        
+        </div>
     );
 }

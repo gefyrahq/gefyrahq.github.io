@@ -1,7 +1,8 @@
 ---
-title: About
+title: About Gefyra
 ---
-# About this project
+
+# About Gefyra
 Gefyra is based on well-crafted open-source software. Special credits go to the teams of 
 [linxuserver.io](https://www.linuxserver.io/)
 be sure to check out their awesome work.  

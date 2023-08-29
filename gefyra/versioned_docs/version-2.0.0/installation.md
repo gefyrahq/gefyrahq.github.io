@@ -1,5 +1,6 @@
 ---
 title: Installation
+sidebar_position: 2
 ---
 <img src="/img/minfootprint.png" alt="minimal footprint" width="150" style={{ float: 'right' }}/>
 

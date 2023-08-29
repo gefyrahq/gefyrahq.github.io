@@ -1,5 +1,6 @@
 ---
 title: Command Line Interface (CLI)
+sidebar_position: 10
 ---
 # Command line tool (CLI)
 
