@@ -2,8 +2,8 @@
 title: kind
 ---
 
-import GettingStartedCommon from './_includes/getting_started_common.mdx';
-import Feedback from './_includes/feedback.mdx';
+import GettingStartedCommon from '../_includes/getting_started_common.md';
+import Feedback from '../_includes/feedback.md';
 
 # Getting started with Gefyra and kind
 This guide will show you how to use Gefyra for the local development of a Kubernetes application running in [kind](https://kind.sigs.k8s.io/).

@@ -6,8 +6,8 @@ nav_order: 3
 parent: Getting Started
 ---
 
-import GettingStartedCommon from './_includes/getting_started_common.mdx';
-import Feedback from './_includes/feedback.mdx';
+import GettingStartedCommon from '../_includes/getting_started_common.md';
+import Feedback from '../_includes/feedback.md';
 
 # Getting started with Gefyra and Docker Desktop Kubernetes on MacOS
 This example is really similar to the k3d getting started guide.

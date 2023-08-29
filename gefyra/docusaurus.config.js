@@ -114,13 +114,18 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {
-            type: 'docSidebar',
-            sidebarId: 'docsSidebar',
-            docsPluginId: 'devenvs',
-            position: 'left',
-            label: 'Development Environments',
-          },
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'docsSidebar',
+          //   docsPluginId: 'devenvs',
+          //   position: 'left',
+          //   label: 'Development Environments',
+          // },
+          // {
+          //   position: 'right',
+          //   label: 'Pricing',
+          //   to: '/pricing',
+          // },
           {
             type: 'docSidebar',
             sidebarId: 'docsSidebar',

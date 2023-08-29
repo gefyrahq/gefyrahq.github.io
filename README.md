@@ -46,6 +46,14 @@ then
 
 The main branch gets automatically deployed to GitHub Pages.
 
+## Terminal Recordings:
+
+1. asciinema rec demo.cast
+2. Record terminal session
+3. Edit demo.cast: remove start and end
+4. agg demo.cast ./minikube2.gif --theme dracula --font-size 30 --speed 2 --rows 20
+
+
 
 ## License
 

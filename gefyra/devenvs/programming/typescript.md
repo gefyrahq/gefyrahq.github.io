@@ -1,5 +1,5 @@
 ---
-title: javascript
+title: Javascript
 slug: with-javascript
 sidebar_position: 5
 ---

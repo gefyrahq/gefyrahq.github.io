@@ -1,0 +1,44 @@
+.buttons {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
+  top: 1px;
+  left: 6px;
+  background-color: #ff3b47;
+  border-color: #9d252b;
+  display: inline-block;
+}
+
+.minimize {
+  left: 11px;
+  background-color: #ffc100;
+  border-color: #9d802c;
+}
+
+.zoom {
+  left: 16px;
+  background-color: #00d742;
+  border-color: #049931;
+}
+
+.menu {
+  /* width: 550px; */
+  box-sizing: border-box;
+  height: 30px;
+  background-color: #bbb;
+  margin: 0 auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.screen {
+  background-color: #282a36;
+  box-sizing: border-box;
+  /* width: 550px; */
+  margin: 0 auto;
+  /* padding: 20px; */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

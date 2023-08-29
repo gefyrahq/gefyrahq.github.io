@@ -3,7 +3,7 @@ title: Docker Desktop Extension
 sidebar_position: 5
 ---
 
-import Feedback from './getting-started/_includes/feedback.mdx';
+import Feedback from './_includes/feedback.md';
 
 # Gefyra Docker Desktop Extension
 
@@ -11,19 +11,11 @@ import Feedback from './getting-started/_includes/feedback.mdx';
 
 :::note Runs Gefyra v1
 
-Gefyra's Docker Desktop Extension still runs Gefyra v1.
+Gefyra's Docker Desktop Extension still runs Gefyra v1 internally and thus does not support shared environments.
 
 :::
 
 **Looking for CLI rather than a GUI?** Check out [Gefyra's CLI](/docs/installation/)
-
-## 10 minute demo
-
-**Gefyra Docker Desktop Extension Run Demo Video**  
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4xmaOVul5Ww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-**Gefyra Docker Desktop Extension Bridge Demo Video**  
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EBArR1O2BGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Installation
 The Gefyra Docker Desktop Extension is available on the Docker Desktop extension [marketplace](https://hub.docker.com/extensions/gefyra/docker-desktop-extension). 
@@ -60,5 +52,13 @@ As soon as you're done hit run!
 Gefyra ensures that its cluster components are in the correct state and starts the container.
 
 Once the container is running Gefyra will show you the logs of the container.
+
+## 10 minute demo
+
+**Gefyra Docker Desktop Extension Run Demo Video**  
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4xmaOVul5Ww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+**Gefyra Docker Desktop Extension Bridge Demo Video**  
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EBArR1O2BGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <Feedback />

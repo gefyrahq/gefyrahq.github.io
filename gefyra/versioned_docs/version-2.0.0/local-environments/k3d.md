@@ -2,8 +2,8 @@
 title: k3d
 ---
 
-import GettingStartedCommon from './_includes/getting_started_common.mdx';
-import Feedback from './_includes/feedback.mdx';
+import GettingStartedCommon from '../_includes/getting_started_common.md';
+import Feedback from '../_includes/feedback.md';
 
 # Getting started with Gefyra and k3d
 This guide will show you how to use Gefyra for the local development of a Kubernetes application running in [k3d](https://k3d.io/).

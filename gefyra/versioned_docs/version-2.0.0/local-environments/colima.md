@@ -2,8 +2,8 @@
 title: Colima Kubernetes
 ---
 
-import GettingStartedCommon from './_includes/getting_started_common.mdx';
-import Feedback from './_includes/feedback.mdx';
+import GettingStartedCommon from '../_includes/getting_started_common.md';
+import Feedback from '../_includes/feedback.md';
 
 # Getting started with Gefyra and Colima Kubernetes
 This guide will show you how to use Gefyra for the local development of a Kubernetes application running in [Colima Kubernetes](https://github.com/abiosoft/colima).

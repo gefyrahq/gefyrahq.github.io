@@ -1,14 +1,14 @@
 ---
-title: Getting Started
+title: Getting Started With Local Kubernetes Cluster
+sidebar_position: 1
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 
-# How to get started
+# Getting Started With Local Kubernetes Cluster
 This chapter contains guides on how to get started with Gefyra and
-different Kubernetes solutions, both local and remote.
-
+different local Kubernetes solutions.
 
 
 Hey! We would be very happy to know about your Kubernetes development setup. If you can't find your distribuition in this

@@ -1,6 +1,6 @@
 ---
 title: Run vs Bridge
-sidebar_position: 5
+sidebar_position: 7
 ---
 import RunAnimation from '@site/src/components/RunAnimation';
 import BridgeAnimation from '@site/src/components/BridgeAnimation';
