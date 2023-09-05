@@ -87,7 +87,7 @@ export default function Home() {
               <div className={clsx(styles.sideBySideContent)}>
                 <h2 className={clsx(styles.sectionHeading)}>Docker Desktop Extension</h2>
                 <p className={clsx(styles.sideBySideContentText)}>Gefyra provides a <strong>Docker Desktop Extension</strong> for even more simple usage.</p>
-                <p className={clsx(styles.sideBySideContentText)}>Connect your development containers directly to any Kubernetes cluster through Gefyra's Docker Desktop Extension user-interface.</p>
+                <p className={clsx(styles.sideBySideContentText)}>Connect your development containers directly to any Kubernetes cluster through Gefyra's Docker Desktop Extension user interface.</p>
                 <Link
                   className={clsx("button button--secondary button--lg", styles.center)}
                   to="https://www.docker.com/blog/building-a-local-application-development-environment-for-kubernetes-with-the-gefyra-docker-extension/">
@@ -170,8 +170,8 @@ export default function Home() {
         <section className={clsx(styles.singleItemSection, styles.section, styles.lightBg)}>
           <div className={clsx('container')}>
             <h3 className={clsx(styles.sectionHeading)}>Let us know about your experience!</h3>
-            <p className={clsx(styles.sideBySideContentText)}>We depend on your feedback - Gefyra's was created out of our own needs and the feedback we received from you, our community.</p>
-            <p className={clsx(styles.sideBySideContentText)}>We'd appreciate if you could take 2 minutes of your time to fill out our <strong>feedback form</strong>.</p>
+            <p className={clsx(styles.sideBySideContentText)}>We depend on your feedback - Gefyra's was created out of our own needs and the feedback we received from you, and our community.</p>
+            <p className={clsx(styles.sideBySideContentText)}>We'd appreciate it if you could take 2 minutes of your time to fill out our <strong>feedback form</strong>.</p>
             <Link
               className={clsx("button button--secondary button--lg", styles.center)}
               to="https://forms.gle/AWT9NparpTVk8E978">

@@ -26,11 +26,11 @@ i {
     text-decoration: none;
 }
 
-.zoom:hover {
+/* .zoom:hover {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
     font-size: 60px;
     padding: 0;
-}
+} */

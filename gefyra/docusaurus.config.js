@@ -196,15 +196,15 @@ const config = {
       }
     }),
   plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'devenvs',
-        path: 'devenvs',
-        routeBasePath: 'container-based-development',
-        sidebarPath: require.resolve('./sidebarsDevenvs.js'),
-      },
-    ],
+    // [
+    //   '@docusaurus/plugin-content-docs',
+    //   {
+    //     id: 'devenvs',
+    //     path: 'devenvs',
+    //     routeBasePath: 'container-based-development',
+    //     sidebarPath: require.resolve('./sidebarsDevenvs.js'),
+    //   },
+    // ],
     [
       '@docusaurus/plugin-content-docs',
       {

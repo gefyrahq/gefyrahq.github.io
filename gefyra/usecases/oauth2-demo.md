@@ -35,13 +35,6 @@ out the [getting started guide](https://gefyra.dev/getting-started/).
 * Optionally: [k3d](https://k3d.io) or any other preferred Kubernetes cluster
 * Optionally: VSCode with Python debugger installed (or any other preferred IDE)
 
-<hr />
-
-### Table of contents
-
-1. TOC
-
-
 That's about it. Let's get started.
 
 <hr />

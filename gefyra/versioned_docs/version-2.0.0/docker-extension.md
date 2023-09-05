@@ -27,8 +27,7 @@ docker extension install gefyra/docker-desktop-extension:latest
 
 ## Usage
 
-After installing the extension it becomes available in the Docker Desktop Extension sidebar. Gefyra Docker Desktop currently only
-support the `run` mode. After clicking on the `run` tile you're guided through the process of running a container on your local machine.
+After installing the extension it becomes available in the Docker Desktop Extension sidebar. Gefyra Docker Desktop currently only supports the `run`` mode. After clicking on the `run` tile you're guided through the process of running a container on your local machine.
 
 ![Docker Desktop Extension Start](/img/extension/home_light.png)
 
@@ -36,7 +35,7 @@ Firstly Gefyra needs to know about your cluster to allow you to set all settings
 
 ![Docker Desktop Extension Cluster Settings](/img/extension/cluster_light.png)
 
-After choosing your kubeconfig and context you can then proceed to adding the settings for your container. In case you have a remote cluster
+After choosing your *kubeconfig* and context you can then proceed to adding the settings for your container. In case you have a remote cluster
 you need to provide Gefyra with its connection parameters under `Remote Cluster Settings`.
 
 ![Docker Desktop Extension Container Settings](/img/extension/container_light.png)

@@ -7,7 +7,7 @@ import BridgeAnimation from '@site/src/components/BridgeAnimation';
 
 # Run vs. Bridge Operation
 
-Gefyra support two modes of operation: Run and Bridge. Let's dive into the differences.
+Gefyra support two modes of operation: **run** and **bridge**. Let's dive into the differences.
 
 ## TLDR;
 

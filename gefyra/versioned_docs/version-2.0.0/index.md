@@ -47,6 +47,6 @@ Looking for Homebrew or Windows installation? Checkout the [installation guide](
 
 ## Use Cases and Demos
 If you are interested in more sophisticated use cases or want to develop modern Kubernetes-based architectures, 
-check out the [use cases and demos](/docs/usecases/) or [the media section](/media/). 
+check out the [use cases and demos](/usecases-and-demos/) or [the media section](/media/). 
 
 
