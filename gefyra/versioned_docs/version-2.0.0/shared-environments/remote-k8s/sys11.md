@@ -3,7 +3,7 @@ title: SysEleven MetaKube Kubernetes
 sidebar_position: 4
 ---
 
-import Feedback from '../_includes/feedback.md';
+import Feedback from '../../_includes/feedback.md';
 
 # Getting started with Gefyra and SysEleven MetaKube
 This guide will show you how to use Gefyra for the remote development of a Kubernetes

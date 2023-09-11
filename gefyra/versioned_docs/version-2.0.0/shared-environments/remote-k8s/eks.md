@@ -3,7 +3,7 @@ title: Elastic Kubernetes Service (EKS)
 sidebar_position: 3
 ---
 
-import Feedback from '../_includes/feedback.md';
+import Feedback from '../../_includes/feedback.md';
 
 # Getting started with Gefyra and Elastic Kubernetes Service (EKS)
 This guide will show you how to use Gefyra for the remote development of a Kubernetes

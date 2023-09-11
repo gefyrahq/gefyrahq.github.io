@@ -3,7 +3,7 @@ title: Google Cloud Platform (GCP)
 sidebar_position: 2
 ---
 
-import Feedback from '../_includes/feedback.md';
+import Feedback from '../../_includes/feedback.md';
 
 # Getting started with Gefyra and the Google Cloud Platform
 This guide will show you how to use Gefyra for the remote development of a Kubernetes

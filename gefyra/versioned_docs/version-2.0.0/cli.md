@@ -261,7 +261,7 @@ gefyra unbridge -N mypybridge
 | `-A`, `--all`  | Remove all bridges at once           |
 
 
-### reflect
+<!-- ### reflect
 Combines `run` and `bridge` commands. It starts a new container in Gefyra and bridges the traffic to it.
 `reflect` takes a workload as argument and mirrors the given workload on the local machine.
 It is possible to overwrite several aspects of the workload, e.g. the image, the command or the environment variables.
@@ -283,7 +283,7 @@ gefyra reflect
 | `-b`, `--bridge`  | Bridge workload immediately when container has started.                                                                           |
 | `-c`, `--command`    | Overwrite command of container.                                                                               |
 | `-n`, `--namespace` | Namespace of the workload. Default to `default`.                 |                                                                                                      |
-| `--env`     | Add environment variable to container e.g. `--env KUBE=2` |                                                                                                      |
+| `--env`     | Add environment variable to container e.g. `--env KUBE=2` |                                                                                                      | -->
 
 
 ### down
