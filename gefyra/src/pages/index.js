@@ -23,7 +23,7 @@ function HomepageHeader() {
           <Link
             className="button button--primary button--lg"
             style={{ "marginRight": "20px" }}
-            to="/docs/getting-started/">
+            to="/docs/getting-started-with-gefyra/">
             Let's try Gefyra
           </Link>
           <Link
