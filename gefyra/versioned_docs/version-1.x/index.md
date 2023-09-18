@@ -14,7 +14,7 @@ Building and pushing containers to test them in Kubernetes is repetitive and tim
 ## The Solution
 Gefyra runs local code in any Kubernetes cluster without the build and push cycle. It overlays containers in the cluster making code changes immediately available.
 
-[Try it now](/docs/getting-started/)
+[Try it now](/docs/1.x/getting-started/)
 
 ## Core Features
 ### Run a container instance on a developer machine and connect it to Kubernetes-based resources

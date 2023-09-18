@@ -35,13 +35,13 @@ gefyra install
 | Argument           | Description                                                                                                                                                                |
 |:-------------------|:------------------------------------------------------------------------|
 | `--component`, `--comp` | Install specific cluster components. Valid options are: `namespace`, `rbac`, `webhook`, `deployment`, `service`. |
-| `--preset` | Apply loadbalancer preset. Allows to expose Gefyra's stowaway connection. Valid options are: `aws`. For more information see [presets](/docs/presets). |
+| `--preset` | Apply loadbalancer preset. Allows to expose Gefyra's stowaway connection. Valid options are: `aws`, `gke`. |
 | `--apply` | Apply changes to cluster immediately. Otherwise just output YAML to console. |
 | `--wait` | Wait until `--apply` is finished. Has to be used with `--apply`. |
 
 ### clients
 
-Gefyra allows to create client instances which are used to connect to the cluster. A [Gefyra Client](/docs/tech/clients) is a custom resource within Kubernetes.
+Gefyra allows to create client instances which are used to connect to the cluster. A [Gefyra Client](/docs/shared-environments/clients) is a custom resource within Kubernetes.
 Once a client instance is created in the cluster it can be used to generate a connection file. This file can be used to connect Gefyra's client side
 to the cluster (with limited permissions).
 
@@ -54,7 +54,7 @@ gefyra clients delete my-client
 
 #### clients create
 
-Creates a new client. What are [clients](/docs/tech/clients)?
+Creates a new client. What are [clients](/docs/shared-environments/clients)?
 
 **Example:**
 ```bash

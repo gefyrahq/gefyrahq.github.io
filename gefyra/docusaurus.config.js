@@ -223,39 +223,39 @@ const config = {
             from: '/installation/',
           },
           {
-            to: '/docs/getting-started/',
+            to: '/docs/local-environments/',
             from: '/getting-started/',
           },
           {
-            to: '/docs/getting-started/minikube',
+            to: '/docs/local-environments/minikube',
             from: '/getting-started/minikube/',
           },
           {
-            to: '/docs/getting-started/k3d',
+            to: '/docs/local-environments/k3d',
             from: '/getting-started/k3d/',
           },
           {
-            to: '/docs/getting-started/kind',
+            to: '/docs/local-environments/kind',
             from: '/getting-started/kind/',
           },
           {
-            to: '/docs/getting-started/docker_desktop_osx',
+            to: '/docs/local-environments/docker_desktop_osx',
             from: '/getting-started/docker-desktop-kubernetes-osx/',
           },
           {
-            to: '/docs/getting-started/gcp',
+            to: '/docs/shared-environments/remote-k8s/gcp',
             from: '/getting-started/google-cloud-platform-gcp/',
           },
           {
-            to: '/docs/getting-started/eks',
+            to: '/docs/shared-environments/remote-k8s/eks',
             from: '/getting-started/aws-eks/',
           },
           {
-            to: '/docs/getting-started/colima',
+            to: '/docs/local-environments/colima',
             from: '/getting-started/colima-kubernetes/',
           },
           {
-            to: '/docs/getting-started/sys11',
+            to: '/docs/shared-environments/remote-k8s/sys11',
             from: '/getting-started/syseleven-metakube-kubernetes/',
           },
           {
@@ -263,16 +263,16 @@ const config = {
             from: '/cli/',
           },
           {
-            to: '/docs/tech/',
-            from: '/details/',
+            to: '/docs/technical-details',
+            from: '/docs/tech/',
           },
           {
-            to: '/docs/tech/architecture',
-            from: '/details/architecture/',
+            to: '/docs/technical-details/architecture',
+            from: '/docs/tech/architecture/',
           },
           {
-            to: '/docs/tech/what/',
-            from: '/details/what-is-gefyra/',
+            to: '/docs/technical-details/what',
+            from: '/docs/tech/what/',
           },
           {
             to: '/docs/run_vs_bridge/',
@@ -283,38 +283,60 @@ const config = {
             from: '/docker-desktop-extension/',
           },
           {
-            to: '/docs/usecases/',
+            to: '/usecases-and-demos/',
             from: '/usecases/',
           },
           {
-            to: '/docs/usecases/ubuntu-in-namespace',
+            to: '/usecases-and-demos/',
+            from: '/docs/usecases/',
+          },
+          {
+            to: '/usecases-and-demos/ubuntu-in-namespace',
+            from: '/docs/usecases/ubuntu-in-namespace/',
+          },
+          {
+            to: '/usecases-and-demos/ubuntu-in-namespace',
             from: '/usecases/ubuntu-in-namespace/',
           },
-
           {
-            to: '/docs/usecases/oauth2-demo',
+            to: '/usecases-and-demos/oauth2-demo',
+            from: '/docs/usecases/oauth2-demo/',
+          },
+          {
+            to: '/usecases-and-demos/oauth2-demo',
             from: '/usecases/oauth2-demo/',
           },
-
           {
-            to: '/docs/usecases/remote-gke',
+            to: '/usecases-and-demos/remote-gke',
+            from: '/docs/usecases/remote-gke/',
+          },
+          {
+            to: '/usecases-and-demos/remote-gke',
             from: '/usecases/remote-development-with-gke/',
           },
           {
-            to: '/docs/usecases/golang',
+            to: '/usecases-and-demos/golang',
+            from: '/docs/usecases/golang/',
+          },
+          {
+            to: '/usecases-and-demos/golang',
             from: '/usecases/developing-go-with-gefyra/',
           },
           {
-            to: '/docs/enterprise',
+            to: '/pricing',
             from: '/enterprise/',
           },
           {
-            to: '/docs/media',
-            from: '/media/',
+            to: '/pricing',
+            from: '/docs/enterprise/',
           },
           {
-            to: '/docs/about',
-            from: '/about/',
+            to: '/media/',
+            from: '/docs/media',
+          },
+          {
+            to: '/about/',
+            from: '/docs/about',
           },
 
         ],
