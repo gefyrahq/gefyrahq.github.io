@@ -1,0 +1,36 @@
+.sectionFigure {
+    font-size: 55px;
+    line-height: 1.5em;
+    max-width: 400px;
+    text-align: center;
+    color: var(--ifm-link-color);
+}
+
+i {
+    padding: 5px;
+}
+
+.zoom:link {
+    text-decoration: none;
+}
+
+.zoom:visited {
+    text-decoration: none;
+}
+
+.zoom:hover {
+    text-decoration: none;
+}
+
+.zoom:active {
+    text-decoration: none;
+}
+
+/* .zoom:hover {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    font-size: 60px;
+    padding: 0;
+} */

@@ -16,6 +16,7 @@
   }
 }
 
+
 .buttons {
   display: flex;
   align-items: center;
@@ -36,4 +37,90 @@
 
 .lightBg {
   background-color: var(--gefyra-secondary-bg-color);
+}
+
+.ornamentSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.heroBannerGradient {
+  background: rgb(255,225,133);
+  background: linear-gradient(180deg, rgba(255,225,133,1) 10%, rgba(255,255,255,1) 20%);
+}
+
+.singleItemSection {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  
+}
+
+.sectionHeading {
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 52px;
+  margin: 0 auto;
+  max-width: 971px;
+  text-align: center;
+  
+}
+
+.section {
+  padding: 25px;
+}
+
+.sectionSideBySide {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 25px;
+}
+
+.sideBySideContent {
+  flex: 0 1 550px;
+  min-width: 350px;
+  display: block;
+  position: relative;
+  padding: 20px;
+}
+
+.sideBySideReversed {
+  flex-direction: row-reverse;
+}
+
+.sideBySideContentText {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.sectionFigure {
+  max-width: 30em;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+}
+
+.textBlock{
+  width: 60em;
+  justify-content: center;
+}
+
+.ornamentSection::before {
+  content: "";
+  position: absolute;
+  width: 175%;
+  height: 100%;
+  top: 70%;
+  left: -50%;
+  z-index: -1;
+  background: url(/img/gefyra_vertical_logoonly.svg) 50px 20px repeat no-repeat;
+  filter: grayscale(50%);
+  opacity: 0.15;
+  transform: rotate(20deg) scale(2.5);
 }

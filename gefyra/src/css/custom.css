@@ -6,13 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  /* --ifm-color-primary: #2e8555; */
-  /* --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e; */
+  --ifm-font-family-base: 'Open Sans';
   --ifm-link-color: #ac8316;
   --ifm-navbar-link-hover-color: #ac8316;
   --ifm-menu-color-active: #ac8316;
@@ -50,7 +44,19 @@
   --gefyra-logo-color: #ffffff;
 }
 
+.button.button--primary {
+  border-radius: 2px;
+}
+
 .button.button--secondary {
-  color: #fff;
-  border-radius: 0;
+  border-radius: 2px;
+}
+
+[data-theme="light"] header.hero {  
+ background-image: url(/img/Getting-Started-BG.png);
+ background-size: cover;
+}
+
+.subtitle {
+  font-size: 2rem;
 }
