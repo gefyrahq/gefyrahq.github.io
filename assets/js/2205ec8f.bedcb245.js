@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgefyra=self.webpackChunkgefyra||[]).push([[7533],{4796:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"usecases"}')}}]);
