@@ -22,8 +22,9 @@ The CLI allows to run the following available actions.
 
 ### install
 
-Gefyra installs its _Operator_, validation webhook and _Stowaway_ to the connected cluster.
-**Import** In some scenarios firewalls may be blocking port `31280`. Make sure it is reachable from your machine.
+Gefyra installs its _Operator_, validation webhook and _Stowaway_ (the Wireguard endpoint) to the connected cluster.  
+
+**Important:** Please check out the [documentation on remote cluster installation](/docs/shared-environments/installation).
 
 **Example:**
 ```sh
@@ -172,8 +173,8 @@ gefyra connections rm my-connection
 ### up
 Brings up a local development infrastructure. Gefyra pulls the active `kubectl` connection and installs 
 _Operator_ to the connected cluster. Gefyra waits for _Operator_ to become ready. In the last step, Gefyra rolls out
-the local Docker network and traffic tunnel endpoint.
-**Import** In some scenarios firewalls may be blocking port `31280`. Make sure it is reachable from your machine.
+the local Docker network and traffic tunnel endpoint.  
+**Import:** In some scenarios firewalls may be blocking port `31280`. Make sure it is reachable from your machine.
 
 **Example:**
 ```sh

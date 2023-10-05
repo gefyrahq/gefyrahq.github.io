@@ -1,5 +1,5 @@
 ---
-title: Run vs Bridge
+title: Run vs. Bridge
 sidebar_position: 7
 ---
 import RunAnimation from '@site/src/components/RunAnimation';

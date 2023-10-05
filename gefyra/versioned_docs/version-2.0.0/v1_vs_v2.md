@@ -1,5 +1,5 @@
 ---
-title: What changed in v2?
+title: What Changed in Gefyra 2?
 sidebar_position: 9
 ---
 

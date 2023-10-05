@@ -1,5 +1,5 @@
 ---
-title: Gefyra Clients
+title: What are Gefyra Clients?
 sidebar_position: 1
 ---
 
@@ -7,7 +7,7 @@ sidebar_position: 1
 
 :::note **TLDR;**
 
-Gefyra Clients provide a way to grant multiple clients limited access to a Kubernetes cluster in order to use Gefyra's capabilities.
+Gefyra Clients provide a way to grant multiple clients (i.e. users, robots, pipelines, etc.) limited access to a Kubernetes cluster in order to use Gefyra's capabilities.
 
 ::: 
 
