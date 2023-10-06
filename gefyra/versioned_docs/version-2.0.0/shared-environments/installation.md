@@ -1,6 +1,6 @@
 ---
 title: Installing Gefyra in a Cluster
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Gefyra (Remote) Cluster Installation
