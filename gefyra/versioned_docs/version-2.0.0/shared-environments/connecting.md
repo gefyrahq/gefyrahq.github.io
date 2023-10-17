@@ -92,5 +92,26 @@ later, you will need a *client file* again.
 :::
 
 ### Connection Names
+You can assign (and have to) names to your connections if you have more than one. Almost all commands of the Gefyra CLI support
+the `--connection-name` option to specify the connection a certain command is targeting. Most importantly, for
+`gefyra run --connection-name` you specify to which cluster a local container is connected.
+
+To create a new connection with a name (in this example `my-conn1`), please run the following to set up a connection with a given name:
+```
+gefyra connections connect --connection-name my-conn1 ... 
+```
+
+The connection will show up in the connection list:
+```
+> gefyra connections list
+NAME     VERSION    CREATED                         STATUS
+default  2.0.0      2023-10-10T18:36:15.519969679Z  running
+my-conn1 2.0.1      2023-10-12T12:14:11.48715/726Z  running
+```
+
+You can manage connections based on the local names, i.e. halt the connection, reconnect, remove it, and run containers with it.
+
 
 ## Simultaneous Connections
+As you can see above, it is possible to create a list of connections simultaneously. They can be individually managed, like started and stopped, even at the same time.  
+It is possible to have multiple connections to one cluster, too.
