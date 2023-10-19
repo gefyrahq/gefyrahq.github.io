@@ -82,7 +82,7 @@ To actively disconnect from the cluster, you run this command:
 ```
 gefyra connections stop
 ```
-This assumes you have a *default* connection currently running. If not, you have to provide a valid connection name with the `--connection-name` option.
+This assumes you have a *default* connection currently running. If not, you have to provide a valid connection name with the `[connection-name]` argument.
 
 You will find this connection to be stopped from the client's side. However, if you want to reconnect to the cluster, you can now run `gefyra connections connect` again. The connection process will be superfast this time.
 
