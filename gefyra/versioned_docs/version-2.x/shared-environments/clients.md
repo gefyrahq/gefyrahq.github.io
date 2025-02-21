@@ -146,6 +146,24 @@ If you need to specify Gefyra's VPN connection endpoint, please use the `--host`
 gefyra clients config 20d50da476524eaf8dd511deed55fc63 --host 192.169.0.1
 ```
 
+If you have Max-Transmission-Unit restrictions in your cluster or are connected via a VPN already you can use the `--mtu` option to set a custom one:
+```
+gefyra clients config 20d50da476524eaf8dd511deed55fc63 --mtu 1200
+```
+
+If you are in an airgapped environment and your cluster cannot use the default Gefyra images you can use the `--registry` option to set a custom docker regisry, Gefyra should use.
+```
+gefyra clients config 20d50da476524eaf8dd511deed55fc63 --registry https://my-secure-registry
+```
+
+:::important Custom Registry
+The custom registry will be used for all required Gefyra images. Meaning your registry should have the following images available:
+- [Stowaway](https://github.com/gefyrahq/gefyra/blob/main/stowaway/Dockerfile)
+- [Carrier](https://github.com/gefyrahq/gefyra/blob/main/carrier/Dockerfile)
+- [Cargo](https://github.com/gefyrahq/gefyra/blob/main/cargo/Dockerfile)
+- [Operator](https://github.com/gefyrahq/gefyra/blob/main/operator/Dockerfile)
+:::
+
 This data will be written into the *client file* so that your clients can connect to the cluster using these parameters. If you
 fail to provide correct data to your clients, they might be unable to connect to the cluster. 
 

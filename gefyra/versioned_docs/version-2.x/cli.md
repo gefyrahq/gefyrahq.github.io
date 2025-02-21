@@ -106,6 +106,8 @@ gefyra clients config -h 1.1.1.1 my-client-id
 | `-p`, `--port` | The port on which Gefyra's stowaway is exposed on the cluster. |
 | `-a`, `--kube-api`, `--kubernetes-api` | Address of the cluster's Kubernetes API. |
 | `-o`, `--output` | Output file to write the config to. Command prints output to stdout if not provided. |
+| `--registry` | Optional parameter to set a custom registry that should be used for pulling Carrier and Stowaway images. |
+| `--mtu` | Optional parameter that sets the wireguard Max-Transmission-Unit to use for this client (defaults to: 1340) |
 
 #### clients delete
 
@@ -136,9 +138,10 @@ gefyra connections connect -f con_file.json -n my-connection
 
 | Argument           | Description                                                                                                                                                                |
 |:-------------------|:------------------------------------------------------------------------|
-| `-f`, `--client-config` | Gefyra's client connection file. Can be retrieved via `gefyra client config`  |
-| `-n`, `--connection-name` | The connection's name. Defaults to `default`. Connection names must be unique.|
+| `-f`, `--client-config` | Gefyra's client connection file. Can be retrieved via `gefyra client config` |
+| `-n`, `--connection-name` | The connection's name. Defaults to `default`. Connection names must be unique. |
 | `--minikube` | Target cluster is of type Minikube. Adapts connection's network settings. |
+| `--mtu` | Optional wireguard Max-Transmission-Unit that overrides the configured client MTU (defaults to: 1340) |
 
 
 #### connections disconnect
@@ -195,7 +198,7 @@ gefyra up
 | `-r`, `--registry` | The base url for registry to pull images from (e.g. _quay.io/gefyra/_), the full image paths will be constructed using the name and the tag of the release                 |                                                                                                      |
 | `--kubeconfig`     | The path to kubeconfig file to the Kubernetes cluster (default is global `kubeconfig`)                                                                                     |                                                                                                      |
 | `--context`        | The context name from kubeconfig (default is active global context)                                                                                                        |                                                                                                      |
-| `--wireguard-mtu`  | The MTU value for the local Wireguard endpoint (default: 1340)                                                                                                             |                                                                                                      |
+| `--mtu`  | The MTU value for the local Wireguard endpoint (default: 1340) |                                                                                                      |
                         
 
 ### run

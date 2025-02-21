@@ -88,6 +88,16 @@ spec:
 ```
 This service will open up the port **31820** on all of your Kubernetes nodes and route VPN traffic to Gefyra.
 
+If you experience problems with the Wireguard VPN connection, or are already behind a VPN that imposes a Max-Transmission-Unit (MTU) you can change the MTU that gefyra uses on the fly.
+Again there are multiple options to achive this (please see [Gefyra cli docs](/docs/cli) for further reference):
+1. Add the `--mtu` parameter at `gefyra up` to set up the MTU system wide
+2. Add the `--mtu` parameter at `gefyra client config` to set the MTU for a specific client config
+3. Add the `--mtu` parameter at `gefyra connection connect` to override any previously set MTUs
+
+:::note
+If you are already connected to a VPN that has a MTU, you should try Gefyra with a MTU lower than that.
+:::
+
 If you don't want to expose Gefyra via a *NodePort* service, or you don't have routable IPs on your Kubernetes nodes, you need
 to set up a **UDP load balancing** for Gefyra. Luckily, Gefyra's got you covered.
 
